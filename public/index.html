@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+<head>
+    <meta charset="utf-8"/>
+    <link href="%PUBLIC_URL%/favicon.ico" rel="shortcut icon"/>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
     />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <meta content="#000000" name="theme-color"/>
+    <link href="%PUBLIC_URL%/manifest.json" rel="manifest"/>
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
     <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<script crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+<script>
+    $(document).ready(() => {
+        $('body').bootstrapMaterialDesign();
+        $('#myCarousel').carousel({
+            interval: 5000
+        });
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        $('.next').click(function () {
+            $('.carousel').carousel('next');
+            return false;
+        });
+        $('.prev').click(function () {
+            $('.carousel').carousel('prev');
+            return false;
+        });
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        $("#myCarousel").on("slide.bs.carousel", function (e) {
+            const $e = $(e.relatedTarget);
+            const idx = $e.index();
+            const itemsPerSlide = 3;
+            const totalItems = $(".carousel-item").length;
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide -
+                    (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    if (e.direction === "left") {
+                        $(
+                            ".carousel-item").eq(i).appendTo(".carousel-inner");
+                    } else {
+                        $(".carousel-item").eq(0).appendTo(".carousel-inner");
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
 </html>
