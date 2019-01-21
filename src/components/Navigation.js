@@ -2,9 +2,9 @@ import React from 'react';
 
 const Navigation = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark" style={{boxShadow: 'none'}}>
+        <nav className="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style={{boxShadow: 'none'}}>
             <a className="navbar-brand" href="#">
-                <img src="https://jeager.io/static/media/white-logo.168e2d24.png" height="30"
+                <img src={require('../assets/logoputih.png')} height="90"
                      className="d-inline-block align-top" alt=""/>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
@@ -16,16 +16,16 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                        <a className="nav-link font-weight-bold" href="#">Tentang Kami</a>
+                        <a className="nav-link font-weight-bold text-capitalize" href="#">Tentang Kami</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link font-weight-bold" href="#">Solution</a>
+                        <a className="nav-link font-weight-bold text-capitalize" href="#">Solution</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link font-weight-bold" href="#">Berita</a>
+                        <a className="nav-link font-weight-bold text-capitalize" href="#">Berita</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link font-weight-bold" href="#">Hubungi Kami</a>
+                        <a className="nav-link font-weight-bold text-capitalize" href="#">Hubungi Kami</a>
                     </li>
                 </ul>
             </div>

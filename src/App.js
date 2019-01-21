@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div style={{backgroundColor: '#2980b9'}}>
+                <div style={{backgroundColor: '#fff'}}>
                     <Route path="/" exact component={Main}/>
                 </div>
             </Router>
