@@ -37,7 +37,7 @@ export default () => {
                     <div className="line mb-3" style={{marginLeft: '27%'}}/>
                     <div className="row pt-4 pb-4 d-flex align-items-center">
                         <div className="col-6 d-flex justify-content-end">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DzWHKNMwrIM"
+                            <iframe width="610" height="425" src="https://www.youtube.com/embed/DzWHKNMwrIM"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen/>
@@ -45,14 +45,100 @@ export default () => {
                         <div className="col-6 ">
                             <div style={{
                                 backgroundImage: '-webkit-linear-gradient(0deg, #072f4c 0%, #00c4e7 100%)',
-                                height: '315px',
-                                width: '560px'
+                                height: '425px',
+                                width: '610px'
                             }} className="text-white text-center d-flex justify-content-center align-items-center">
-                                <h2 style={{fontSize: '27px'}}>
-                                    JEAGER MEMBANTU INDUSTRI MANUFAKTUR UNTUK MENINGKATKAN PERFORMA PRODUKSI
-                                    MELALUI<br/>"INDUSTRIAL
-                                    INTERNET OF THINGS"
+                                <h2 style={{fontSize: '35px', fontWeight: 500}}>
+                                    JEAGER MEMBANTU INDUSTRI<br/>MANUFAKTUR UNTUK<br/>MENINGKATKAN PERFORMA<br/>PRODUKSI
+                                    MELALUI "INDUSTRIAL INTERNET OF THINGS"
                                 </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="mt-5">
+                <div className="container">
+                    <div className="line m-auto"/>
+                    <div className="row mt-4">
+                        <div className="col-12 text-center">
+                            <h2 style={{color: '#072f4c', fontWeight: 500}} className="mb-2">SOLUSI KAMI</h2>
+                            <p>Kami menyediakan perangkat atau sensor IoT dan sistem pemantauan berbasis web<br/>untuk
+                                mendapatkan lebih banyak wawasan tentang lantai pabrik.</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12">
+                            <div id="myCarousel" className="carousel slide" data-interval="false" data-ride="carousel">
+                                <div className="row d-flex justify-content-center align-items-center">
+                                    <div className="col-1 d-flex justify-content-end">
+                                        <div className="prev-arrow prev"/>
+                                    </div>
+                                    <div className="col-10">
+                                        <div className="carousel-inner row ml-2" style={{padding: '10px'}}>
+                                            <div className="carousel-item col-4 active">
+                                                <div className="card solution-card">
+                                                    <div className="card d-flex align-items-center solution">
+                                                        <img className="mt-3" src={require('../assets/Solusi1.png')}
+                                                             height="200" width="auto" alt="Card image cap"/>
+                                                        <div className="mb-4">
+                                                            <h4 className="text-center text-uppercase"
+                                                                style={{fontWeight: 500, color: '#072f4c'}}>OEE<br/>Monitoring
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="carousel-item col-4">
+                                                <div className="card solution-card">
+                                                    <div className="card d-flex align-items-center solution">
+                                                        <img className="mt-3" src={require('../assets/Solusi2.png')}
+                                                             height="200" width="auto" alt="Card image cap"/>
+                                                        <div className="mb-4">
+                                                            <h4 className="text-center text-uppercase"
+                                                                style={{
+                                                                    fontWeight: 500,
+                                                                    color: '#072f4c'
+                                                                }}>Production<br/>Traceability
+                                                                System
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="carousel-item col-4">
+                                                <div className="card solution-card">
+                                                    <div className="card d-flex align-items-center solution">
+                                                        <img className="mt-3" src={require('../assets/Solusi3.png')}
+                                                             height="200" width="auto" alt="Card image cap"/>
+                                                        <div className="mb-4">
+                                                            <h4 className="text-center text-uppercase"
+                                                                style={{
+                                                                    fontWeight: 500,
+                                                                    color: '#072f4c'
+                                                                }}>Environment<br/>Management
+                                                                System
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*<div className="carousel-item col-4">
+                                                <div className="card">
+                                                    <div className="card">
+                                                        <img className="card-img-top"
+                                                             src={require('../assets/Solusi3.png')}
+                                                             alt="Card image cap"/>
+                                                        <h3 className="text-center">Environment<br/>Management System</h3>
+                                                    </div>
+                                                </div>
+                                            </div>*/}
+                                        </div>
+                                    </div>
+                                    <div className="col-1">
+                                        <div className="next-arrow next"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
