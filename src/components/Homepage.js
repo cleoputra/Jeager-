@@ -44,13 +44,13 @@ export default () => {
                         </div>
                         <div className="col-6 ">
                             <div style={{
-                                backgroundImage: '-webkit-linear-gradient(0deg, #072f4c 0%, #00c4e7 100%)',
+                                background: 'linear-gradient(90deg, #112F4B 0%, #25A4D9 100%)',
                                 height: '425px',
                                 width: '610px'
                             }} className="text-white text-center d-flex justify-content-center align-items-center">
                                 <h2 style={{fontSize: '35px', fontWeight: 500}}>
                                     JEAGER MEMBANTU INDUSTRI<br/>MANUFAKTUR UNTUK<br/>MENINGKATKAN PERFORMA<br/>PRODUKSI
-                                    MELALUI "INDUSTRIAL INTERNET OF THINGS"
+                                    MELALUI<br/>"INDUSTRIAL INTERNET OF THINGS"
                                 </h2>
                             </div>
                         </div>
@@ -62,8 +62,9 @@ export default () => {
                     <div className="line m-auto"/>
                     <div className="row mt-4">
                         <div className="col-12 text-center">
-                            <h2 style={{color: '#072f4c', fontWeight: 500}} className="mb-2">SOLUSI KAMI</h2>
-                            <p>Kami menyediakan perangkat atau sensor IoT dan sistem pemantauan berbasis web<br/>untuk
+                            <h2 style={{color: '#072f4c', fontWeight: 600}} className="mb-2">SOLUSI KAMI</h2>
+                            <p style={{color: '#072f4c', fontWeight: 600}}>Kami menyediakan perangkat atau sensor IoT
+                                dan sistem pemantauan berbasis web<br/>untuk
                                 mendapatkan lebih banyak wawasan tentang lantai pabrik.</p>
                         </div>
                     </div>
@@ -123,22 +124,149 @@ export default () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            {/*<div className="carousel-item col-4">
-                                                <div className="card">
-                                                    <div className="card">
-                                                        <img className="card-img-top"
-                                                             src={require('../assets/Solusi3.png')}
-                                                             alt="Card image cap"/>
-                                                        <h3 className="text-center">Environment<br/>Management System</h3>
+                                            <div className="carousel-item col-4">
+                                                <div className="card solution-card">
+                                                    <div className="card d-flex align-items-center solution">
+                                                        <img className="mt-3" src={require('../assets/Solusi4.png')}
+                                                             height="200" width="auto" alt="Card image cap"/>
+                                                        <div className="mb-4">
+                                                            <h4 className="text-center text-uppercase"
+                                                                style={{
+                                                                    fontWeight: 500,
+                                                                    color: '#072f4c'
+                                                                }}>Maintenance<br/>System
+                                                            </h4>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>*/}
+                                            </div>
+                                            <div className="carousel-item col-4">
+                                                <div className="card solution-card">
+                                                    <div className="card d-flex align-items-center solution">
+                                                        <img className="mt-3" src={require('../assets/Solusi5.png')}
+                                                             height="200" width="auto" alt="Card image cap"/>
+                                                        <div className="mb-4">
+                                                            <h4 className="text-center text-uppercase"
+                                                                style={{
+                                                                    fontWeight: 500,
+                                                                    color: '#072f4c'
+                                                                }}>Warehouse<br/>Management System
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-1">
                                         <div className="next-arrow next"/>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style={{marginTop: '5%'}}>
+                <div className="container">
+                    <div className="line m-auto"/>
+                    <div className="row">
+                        <div className="col-12 text-center mt-4 text-uppercase mb-4">
+                            <h2 style={{
+                                fontWeight: 600,
+                                color: '#072f4c'
+                            }}>Berkolaborasi Bersama Jeager</h2>
+                        </div>
+                        <div className="container" style={{width: '95%'}}>
+                            <div className="row">
+                                <div className="col-3 d-flex justify-content-center pl-4 pr-4">
+                                    <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card d-flex align-items-center solution">
+                                            <img className="mt-3" src={require('../assets/Value1.png')} height="175"
+                                                 width="auto" alt="Card image cap"/>
+                                            <div className="mb-4">
+                                                <h5 className="text-center text-capitalize"
+                                                    style={{
+                                                        fontWeight: 500,
+                                                        color: '#072f4c'
+                                                    }}>No Upfront<br/>Investment
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-3 d-flex justify-content-center pl-4 pr-4">
+                                    <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card d-flex align-items-center solution">
+                                            <img className="mt-3" src={require('../assets/Value2.png')} height="175"
+                                                 width="auto" alt="Card image cap"/>
+                                            <div className="mb-4">
+                                                <h5 className="text-center text-capitalize"
+                                                    style={{
+                                                        fontWeight: 500,
+                                                        color: '#072f4c'
+                                                    }}>Tailor Made<br/>Solution Delivery
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-3 d-flex justify-content-center pl-4 pr-4">
+                                    <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card d-flex align-items-center solution">
+                                            <img className="mt-3" src={require('../assets/Value3.png')} height="175"
+                                                 width="auto" alt="Card image cap"/>
+                                            <div className="mb-4">
+                                                <h5 className="text-center text-capitalize"
+                                                    style={{
+                                                        fontWeight: 500,
+                                                        color: '#072f4c'
+                                                    }}>Digitizing to Create<br/>Business Outcomes
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-3 d-flex justify-content-center pl-4 pr-4">
+                                    <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card d-flex align-items-center solution">
+                                            <img className="mt-3" src={require('../assets/Value4.png')} height="175"
+                                                 width="auto" alt="Card image cap"/>
+                                            <div className="mb-4">
+                                                <h5 className="text-center text-capitalize"
+                                                    style={{
+                                                        fontWeight: 500,
+                                                        color: '#072f4c'
+                                                    }}>New Insight<br/>For Improving
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style={{
+                backgroundImage: `url(${require('../assets/homepgbg3.png')})`, backgroundSize: '100% auto',
+                backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '800px'
+            }} className="mt-5">
+                <div className="container" style={{paddingTop: '15%'}}>
+                    <div className="row">
+                        <div className="line-white m-auto"/>
+                        <div className="col-12 text-center text-white mt-4">
+                            <h1 style={{
+                                fontWeight: 525
+                            }} className="text-uppercase">JEAGER, BEST PARTNER<br/>For Manufacturing Solution</h1>
+                            <p style={{fontSize: '24px', lineHeight: 'normal'}} className="mt-5">Kami membantu mesin
+                                Anda bekerja lebih cepat, lebih pintar dan lebih baik. Hubungi kami, dan<br/>kami akan
+                                menghemat waktu uang anda.</p>
+                        </div>
+                        <div className="col-12 d-flex justify-content-center text-white mt-5">
+                            <div className="hubungi-kami text-center d-flex align-items-center justify-content-center"
+                                 style={{fontWeight: '500'}}>
+                                Siap Untuk Industri 4.0
                             </div>
                         </div>
                     </div>
@@ -153,67 +281,6 @@ export default () => {
                             <br/>web untuk mendapatkan lebih banyak wawasan tentang lantai pabrik.
                         </p>
                     </div>
-                    <div className="row">
-                        <div className="col-12">
-                            <div id="myCarousel" className="carousel slide" data-ride="carousel">
-                                <div className="row d-flex justify-content-center align-items-center">
-                                    <div className="col-1 ">
-                                        <a className="btn btn-light mx-1 prev" href="javascript:void(0)"
-                                           title="Previous">
-                                            <i className="fa fa-lg fa-caret-left" style={{fontSize: '165px'}}/>
-                                        </a>
-                                    </div>
-                                    <div className="col-10">
-                                        <div className="carousel-inner row w-100 mx-auto">
-                                            <div className="carousel-item col-4 active">
-                                                <div className="card custom-shadow">
-                                                    <img className="card-img-top"
-                                                         src="https://jeager.io/static/media/denah_manufaktur.4587164f.png"
-                                                         alt="Card image cap"/>
-                                                    <h3 className="text-center">Utility Management System</h3>
-                                                </div>
-                                            </div>
-                                            <div className="carousel-item col-4">
-                                                <div className="card">
-                                                    <div className="card">
-                                                        <img className="card-img-top"
-                                                             src="https://jeager.io/static/media/denah_manufaktur.4587164f.png"
-                                                             alt="Card image cap"/>
-                                                        <h3 className="text-center">Utility Management System</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="carousel-item col-4">
-                                                <div className="card">
-                                                    <div className="card">
-                                                        <img className="card-img-top"
-                                                             src="https://jeager.io/static/media/denah_manufaktur.4587164f.png"
-                                                             alt="Card image cap"/>
-                                                        <h3 className="text-center">Utility Management System</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="carousel-item col-4">
-                                                <div className="card">
-                                                    <div className="card">
-                                                        <img className="card-img-top"
-                                                             src="https://jeager.io/static/media/denah_manufaktur.4587164f.png"
-                                                             alt="Card image cap"/>
-                                                        <h3 className="text-center">Utility Management System</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-1">
-                                        <a className="btn btn-light mx-1 next" href="javascript:void(0)"
-                                           title="Next">
-                                            <i className="fa fa-lg fa-caret-right" style={{fontSize: '165px'}}/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div className="row">

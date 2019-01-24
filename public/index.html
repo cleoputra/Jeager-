@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link href="%PUBLIC_URL%/favicon.ico" rel="shortcut icon"/>
+    <link href="%PUBLIC_URL%/favicon.png" rel="shortcut icon"/>
     <meta
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
             name="viewport"
@@ -11,7 +11,7 @@
     <link href="%PUBLIC_URL%/manifest.json" rel="manifest"/>
     <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
-    <title>React App</title>
+    <title>Jeager - Industrial IoT Solution</title>
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -27,8 +27,11 @@
         src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
 <script>
     $(document).ready(() => {
+        const carousel = $('#myCarousel');
+        const carouselItem = $(".carousel-item");
+
         $('body').bootstrapMaterialDesign();
-        /*$('#myCarousel').carousel({
+        carousel.carousel({
             interval: 5000
         });
 
@@ -41,15 +44,15 @@
             return false;
         });
 
-        $("#myCarousel").on("slide.bs.carousel", function (e) {
+        carousel.on("slide.bs.carousel", function (e) {
             const $e = $(e.relatedTarget);
             const idx = $e.index();
             const itemsPerSlide = 3;
-            const totalItems = $(".carousel-item").length;
+            const totalItems = carouselItem.length;
             if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide -
+                const it = itemsPerSlide -
                     (totalItems - idx);
-                for (var i = 0; i < it; i++) {
+                for (let i = 0; i < it; i++) {
                     if (e.direction === "left") {
                         $(
                             ".carousel-item").eq(i).appendTo(".carousel-inner");
@@ -58,7 +61,7 @@
                     }
                 }
             }
-        });*/
+        });
     });
 </script>
 </body>
