@@ -4,7 +4,7 @@ const Navigation = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style={{boxShadow: 'none'}}>
             <a className="navbar-brand" href="#">
-                <img src={require('../assets/logoputih.png')} height="90"
+                <img src={require('../assets/logoputih.png')} height="70"
                      className="d-inline-block align-top" alt=""/>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
@@ -18,13 +18,13 @@ const Navigation = () => {
                     <li className="nav-item active">
                         <a className="nav-link font-weight-bold text-capitalize" href="#">Tentang Kami</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link font-weight-bold text-capitalize" href="#">Solution</a>
+                    <li className="nav-item ml-5">
+                        <a className="nav-link font-weight-bold text-capitalize" href="#">Solusi</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item ml-5">
                         <a className="nav-link font-weight-bold text-capitalize" href="#">Berita</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item ml-5 mr-4">
                         <a className="nav-link font-weight-bold text-capitalize" href="#">Hubungi Kami</a>
                     </li>
                 </ul>

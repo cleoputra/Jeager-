@@ -6,25 +6,26 @@ export default () => {
         <div>
             <section style={{
                 backgroundImage: `url(${require('../assets/homepgbg1.png')})`, backgroundSize: '100% auto',
-                backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '765px'
+                backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '773px'
             }}>
                 <div className="container">
                     <Navigation/>
-                    <div className="row d-flex align-items-center" style={{height: '80vh'}}>
-                        <div className="col-6 text-white justify-content-center align-items-center"
-                             style={{marginTop: '-11.5%'}}>
-                            <div className="ml-5">
-                                <h2 style={{fontSize: '33px'}}>PANDANGAN BARU UNTUK<br/>INDUSTRI MANUFAKTUR</h2>
-                                <p>Dari tumpukan data menjadi perbaikan performansi</p>
-                                <button type="button" className="btn btn-raised btn-info text-capitalize">Pelajari
-                                    Selengkapnya
-                                </button>
+                    <div className="row d-flex align-items-center">
+                        <div className="col-6 text-white justify-content-center align-items-center mt-5">
+                            <div className="ml-5 mt-5 pt-5">
+                                <h2 className="homepage-text mt-4">PANDANGAN BARU UNTUK<br/>INDUSTRI
+                                    MANUFAKTUR</h2>
+                                <p className="mt-3" style={{fontSize: '20px'}}>Dari tumpukan data menjadi perbaikan
+                                    performansi</p>
+                                <div
+                                    className="btn-pelajari text-center d-flex align-items-center justify-content-center">
+                                    Pelajari Selengkapnya
+                                </div>
                             </div>
                         </div>
                         <div className="col-6 d-flex justify-content-center align-items-center">
                             <img
-                                src={require('../assets/homepgbgdt1.png')}
-                                width="90%" alt="Jos"/>
+                                src={require('../assets/homepgbgdt1.png')} alt="Jos" className="homepage-cover"/>
                         </div>
                     </div>
                 </div>
@@ -47,8 +48,8 @@ export default () => {
                                 background: 'linear-gradient(90deg, #112F4B 0%, #25A4D9 100%)',
                                 height: '425px',
                                 width: '610px'
-                            }} className="text-white text-center d-flex justify-content-center align-items-center">
-                                <h2 style={{fontSize: '35px', fontWeight: 500}}>
+                            }} className="text-white d-flex justify-content-center align-items-center">
+                                <h2 className="jeager-membantu-industri">
                                     JEAGER MEMBANTU INDUSTRI<br/>MANUFAKTUR UNTUK<br/>MENINGKATKAN PERFORMA<br/>PRODUKSI
                                     MELALUI<br/>"INDUSTRIAL INTERNET OF THINGS"
                                 </h2>
@@ -62,7 +63,7 @@ export default () => {
                     <div className="line m-auto"/>
                     <div className="row mt-4">
                         <div className="col-12 text-center">
-                            <h2 style={{color: '#072f4c', fontWeight: 600}} className="mb-2">SOLUSI KAMI</h2>
+                            <h2 className="mb-2 jeager-text-color font-weight-bold">SOLUSI KAMI</h2>
                             <p style={{color: '#072f4c', fontWeight: 600}}>Kami menyediakan perangkat atau sensor IoT
                                 dan sistem pemantauan berbasis web<br/>untuk
                                 mendapatkan lebih banyak wawasan tentang lantai pabrik.</p>
@@ -70,7 +71,7 @@ export default () => {
                     </div>
                     <div className="row">
                         <div className="col-12">
-                            <div id="myCarousel" className="carousel slide" data-interval="false" data-ride="carousel">
+                            <div id="myCarousel" className="carousel slide" data-ride="carousel">
                                 <div className="row d-flex justify-content-center align-items-center">
                                     <div className="col-1 d-flex justify-content-end">
                                         <div className="prev-arrow prev"/>
