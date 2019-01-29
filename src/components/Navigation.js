@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navigation = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark pl-5 pr-5" style={{boxShadow: 'none'}}>
+        <nav className="navbar navbar-expand-lg navbar-dark pl-5 pr-5 pt-4" style={{boxShadow: 'none'}}>
             <a className="navbar-brand" href="#">
                 <img src={require('../assets/logoputih.png')} height="70"
                      className="d-inline-block align-top" alt=""/>

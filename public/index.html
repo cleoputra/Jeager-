@@ -31,34 +31,31 @@
         const carouselItem = $(".carousel-item");
 
         $('body').bootstrapMaterialDesign();
-        carousel.carousel({
-            interval: 2500
-        });
 
-        $('.next').click(function () {
+        carousel.carousel({interval: 2500});
+
+        $('.next').click(() => {
             $('.carousel').carousel('next');
             return false;
         });
-        $('.prev').click(function () {
+
+        $('.prev').click(() => {
             $('.carousel').carousel('prev');
             return false;
         });
 
-        carousel.on("slide.bs.carousel", function (e) {
+        carousel.on("slide.bs.carousel", e => {
             const $e = $(e.relatedTarget);
             const idx = $e.index();
             const itemsPerSlide = 3;
             const totalItems = carouselItem.length;
             if (idx >= totalItems - (itemsPerSlide - 1)) {
-                const it = itemsPerSlide -
-                    (totalItems - idx);
+                const it = itemsPerSlide - (totalItems - idx);
                 for (let i = 0; i < it; i++) {
-                    if (e.direction === "left") {
-                        $(
-                            ".carousel-item").eq(i).appendTo(".carousel-inner");
-                    } else {
+                    if (e.direction === "left")
+                        $(".carousel-item").eq(i).appendTo(".carousel-inner");
+                    else
                         $(".carousel-item").eq(0).appendTo(".carousel-inner");
-                    }
                 }
             }
         });
