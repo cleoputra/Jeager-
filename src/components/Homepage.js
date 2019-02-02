@@ -243,7 +243,7 @@ export default () => {
                         </div>
                     </div>
                 </div>
-                <div style={{marginTop: '7%'}} className="pl-3">
+                <div style={{marginTop: '3%'}} className="pl-3">
                     <Footer/>
                 </div>
             </section>
