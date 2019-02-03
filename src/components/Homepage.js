@@ -42,6 +42,7 @@ class Homepage extends React.Component {
                             <div className="col-6 d-flex justify-content-end">
                                 <iframe width="610" height="425" src="https://www.youtube.com/embed/DzWHKNMwrIM"
                                         frameBorder="0"
+                                        title="youtube"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen/>
                             </div>
@@ -84,7 +85,7 @@ class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi1.png')}
-                                                                 height="200" width="auto" alt="Card image cap"/>
+                                                                 height="200" width="auto" alt="gambar solusi 1"/>
                                                             <div className="mb-4">
                                                                 <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">OEE<br/>Monitoring
                                                                 </h4>
@@ -96,7 +97,7 @@ class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi2.png')}
-                                                                 height="200" width="auto" alt="Card image cap"/>
+                                                                 height="200" width="auto" alt="gambar solusi 2"/>
                                                             <div className="mb-4">
                                                                 <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Production<br/>Traceability
                                                                     System
@@ -109,7 +110,7 @@ class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi3.png')}
-                                                                 height="200" width="auto" alt="Card image cap"/>
+                                                                 height="200" width="auto" alt="gambar solusi 3"/>
                                                             <div className="mb-4">
                                                                 <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Environment<br/>Management
                                                                     System
@@ -122,7 +123,7 @@ class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi4.png')}
-                                                                 height="200" width="auto" alt="Card image cap"/>
+                                                                 height="200" width="auto" alt="gambar solusi 5"/>
                                                             <div className="mb-4">
                                                                 <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Maintenance<br/>System
                                                                 </h4>
@@ -134,7 +135,7 @@ class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi5.png')}
-                                                                 height="200" width="auto" alt="Card image cap"/>
+                                                                 height="200" width="auto" alt="gambar solusi 6"/>
                                                             <div className="mb-4">
                                                                 <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Warehouse<br/>Management
                                                                     System
@@ -168,7 +169,7 @@ class Homepage extends React.Component {
                                         <div className="card solution-card" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value1.png')} height="175"
-                                                     width="auto" alt="Card image cap"/>
+                                                     width="auto" alt="gambar value 1"/>
                                                 <div className="mb-4">
                                                     <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">No
                                                         Upfront<br/>Investment
@@ -181,7 +182,7 @@ class Homepage extends React.Component {
                                         <div className="card solution-card" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value2.png')} height="175"
-                                                     width="auto" alt="Card image cap"/>
+                                                     width="auto" alt="gambar value 2"/>
                                                 <div className="mb-4">
                                                     <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">Tailor
                                                         Made<br/>Solution Delivery
@@ -194,7 +195,7 @@ class Homepage extends React.Component {
                                         <div className="card solution-card" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value3.png')} height="175"
-                                                     width="auto" alt="Card image cap"/>
+                                                     width="auto" alt="gambar value 3"/>
                                                 <div className="mb-4">
                                                     <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">Digitizing
                                                         to Create<br/>Business Outcomes
@@ -207,7 +208,7 @@ class Homepage extends React.Component {
                                         <div className="card solution-card" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value4.png')} height="175"
-                                                     width="auto" alt="Card image cap"/>
+                                                     width="auto" alt="gambar value 4"/>
                                                 <div className="mb-4">
                                                     <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">New
                                                         Insight<br/>For Improving

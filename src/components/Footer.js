@@ -19,10 +19,10 @@ const Footer = () => (
             </div>
             <div className="col-3 pt-4 mt-4">
                 <div className="font-weight-bold ml-4" style={{fontSize: '30px'}}>
-                    <a href="#" className="d-block jeager-text-color">Tentang Kami</a>
-                    <a href="#" className="d-block jeager-text-color">Solusi</a>
-                    <a href="#" className="d-block jeager-text-color">Berita</a>
-                    <a href="#" className="d-block jeager-text-color">Hubungi Kami</a>
+                    <div className="d-block jeager-text-color">Tentang Kami</div>
+                    <div className="d-block jeager-text-color">Solusi</div>
+                    <div className="d-block jeager-text-color">Berita</div>
+                    <div className="d-block jeager-text-color">Hubungi Kami</div>
                 </div>
             </div>
             <div className="col-5 pl-5 mt-4">

@@ -21,13 +21,13 @@ const Navigation = ({backgroundColor, homePage}) => {
                         <Link className="nav-link font-weight-bold text-capitalize" to="/tentang">Tentang Kami</Link>
                     </li>
                     <li className="nav-item ml-5">
-                        <a className="nav-link font-weight-bold text-capitalize" href="#">Solusi</a>
+                        <Link className="nav-link font-weight-bold text-capitalize" to="#">Solusi</Link>
                     </li>
                     <li className="nav-item ml-5">
-                        <a className="nav-link font-weight-bold text-capitalize" href="#">Berita</a>
+                        <Link className="nav-link font-weight-bold text-capitalize" to="#">Berita</Link>
                     </li>
                     <li className="nav-item ml-5 mr-4">
-                        <a className="nav-link font-weight-bold text-capitalize" href="#">Hubungi Kami</a>
+                        <Link className="nav-link font-weight-bold text-capitalize" to="#">Hubungi Kami</Link>
                     </li>
                 </ul>
             </div>
