@@ -1,10 +1,14 @@
 import React from 'react';
 import Navigation from "./Navigation";
 
-const About = () => (
-    <div>
-        <Navigation/>
-    </div>
-);
+class About extends React.Component {
+    render() {
+        return (
+            <div>
+                <Navigation backgroundColor="#112F4B"/>
+            </div>
+        );
+    }
+}
 
 export default About;

@@ -36,7 +36,7 @@ const Footer = () => (
                     <div className="row">
                         <div className="col-6 px-0">
                             <img src={require('../assets/telfon.png')} width="20%" alt="icon telephone"/>
-                            <p className="d-inline jeager-text-color font-weight-bold footer-attrib-fontsize ml-3">+62-812-7329-7777</p>
+                            <p className="d-inline jeager-text-color font-weight-bold footer-attrib-fontsize ml-3">+62-822-3241-9113</p>
                             <img src={require('../assets/email.png')} width="20%" alt="icon email"/>
                             <p className="d-inline jeager-text-color font-weight-bold footer-attrib-fontsize ml-3">info@jeager.io</p>
                         </div>
