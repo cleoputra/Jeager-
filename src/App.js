@@ -5,7 +5,15 @@ import './App.css';
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 
+window.$ = window.jQuery = require('jquery');
+window.Popper = require('popper.js').default;
+require('bootstrap-material-design/dist/js/bootstrap-material-design');
+
 class App extends Component {
+    componentDidMount() {
+        window.$('#root').bootstrapMaterialDesign();
+    }
+
     render() {
         return (
             <Router>

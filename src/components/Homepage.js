@@ -3,6 +3,40 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 class Homepage extends React.Component {
+    componentDidMount() {
+        const $ = window.$;
+        const carousel = $('#myCarousel');
+        const carouselItem = $(".carousel-item");
+
+        carousel.carousel({interval: 2500});
+
+        carousel.on("slide.bs.carousel", e => {
+            const $e = $(e.relatedTarget);
+            const idx = $e.index();
+            const itemsPerSlide = 3;
+            const totalItems = carouselItem.length;
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                const it = itemsPerSlide - (totalItems - idx);
+                for (let i = 0; i < it; i++) {
+                    if (e.direction === "left")
+                        $(".carousel-item").eq(i).appendTo(".carousel-inner");
+                    else
+                        $(".carousel-item").eq(0).appendTo(".carousel-inner");
+                }
+            }
+        });
+
+        $('.next').click(() => {
+            $('.carousel').carousel('next');
+            return false;
+        });
+
+        $('.prev').click(() => {
+            $('.carousel').carousel('prev');
+            return false;
+        });
+    }
+
     render() {
         return (
             <div>
