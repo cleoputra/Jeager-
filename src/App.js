@@ -12,6 +12,28 @@ require('bootstrap-material-design/dist/js/bootstrap-material-design');
 class App extends Component {
     componentDidMount() {
         window.$('#root').bootstrapMaterialDesign();
+        const script = document.createElement("script");
+        script.innerHTML = `
+        (function () {
+        const options = {
+                whatsapp: "+6282232419113", // WhatsApp number
+                call_to_action: "Hubungi Kami 😊", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            const proto = document.location.protocol,
+            host = "whatshelp.io",
+            url = proto + "//static." + host;
+            const s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+            const x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();`;
+        document.body.appendChild(script);
     }
 
     render() {
