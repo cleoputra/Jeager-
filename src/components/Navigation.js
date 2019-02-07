@@ -20,14 +20,32 @@ const Navigation = ({backgroundColor, homePage}) => {
                     <li className="nav-item active">
                         <Link className="nav-link font-weight-bold text-capitalize" to="/tentang">Tentang Kami</Link>
                     </li>
-                    <li className="nav-item ml-5">
-                        <Link className="nav-link font-weight-bold text-capitalize" to="#">Solusi</Link>
+                    <li className="nav-item dropdown ml-5">
+                        <Link className="nav-link dropdown-toggle text-capitalize" to="#" id="navbarDropdown"
+                              role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Solusi
+                        </Link>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown" style={{fontSize: '13px'}}>
+                            <Link className="dropdown-item jeager-text-color font-weight-bold text-uppercase" to="#">OEE
+                                Monitoring System</Link>
+                            <Link className="dropdown-item jeager-text-color font-weight-bold text-uppercase" to="#">Environment
+                                Monitoring System</Link>
+                            <Link className="dropdown-item jeager-text-color font-weight-bold text-uppercase" to="#">Maintenance
+                                System</Link>
+                        </div>
                     </li>
                     <li className="nav-item ml-5">
                         <Link className="nav-link font-weight-bold text-capitalize" to="#">Berita</Link>
                     </li>
                     <li className="nav-item ml-5 mr-4">
-                        <Link className="nav-link font-weight-bold text-capitalize" to="#">Hubungi Kami</Link>
+                        <Link className="nav-link font-weight-bold text-capitalize" to="#"
+                              style={{
+                                  padding: '6px',
+                                  border: '3px solid',
+                                  borderRadius: '5px',
+                                  boxSizing: 'border-box'
+                              }}>Hubungi Kami</Link>
                     </li>
                 </ul>
             </div>
