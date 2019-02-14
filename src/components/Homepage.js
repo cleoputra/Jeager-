@@ -40,63 +40,58 @@ class Homepage extends React.Component {
     render() {
         return (
             <div>
+                <Navigation homePage/>
                 <section style={{
-                    backgroundImage: `url(${require('../assets/homepgbg1.png')})`, backgroundSize: '100% auto',
-                    backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '773px'
+                    backgroundImage: `url(${require('../assets/Rectangle_2.png')})`, backgroundSize: '100% auto',
+                    backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '773px', marginTop: '-8%'
                 }}>
-                    <div className="container">
-                        <Navigation homePage/>
-                        <div className="row d-flex align-items-center">
-                            <div className="col-6 text-white justify-content-center align-items-center mt-5">
-                                <div className="ml-5 mt-5 pt-5">
-                                    <h2 className="homepage-text mt-4">PANDANGAN BARU UNTUK<br/>INDUSTRI
-                                        MANUFAKTUR</h2>
-                                    <p className="mt-3" style={{fontSize: '20px'}}>Dari tumpukan data menjadi perbaikan
-                                        performansi</p>
-                                    <div
-                                        className="btn-pelajari text-center d-flex align-items-center justify-content-center">
-                                        Pelajari Selengkapnya
+                    <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '773px'}}>
+                        <div className="row d-flex align-items-center" style={{paddingTop: '8%'}}>
+                            <div className="col-8 text-white justify-content-center align-items-center mt-5 ml-5 mb-5">
+                                <div className="ml-5 pt-5">
+                                    <h1 className="homepage-text mt-4 ml-3"
+                                        style={{
+                                            fontSize: '70px', fontFamily: 'Rubik', fontWeight: '700'
+                                        }}>
+                                        PANDANGAN BARU<br/>UNTUK INDUSTRI
+                                        <br/>MANUFAKTUR</h1>
+                                    <p className="mt-3 ml-4 font-italic font-weight-normal" style={{
+                                        fontSize: '23px', fontFamily: 'Georgia'
+                                    }}>Dari tumpukan data menjadi perbaikan performansi</p>
+                                    <div className="ml-3">
+                                        <img src={require('../assets/Button Pelajari.png')} width="40%"
+                                             alt="tombol pelajari"/>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6 d-flex justify-content-center align-items-center">
-                                <img
-                                    src={require('../assets/homepgbgdt1.png')} alt="Jos" className="homepage-cover"/>
+                            <div className="col-12 d-flex justify-content-center mt-5">
+                                <div style={{width: '3%'}}>
+                                    <img src={require('../assets/Vector.png')} width="100%" alt="tombol scroll"
+                                         className="mt-2"/>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section style={{
-                    backgroundImage: `url(${require('../assets/homepgbg2.png')})`, backgroundSize: '100% auto',
-                    backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '800px', marginTop: '-5%'
-                }}>
-                    <div className="container" style={{paddingTop: '8%'}}>
-                        <div className="line mb-3" style={{marginLeft: '27%'}}/>
-                        <div className="row pt-4 pb-4 d-flex align-items-center">
-                            <div className="col-6 d-flex justify-content-end">
-                                <iframe width="610" height="425" src="https://www.youtube.com/embed/DzWHKNMwrIM"
+                <section>
+                    <div className="container d-flex justify-content-center" style={{paddingTop: '8%'}}>
+                        <div className="row pt-4 pb-4" style={{backgroundColor: '#FFD401', width: '94%'}}>
+                            <div className="col-5 pt-4">
+                                <img src={require('../assets/Group.png')} width="80%"
+                                     style={{display: 'block', margin: '0 auto'}}/>
+                            </div>
+                            <div className="col-7 d-flex" style={{marginTop: '-7%', marginBottom: '2.25%'}}>
+                                <iframe width="700" height="425" src="https://www.youtube.com/embed/DzWHKNMwrIM"
                                         frameBorder="0"
                                         title="youtube"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen/>
                             </div>
-                            <div className="col-6 ">
-                                <div style={{
-                                    background: 'linear-gradient(90deg, #112F4B 0%, #25A4D9 100%)',
-                                    height: '425px',
-                                    width: '610px'
-                                }} className="text-white d-flex justify-content-center align-items-center">
-                                    <h2 className="jeager-membantu-industri">
-                                        JEAGER MEMBANTU INDUSTRI<br/>MANUFAKTUR UNTUK<br/>MENINGKATKAN PERFORMA<br/>PRODUKSI
-                                        MELALUI<br/>"INDUSTRIAL INTERNET OF THINGS"
-                                    </h2>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
-                <section className="mt-5">
-                    <div className="container">
+                <section className="mt-5 pt-5">
+                    <div className="container pt-5">
                         <div className="line m-auto"/>
                         <div className="row mt-4">
                             <div className="col-12 text-center">
