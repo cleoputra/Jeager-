@@ -44,7 +44,8 @@ class Homepage extends React.Component {
                         <div className="row pt-4 pb-4" style={{backgroundColor: '#FFD401', width: '94%'}}>
                             <div className="col-5 pt-4">
                                 <img src={require('../assets/Group.png')} width="80%"
-                                     style={{display: 'block', margin: '0 auto'}}/>
+                                     style={{display: 'block', margin: '0 auto'}}
+                                     alt="Jeager membantu industri untuk memaksimalkan produksi"/>
                             </div>
                             <div className="col-7 d-flex" style={{marginTop: '-7%', marginBottom: '2.25%'}}>
                                 <iframe width="700" height="425" src="https://www.youtube.com/embed/DzWHKNMwrIM"
@@ -118,10 +119,10 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section style={{paddingTop: '8.5%', paddingBottom: '8.5%'}}>
+                <section style={{paddingTop: '8%', paddingBottom: '8%'}}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 text-center mt-4 text-capitalize">
+                            <div className="col-12 text-center mt-4 text-capitalize mb-5">
                                 <h2 className="jeager-text-color font-weight-bold section-title">Berkolaborasi Bersama
                                     Jeager</h2>
                             </div>
