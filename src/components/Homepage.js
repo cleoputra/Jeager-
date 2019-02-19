@@ -3,40 +3,6 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 class Homepage extends React.Component {
-    componentDidMount() {
-        const $ = window.$;
-        const carousel = $('#myCarousel');
-        const carouselItem = $(".carousel-item");
-
-        carousel.carousel({interval: 2500});
-
-        carousel.on("slide.bs.carousel", e => {
-            const $e = $(e.relatedTarget);
-            const idx = $e.index();
-            const itemsPerSlide = 3;
-            const totalItems = carouselItem.length;
-            if (idx >= totalItems - (itemsPerSlide - 1)) {
-                const it = itemsPerSlide - (totalItems - idx);
-                for (let i = 0; i < it; i++) {
-                    if (e.direction === "left")
-                        $(".carousel-item").eq(i).appendTo(".carousel-inner");
-                    else
-                        $(".carousel-item").eq(0).appendTo(".carousel-inner");
-                }
-            }
-        });
-
-        $('.next').click(() => {
-            $('.carousel').carousel('next');
-            return false;
-        });
-
-        $('.prev').click(() => {
-            $('.carousel').carousel('prev');
-            return false;
-        });
-    }
-
     render() {
         return (
             <div>
@@ -90,24 +56,21 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section className="mt-5 pt-5">
-                    <div className="container pt-5">
-                        <div className="line m-auto"/>
+                <section className="mt-5 pt-5 pb-5" style={{background: '#112F4B'}}>
+                    <div className="container">
                         <div className="row mt-4">
-                            <div className="col-12 text-center">
-                                <h2 className="mb-3 jeager-text-color font-weight-bold section-title">SOLUSI KAMI</h2>
-                                <p className="jeager-text-color font-weight-bold" style={{fontSize: '21px'}}>
+                            <div className="col-12 text-center text-white">
+                                <h2 className="mb-3 font-weight-bold section-title">Solusi Kami</h2>
+                                <p style={{fontSize: '21px', fontFamily: 'Georgia'}}>
                                     Kami menyediakan perangkat / sensor IoT dan sistem pemantauan berbasis<br/>web untuk
                                     mendapatkan lebih banyak wawasan tentang lantai pabrik.</p>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row mt-4 mb-5">
                             <div className="col-12">
-                                <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                                <div id="myCarousel" className="carousel slide" data-ride="carousel"
+                                     data-interval="false">
                                     <div className="row d-flex justify-content-center align-items-center">
-                                        <div className="col-1 d-flex justify-content-end">
-                                            <div className="prev-arrow prev"/>
-                                        </div>
                                         <div className="col-10">
                                             <div className="carousel-inner row ml-3" style={{padding: '15px'}}>
                                                 <div className="carousel-item col-4 active">
@@ -116,20 +79,7 @@ class Homepage extends React.Component {
                                                             <img className="mt-3" src={require('../assets/Solusi1.png')}
                                                                  height="200" width="auto" alt="gambar solusi 1"/>
                                                             <div className="mb-4">
-                                                                <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">OEE<br/>Monitoring
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="carousel-item col-4">
-                                                    <div className="card solution-card">
-                                                        <div className="card d-flex align-items-center solution">
-                                                            <img className="mt-3" src={require('../assets/Solusi2.png')}
-                                                                 height="200" width="auto" alt="gambar solusi 2"/>
-                                                            <div className="mb-4">
-                                                                <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Production<br/>Traceability
-                                                                    System
+                                                                <h4 className="text-center jeager-text-color">OEE<br/>Monitoring
                                                                 </h4>
                                                             </div>
                                                         </div>
@@ -141,7 +91,7 @@ class Homepage extends React.Component {
                                                             <img className="mt-3" src={require('../assets/Solusi3.png')}
                                                                  height="200" width="auto" alt="gambar solusi 3"/>
                                                             <div className="mb-4">
-                                                                <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Environment<br/>Management
+                                                                <h4 className="text-center jeager-text-color">Environment<br/>Monitoring
                                                                     System
                                                                 </h4>
                                                             </div>
@@ -154,20 +104,7 @@ class Homepage extends React.Component {
                                                             <img className="mt-3" src={require('../assets/Solusi4.png')}
                                                                  height="200" width="auto" alt="gambar solusi 5"/>
                                                             <div className="mb-4">
-                                                                <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Maintenance<br/>System
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="carousel-item col-4">
-                                                    <div className="card solution-card">
-                                                        <div className="card d-flex align-items-center solution">
-                                                            <img className="mt-3" src={require('../assets/Solusi5.png')}
-                                                                 height="200" width="auto" alt="gambar solusi 6"/>
-                                                            <div className="mb-4">
-                                                                <h4 className="text-center text-uppercase jeager-text-color font-weight-bold">Warehouse<br/>Management
-                                                                    System
+                                                                <h4 className="text-center jeager-text-color">Maintenance<br/>System
                                                                 </h4>
                                                             </div>
                                                         </div>
@@ -175,27 +112,23 @@ class Homepage extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-1">
-                                            <div className="next-arrow next"/>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section style={{marginTop: '5%'}}>
+                <section style={{paddingTop: '8.5%', paddingBottom: '8.5%'}}>
                     <div className="container">
-                        <div className="line m-auto"/>
                         <div className="row">
-                            <div className="col-12 text-center mt-4 text-uppercase">
+                            <div className="col-12 text-center mt-4 text-capitalize">
                                 <h2 className="jeager-text-color font-weight-bold section-title">Berkolaborasi Bersama
                                     Jeager</h2>
                             </div>
                             <div className="container" style={{width: '95%'}}>
                                 <div className="row" style={{padding: '2%'}}>
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
-                                        <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value1.png')} height="175"
                                                      width="auto" alt="gambar value 1"/>
@@ -208,7 +141,7 @@ class Homepage extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
-                                        <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value2.png')} height="175"
                                                      width="auto" alt="gambar value 2"/>
@@ -221,7 +154,7 @@ class Homepage extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
-                                        <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value3.png')} height="175"
                                                      width="auto" alt="gambar value 3"/>
@@ -234,7 +167,7 @@ class Homepage extends React.Component {
                                         </div>
                                     </div>
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
-                                        <div className="card solution-card" style={{width: '90%'}}>
+                                        <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
                                                 <img className="mt-3" src={require('../assets/Value4.png')} height="175"
                                                      width="auto" alt="gambar value 4"/>
@@ -252,31 +185,33 @@ class Homepage extends React.Component {
                     </div>
                 </section>
                 <section style={{
-                    backgroundImage: `url(${require('../assets/homepgbg3.png')})`, backgroundSize: '100% auto',
-                    backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '900px'
-                }} className="mt-4">
-                    <div className="container" style={{paddingTop: '12%'}}>
-                        <div className="row">
-                            <div className="line-white m-auto"/>
-                            <div className="col-12 text-center text-white mt-5">
-                                <h1 className="text-uppercase font-weight-bold" style={{fontSize: '55px'}}>JEAGER, BEST
-                                    PARTNER<br/>For
-                                    Manufacturing Solution</h1>
-                                <p style={{fontSize: '25px', lineHeight: 'normal'}} className="mt-5 font-weight-bold">
+                    backgroundImage: `url(${require('../assets/bgjeagerbestpartner.png')})`,
+                    backgroundSize: '100% auto',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center top',
+                }}>
+                    <div className="container"
+                         style={{paddingTop: '6%', paddingBottom: '6%', background: 'rgba(89, 117, 135, 0.6)'}}>
+                        <div className="row pl-5">
+                            <div className="col-12 text-white mt-5 pl-5">
+                                <h1 className="font-weight-bold" style={{fontSize: '79px'}}>Jeager, Best
+                                    Partner<br/>For Manufacturing<br/>Solution</h1>
+                                <p style={{fontSize: '27px', lineHeight: 'normal', fontFamily: 'Georgia'}}
+                                   className="mt-4 font-italic">
                                     Ubah Industri Manufaktur Anda menjadi lebih produktif bersama kami.
                                 </p>
                             </div>
-                            <div className="col-12 d-flex justify-content-center text-white mt-5">
+                            <div className="col-12 text-white mt-4 pl-5">
                                 <div
-                                    className="hubungi-kami text-center d-flex align-items-center justify-content-center font-weight-bold">
+                                    className="hubungi-kami text-uppercase text-center d-flex align-items-center justify-content-center">
                                     Hubungi Kami
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style={{marginTop: '3%'}} className="pl-3">
-                        <Footer/>
-                    </div>
+                </section>
+                <section>
+                    <Footer/>
                 </section>
             </div>
         );
