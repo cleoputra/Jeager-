@@ -17,7 +17,7 @@ class Homepage extends React.Component {
                                 <div className="ml-5 pt-5">
                                     <h1 className="homepage-text mt-4 ml-3"
                                         style={{
-                                            fontSize: '70px', fontFamily: 'Rubik', fontWeight: '700'
+                                            fontSize: '64px', fontFamily: 'Rubik', fontWeight: '700'
                                         }}>
                                         PANDANGAN BARU<br/>UNTUK INDUSTRI
                                         <br/>MANUFAKTUR</h1>
@@ -195,7 +195,7 @@ class Homepage extends React.Component {
                          style={{paddingTop: '6%', paddingBottom: '6%', background: 'rgba(89, 117, 135, 0.6)'}}>
                         <div className="row pl-5">
                             <div className="col-12 text-white mt-5 pl-5">
-                                <h1 className="font-weight-bold" style={{fontSize: '79px'}}>Jeager, Best
+                                <h1 className="font-weight-bold" style={{fontSize: '64px'}}>Jeager, Best
                                     Partner<br/>For Manufacturing<br/>Solution</h1>
                                 <p style={{fontSize: '27px', lineHeight: 'normal', fontFamily: 'Georgia'}}
                                    className="mt-4 font-italic">

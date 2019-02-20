@@ -35,11 +35,11 @@ const Footer = () => (
                 </div>
                 <div className="container mt-3">
                     <div className="row">
-                        <div className="col-6 pl-0" style={{fontSize: '21px'}}>
+                        <div className="col-6 pl-0" style={{fontSize: '19px'}}>
                             <img src={require('../assets/wa.png')} width="50px" alt="Kontak whatsapp"/>
                             &nbsp;+62-812-7329-7777
                         </div>
-                        <div className="col-6 pl-0" style={{fontSize: '21px'}}>
+                        <div className="col-6 pl-0" style={{fontSize: '19px'}}>
                             <img src={require('../assets/email.png')} width="50px" alt="Email Jeager"/>
                             &nbsp;info@jeager.io
                         </div>
