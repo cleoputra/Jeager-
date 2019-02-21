@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-class Navigation extends React.Component {
+export default class Navigation extends React.Component {
     componentDidMount() {
         const $ = window.$;
         $(() => {
@@ -71,5 +71,3 @@ class Navigation extends React.Component {
         );
     }
 }
-
-export default Navigation;

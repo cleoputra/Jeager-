@@ -1,8 +1,61 @@
 import React from 'react';
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import swal from 'sweetalert2';
+import {ERROR_BASIC} from "../constant";
 
-class Contact extends React.Component {
+export default class Contact extends React.Component {
+    static handleFormSubmit() {
+        const $ = window.$;
+        const nama = $('#nama').val();
+        const email = $('#email').val();
+        const nama_perusahaan = $('#nama_perusahaan').val();
+        const industri = $('#industri').val();
+        const profesi = $('#profesi').val();
+        const negara = $('#negara').val();
+        const no_hp = $('#no_hp').val();
+        const pesan_pertanyaan = $('#pesan_pertanyaan').val();
+        const error = Contact.validate(nama, email, nama_perusahaan, industri, profesi, negara, no_hp, pesan_pertanyaan);
+
+        if (error.length > 0) {
+            let alert = swal.fire('Error', error[0], "error");
+            alert.finally();
+        } else {
+            let alert = swal.fire('Success', null, "success");
+            alert.finally();
+        }
+    }
+
+    static validate(nama, email, nama_perusahaan, industri, profesi, negara, no_hp, pesan_pertanyaan) {
+        let error = [];
+
+        if (nama === '' || nama.length < 3)
+            error.push('Nama ' + ERROR_BASIC);
+        if (email === '' || email.length < 3)
+            error.push('Email ' + ERROR_BASIC);
+        if (!Contact.validateEmail(email))
+            error.push('Format email tidak sesuai');
+        if (nama_perusahaan === '' || nama_perusahaan.length < 3)
+            error.push('Nama Perusahaan ' + ERROR_BASIC);
+        if (industri === '' || industri.length < 3)
+            error.push('Industri ' + ERROR_BASIC);
+        if (profesi === '' || profesi.length < 3)
+            error.push('Profesi ' + ERROR_BASIC);
+        if (negara === '' || negara.length < 3)
+            error.push('Negara ' + ERROR_BASIC);
+        if (no_hp === '' || no_hp.length < 3)
+            error.push('No HP ' + ERROR_BASIC);
+        if (pesan_pertanyaan === '' || pesan_pertanyaan.length < 3)
+            error.push('Pesan/Pertanyaan ' + ERROR_BASIC);
+
+        return error
+    };
+
+    static validateEmail(email) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
     render() {
         return (
             <div>
@@ -28,7 +81,7 @@ class Contact extends React.Component {
                                     bisnis anda<br/>Isi data dibawah ini untuk kami hubungi lebih lanjut.</p>
                             </div>
                         </div>
-                        <div className="row d-flex justify-content-end">
+                        <div className="row d-flex justify-content-end pt-5">
                             <div className="col-6">
                                 <div className="container">
                                     <div className="row">
@@ -36,7 +89,7 @@ class Contact extends React.Component {
                                             Nama*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <input className="custom-input-form"/>
+                                            <input className="custom-input-form" id="nama"/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
@@ -44,7 +97,7 @@ class Contact extends React.Component {
                                             Email*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <input className="custom-input-form"/>
+                                            <input className="custom-input-form" id="email"/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
@@ -52,7 +105,7 @@ class Contact extends React.Component {
                                             Nama Perusahaan*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <input className="custom-input-form"/>
+                                            <input className="custom-input-form" id="nama_perusahaan"/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
@@ -60,7 +113,7 @@ class Contact extends React.Component {
                                             Industri*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <input className="custom-input-form"/>
+                                            <input className="custom-input-form" id="industri"/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
@@ -68,7 +121,7 @@ class Contact extends React.Component {
                                             Profesi*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <input className="custom-input-form"/>
+                                            <input className="custom-input-form" id="profesi"/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
@@ -76,7 +129,7 @@ class Contact extends React.Component {
                                             Negara*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <input className="custom-input-form"/>
+                                            <input className="custom-input-form" id="negara"/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
@@ -84,7 +137,7 @@ class Contact extends React.Component {
                                             No. HP*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <input className="custom-input-form"/>
+                                            <input className="custom-input-form" id="no_hp"/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
@@ -93,6 +146,7 @@ class Contact extends React.Component {
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
                                             <textarea className="custom-input-form" cols="19" rows="3"
+                                                      id="pesan_pertanyaan"
                                                       style={{width: '41%'}}/>
                                         </div>
                                     </div>
@@ -102,6 +156,7 @@ class Contact extends React.Component {
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
                                             <div
+                                                onClick={Contact.handleFormSubmit}
                                                 className="button-form text-uppercase text-center d-flex align-items-center justify-content-center">
                                                 Kirim
                                             </div>
@@ -119,5 +174,3 @@ class Contact extends React.Component {
         );
     }
 }
-
-export default Contact;

@@ -1,0 +1,1 @@
+export const ERROR_BASIC = 'tidak boleh kosong atau kurang dari tiga karakter';

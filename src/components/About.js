@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 
-class About extends React.Component {
+export default class About extends React.Component {
     render() {
         return (
             <div>
@@ -174,5 +174,3 @@ class About extends React.Component {
         );
     }
 }
-
-export default About;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => (
+export default () => (
     <div className="container" style={{background: '#112F4B', paddingTop: '2%', paddingBottom: '2%'}}>
         <div className="row text-white">
             <div className="col-4">
@@ -55,5 +55,3 @@ const Footer = () => (
         </div>
     </div>
 );
-
-export default Footer;

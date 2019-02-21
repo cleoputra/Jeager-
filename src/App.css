@@ -316,7 +316,11 @@ body::-webkit-scrollbar-thumb    {
 
     .button-form {
         background: #112F4B;
-        width: 42%;
+        width: 41%;
         height: 110%;
+    }
+
+    .button-form:hover {
+        cursor: pointer;
     }
 }
