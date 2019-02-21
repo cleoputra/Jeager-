@@ -4,6 +4,7 @@ import 'bootstrap-material-design/dist/css/bootstrap-material-design.min.css';
 import './App.css';
 import Homepage from "./components/Homepage";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js').default;
@@ -42,6 +43,7 @@ class App extends Component {
                 <div style={{backgroundColor: '#fff'}}>
                     <Route path="/" exact component={Homepage}/>
                     <Route path="/tentang" component={About}/>
+                    <Route path="/kontak" component={Contact}/>
                 </div>
             </Router>
         );

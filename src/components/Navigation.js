@@ -57,7 +57,7 @@ class Navigation extends React.Component {
                             <Link className="nav-link font-weight-bold text-capitalize" to="#">Berita</Link>
                         </li>
                         <li className="nav-item ml-5 mr-4 active">
-                            <Link className="nav-link font-weight-bold text-capitalize" to="#"
+                            <Link className="nav-link font-weight-bold text-capitalize" to="/kontak"
                                   style={{
                                       padding: '3px',
                                       border: '3px solid',

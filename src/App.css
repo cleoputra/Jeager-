@@ -296,6 +296,10 @@ body::-webkit-scrollbar-thumb    {
     max-width: 100%;
 }
 
+.custom-input-form {
+    border: none;
+}
+
 @media (min-width: 1366px) {
     .navbar-nav .nav-link {
         font-size: 24px;
@@ -308,5 +312,11 @@ body::-webkit-scrollbar-thumb    {
         background: #112F4B;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+    }
+
+    .button-form {
+        background: #112F4B;
+        width: 42%;
+        height: 110%;
     }
 }
