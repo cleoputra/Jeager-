@@ -107,15 +107,6 @@ body::-webkit-scrollbar-thumb    {
     background: white;
 }
 
-.hubungi-kami {
-    font-size: 25px;
-    width: 260px;
-    height: 55px;
-    background: #112F4B;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-
 .jeager-text-color {
     color: #112F4B;
 }
@@ -305,6 +296,17 @@ body::-webkit-scrollbar-thumb    {
     max-width: 100%;
 }
 
-.navbar-nav .nav-link {
-    font-size: 24px;
+@media (min-width: 1366px) {
+    .navbar-nav .nav-link {
+        font-size: 24px;
+    }
+
+    .hubungi-kami {
+        font-size: 25px;
+        width: 260px;
+        height: 55px;
+        background: #112F4B;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
 }

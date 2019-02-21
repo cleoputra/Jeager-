@@ -13,9 +13,11 @@ class Navigation extends React.Component {
     }
 
     render() {
+        const {backgroundColor} = this.props;
+
         return (
             <nav className="navbar navbar-expand-lg navbar-dark pl-5 pr-3 sticky-top"
-                 style={{boxShadow: 'none'}}>
+                 style={{boxShadow: 'none', backgroundColor}}>
                 <Link className="navbar-brand" to="/">
                     <img src={require('../assets/logoputih.png')} height="70"
                          className="d-inline-block align-top" alt=""/>
