@@ -17,16 +17,18 @@ export default class Homepage extends React.Component {
                                 <div className="ml-5 pt-5">
                                     <h1 className="homepage-text mt-4 ml-3"
                                         style={{
-                                            fontSize: '64px', fontFamily: 'Rubik', fontWeight: '700'
+                                            fontSize: '60px', fontFamily: 'Rubik', fontWeight: '700'
                                         }}>
                                         PANDANGAN BARU<br/>UNTUK INDUSTRI
                                         <br/>MANUFAKTUR</h1>
                                     <p className="mt-3 ml-4 font-italic font-weight-normal" style={{
-                                        fontSize: '23px', fontFamily: 'Georgia'
+                                        fontSize: '29px', fontFamily: 'Georgia'
                                     }}>Dari tumpukan data menjadi perbaikan performansi</p>
-                                    <div className="ml-3">
-                                        <img src={require('../assets/Button Pelajari.png')} width="40%"
-                                             alt="tombol pelajari"/>
+                                    <div className="ml-3 mt-4">
+                                        <div className="button-diskusi jeager-text-color text-md-center">
+                                            <img src={require('../assets/wa-diskusi.png')} width="24" height="24"
+                                                 alt="Diskusi bersama kami"/> Diskusikan Bersama Kami
+                                        </div>
                                     </div>
                                 </div>
                             </div>
