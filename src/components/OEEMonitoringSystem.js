@@ -2,14 +2,17 @@ import React from 'react';
 import Navigation from "./Navigation";
 import {Link} from 'react-router-dom';
 import Footer from "./Footer";
+import {scrollToTop} from "../helper";
 
 export default class OEEMonitoringSystem extends React.Component {
+    componentDidMount() {
+        scrollToTop();
+    }
+
     render() {
         return (
             <div>
-                <section>
-                    <Navigation backgroundColor="#112F4B"/>
-                </section>
+                <Navigation backgroundColor="#112F4B"/>
                 <section style={{
                     backgroundImage: `url(${require('../assets/bgoee.png')})`,
                     backgroundSize: '100% auto',

@@ -1,8 +1,13 @@
 import React from 'react';
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import {scrollToTop} from "../helper";
 
 export default class Homepage extends React.Component {
+    componentDidMount() {
+        scrollToTop();
+    }
+
     render() {
         return (
             <div>

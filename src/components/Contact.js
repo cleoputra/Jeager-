@@ -3,8 +3,13 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import swal from 'sweetalert2';
 import {ERROR_BASIC} from "../constant";
+import {scrollToTop} from "../helper";
 
 export default class Contact extends React.Component {
+    componentDidMount() {
+        scrollToTop();
+    }
+
     static handleFormSubmit() {
         const $ = window.$;
         const nama = $('#nama').val();
@@ -59,9 +64,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div>
-                <section>
-                    <Navigation backgroundColor="#112F4B"/>
-                </section>
+                <Navigation backgroundColor="#112F4B"/>
                 <section style={{
                     backgroundImage: `url(${require('../assets/hubungikamibg.png')})`,
                     backgroundSize: '100% auto',
