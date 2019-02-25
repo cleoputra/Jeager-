@@ -75,7 +75,7 @@ body::-webkit-scrollbar-thumb    {
 
 .email::placeholder {
     color: darkgrey;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .footer-attrib-fontsize {
@@ -316,7 +316,7 @@ body::-webkit-scrollbar-thumb    {
     }
 
     .hubungi-kami {
-        font-size: 25px;
+        font-size: 20px;
         width: 260px;
         height: 55px;
         background: #112F4B;

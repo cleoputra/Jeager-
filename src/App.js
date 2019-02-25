@@ -5,6 +5,7 @@ import './App.css';
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import OEEMonitoringSystem from "./components/OEEMonitoringSystem";
 
 window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js').default;
@@ -44,6 +45,7 @@ class App extends Component {
                     <Route path="/" exact component={Homepage}/>
                     <Route path="/tentang" component={About}/>
                     <Route path="/kontak" component={Contact}/>
+                    <Route path="/oee-monitoring-system" component={OEEMonitoringSystem}/>
                 </div>
             </Router>
         );

@@ -41,7 +41,7 @@ export default class Navigation extends React.Component {
                             </Link>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown" style={{fontSize: '13px'}}>
                                 <Link className="dropdown-item jeager-text-color text-uppercase"
-                                      to="#">OEE
+                                      to="/oee-monitoring-system">OEE
                                     Monitoring System</Link>
                                 <Link className="dropdown-item jeager-text-color text-uppercase"
                                       to="#">Environment
