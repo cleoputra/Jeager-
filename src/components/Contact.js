@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
                     backgroundSize: '100% auto',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center top',
-                    height: '744px'
+                    height: '698px'
                 }}>
                     <div className="container pt-5 text-white">
                         <div className="row d-flex justify-content-end pt-3">

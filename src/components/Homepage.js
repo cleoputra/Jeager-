@@ -9,9 +9,9 @@ export default class Homepage extends React.Component {
                 <Navigation homePage/>
                 <section style={{
                     backgroundImage: `url(${require('../assets/Rectangle_2.png')})`, backgroundSize: '100% auto',
-                    backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '773px', marginTop: '-8%'
+                    backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '770px', marginTop: '-8%'
                 }}>
-                    <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '773px'}}>
+                    <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '770px'}}>
                         <div className="row d-flex align-items-center" style={{paddingTop: '8%'}}>
                             <div className="col-8 text-white justify-content-center align-items-center mt-5 ml-5 mb-5">
                                 <div className="ml-5 pt-5">

@@ -59,10 +59,8 @@ export default class Navigation extends React.Component {
                         <li className="nav-item ml-5 mr-4 active">
                             <Link className="nav-link font-weight-bold text-capitalize" to="/kontak"
                                   style={{
-                                      padding: '3px',
-                                      border: '3px solid',
-                                      boxSizing: 'border-box',
-                                      borderRadius: '5px'
+                                      borderRadius: '5px',
+                                      background: 'rgba(255, 255, 255, 0.2)'
                                   }}>Hubungi Kami</Link>
                         </li>
                     </ul>
