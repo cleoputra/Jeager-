@@ -197,9 +197,9 @@ export default class Homepage extends React.Component {
                          style={{paddingTop: '6%', paddingBottom: '6%', background: 'rgba(89, 117, 135, 0.6)'}}>
                         <div className="row pl-5">
                             <div className="col-12 text-white mt-5 pl-5">
-                                <h1 className="font-weight-bold" style={{fontSize: '64px'}}>Jeager, Best
+                                <h1 className="font-weight-bold" style={{fontSize: '60px'}}>Jeager, Best
                                     Partner<br/>For Manufacturing<br/>Solution</h1>
-                                <p style={{fontSize: '27px', lineHeight: 'normal', fontFamily: 'Georgia'}}
+                                <p style={{fontSize: '29px', lineHeight: 'normal', fontFamily: 'Georgia'}}
                                    className="mt-4 font-italic">
                                     Ubah Industri Manufaktur Anda menjadi lebih produktif bersama kami.
                                 </p>

@@ -1,9 +1,9 @@
 import React from 'react';
 import Navigation from "./Navigation";
-import {Link} from 'react-router-dom';
+import {Link} from "react-router-dom";
 import Footer from "./Footer";
 
-export default class OEEMonitoringSystem extends React.Component {
+export default class EnvironmentMonitoringSystem extends React.Component {
     render() {
         return (
             <div>
@@ -11,7 +11,7 @@ export default class OEEMonitoringSystem extends React.Component {
                     <Navigation backgroundColor="#112F4B"/>
                 </section>
                 <section style={{
-                    backgroundImage: `url(${require('../assets/bgoee.png')})`,
+                    backgroundImage: `url(${require('../assets/bgenv.png')})`,
                     backgroundSize: '100% auto',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center top',
@@ -27,11 +27,12 @@ export default class OEEMonitoringSystem extends React.Component {
                             <div className="col-12 text-white">
                                 <div style={{borderBottom: '1px solid white', width: '10%', fontSize: '20px'}}>
                                     <Link className="text-white" to="/">Home</Link>&nbsp;>&nbsp;
-                                    <Link className="text-white" to="/oee-monitoring-system">Solusi</Link>
+                                    <Link className="text-white" to="/environment-monitoring-system">Solusi</Link>
                                 </div>
                             </div>
                             <div className="col-12 text-white pt-2">
-                                <h1 className="font-weight-bold" style={{fontSize: '60px'}}>OEE MONITORING SYSTEM</h1>
+                                <h1 className="font-weight-bold" style={{fontSize: '60px'}}>ENVIRONMENT MONITORING
+                                    SYSTEM</h1>
                             </div>
                         </div>
                     </div>
@@ -55,21 +56,17 @@ export default class OEEMonitoringSystem extends React.Component {
                                 }}>PAIN<br/>PROBLEM</h1>
                             </div>
                             <div className="col-6" style={{
-                                paddingTop: '9%',
+                                paddingTop: '10%',
                                 fontSize: '20px'
                             }}>
-                                <div style={{fontFamily: 'Georgia'}}><b>01</b>&emsp;Menghitung OEE secara manual.</div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>02</b>&emsp;Menunggu output
-                                    hasil OEE terlalu lama.
+                                <div style={{fontFamily: 'Georgia'}}><b>01</b>&emsp;Kurangnya informasi terkait kondisi
+                                    di lingkungan pabrik.
                                 </div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>03</b>&emsp;Kurang akuratnya
-                                    nilai parameter OEE.
+                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>02</b>&emsp;Tidak adanya
+                                    pemberitahuan terkait kondisi<br/>&emsp;&emsp; lingkungan pabrik.
                                 </div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>04</b>&emsp;Kurangnya data
-                                    historis terkait parameter OEE.
-                                </div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>05</b>&emsp;Informasi terkait
-                                    analisa Siz Big Losses yang masih kurang.
+                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>03</b>&emsp;Kurangnya
+                                    pengawasan terhadap kondisi<br/>&emsp;&emsp; lingkungan pabrik.
                                 </div>
                             </div>
                         </div>
@@ -134,29 +131,23 @@ export default class OEEMonitoringSystem extends React.Component {
                                 }}>MODUL</h1>
                             </div>
                             <div className="col-6" style={{
-                                paddingTop: '10.5%'
+                                paddingTop: '12.5%'
                             }}>
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-4">
                                             <ul>
-                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Timer</li>
+                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Sense</li>
                                                 <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Swipe
-                                                </li>
-                                                <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Rate
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Data
                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="col-8">
                                             <ul>
-                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Counter</li>
+                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Energy</li>
                                                 <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>OEE
-                                                </li>
-                                                <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Data
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Jeager Gateway
                                                 </li>
                                             </ul>
                                         </div>

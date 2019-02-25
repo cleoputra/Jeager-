@@ -69,8 +69,8 @@ export default class Contact extends React.Component {
                     backgroundPosition: 'center top',
                     height: '698px'
                 }}>
-                    <div className="container pt-5 text-white">
-                        <div className="row d-flex justify-content-end pt-3">
+                    <div className="container text-white pt-5">
+                        <div className="row d-flex justify-content-end pt-2">
                             <div className="col-6">
                                 <h1 className="font-weight-bold" style={{fontSize: '50px'}}>Hubungi Kami</h1>
                             </div>
@@ -81,7 +81,7 @@ export default class Contact extends React.Component {
                                     bisnis anda<br/>Isi data dibawah ini untuk kami hubungi lebih lanjut.</p>
                             </div>
                         </div>
-                        <div className="row d-flex justify-content-end pt-5">
+                        <div className="row d-flex justify-content-end pt-2">
                             <div className="col-6">
                                 <div className="container">
                                     <div className="row">
@@ -145,9 +145,8 @@ export default class Contact extends React.Component {
                                             Pesan / Pertanyaan*
                                         </div>
                                         <div className="col-8 px-0" style={{marginLeft: '-5%'}}>
-                                            <textarea className="custom-input-form" cols="19" rows="3"
-                                                      id="pesan_pertanyaan"
-                                                      style={{width: '41%'}}/>
+                                            <textarea className="custom-input-form" rows="3" id="pesan_pertanyaan"
+                                                      style={{width: '43.5%'}}/>
                                         </div>
                                     </div>
                                     <div className="row mt-3">
