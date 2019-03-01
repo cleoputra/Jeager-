@@ -14,7 +14,10 @@ export default class Homepage extends React.Component {
                 <Navigation homePage/>
                 <section style={{
                     backgroundImage: `url(${require('../assets/Rectangle_2.png')})`, backgroundSize: '100% auto',
-                    backgroundRepeat: 'no-repeat', backgroundPosition: 'center top', height: '770px', marginTop: '-8%'
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center top',
+                    height: '770px',
+                    marginTop: '-5.146%'
                 }}>
                     <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '770px'}}>
                         <div className="row d-flex align-items-center" style={{paddingTop: '8%'}}>
@@ -22,23 +25,23 @@ export default class Homepage extends React.Component {
                                 <div className="ml-5 pt-5">
                                     <h1 className="homepage-text mt-4 ml-3"
                                         style={{
-                                            fontSize: '60px', fontFamily: 'Rubik', fontWeight: '700'
+                                            fontSize: '35px', fontFamily: 'Rubik', fontWeight: '700'
                                         }}>
                                         PANDANGAN BARU<br/>UNTUK INDUSTRI
                                         <br/>MANUFAKTUR</h1>
-                                    <p className="mt-3 ml-4 font-italic font-weight-normal" style={{
-                                        fontSize: '29px', fontFamily: 'Georgia'
+                                    <p className="mt-3 ml-3 font-italic font-weight-normal" style={{
+                                        fontSize: '19px', fontFamily: 'Georgia'
                                     }}>Dari tumpukan data menjadi perbaikan performansi</p>
                                     <div className="ml-3 mt-4">
                                         <div className="button-diskusi jeager-text-color text-md-center">
-                                            <img src={require('../assets/wa-diskusi.png')} width="24" height="24"
+                                            <img src={require('../assets/wa-diskusi.png')} width="14" height="14"
                                                  alt="Diskusi bersama kami"/> Diskusikan Bersama Kami
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 d-flex justify-content-center mt-5">
-                                <div style={{width: '3%'}}>
+                                <div style={{width: '3%'}} className="mt-5">
                                     <img src={require('../assets/Vector.png')} width="100%" alt="tombol scroll"
                                          className="mt-2"/>
                                 </div>
