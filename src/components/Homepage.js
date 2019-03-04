@@ -16,16 +16,16 @@ export default class Homepage extends React.Component {
                     backgroundImage: `url(${require('../assets/Rectangle_2.png')})`, backgroundSize: '100% auto',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center top',
-                    height: '770px',
+                    height: '778px',
                     marginTop: '-5.146%'
                 }}>
-                    <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '770px'}}>
+                    <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '778px'}}>
                         <div className="row d-flex align-items-center" style={{paddingTop: '8%'}}>
                             <div className="col-8 text-white justify-content-center align-items-center mt-5 ml-5 mb-5">
                                 <div className="ml-5 pt-5">
-                                    <h1 className="homepage-text mt-4 ml-3"
+                                    <h1 className="homepage-text mt-5 ml-3"
                                         style={{
-                                            fontSize: '35px', fontFamily: 'Rubik', fontWeight: '700'
+                                            fontSize: '47px', fontFamily: 'Rubik', fontWeight: '700'
                                         }}>
                                         PANDANGAN BARU<br/>UNTUK INDUSTRI
                                         <br/>MANUFAKTUR</h1>
@@ -50,9 +50,10 @@ export default class Homepage extends React.Component {
                     </div>
                 </section>
                 <section>
-                    <div className="container d-flex justify-content-center" style={{paddingTop: '8%'}}>
+                    <div className="container d-flex justify-content-center"
+                         style={{paddingTop: '13%', paddingBottom: '5%'}}>
                         <div className="row pt-4 pb-4" style={{backgroundColor: '#FFD401', width: '94%'}}>
-                            <div className="col-5 pt-4">
+                            <div className="col-5 pt-5">
                                 <img src={require('../assets/Group.png')} width="80%"
                                      style={{display: 'block', margin: '0 auto'}}
                                      alt="Jeager membantu industri untuk memaksimalkan produksi"/>
@@ -71,8 +72,9 @@ export default class Homepage extends React.Component {
                     <div className="container">
                         <div className="row mt-4">
                             <div className="col-12 text-center text-white">
-                                <h2 className="mb-3 font-weight-bold section-title">Solusi Kami</h2>
-                                <p style={{fontSize: '21px', fontFamily: 'Georgia'}}>
+                                <h2 className="mb-3 font-weight-bold section-title" style={{fontSize: '47px'}}>Solusi
+                                    Kami</h2>
+                                <p style={{fontSize: '19px', fontFamily: 'Georgia'}}>
                                     Kami menyediakan perangkat / sensor IoT dan sistem pemantauan berbasis<br/>web untuk
                                     mendapatkan lebih banyak wawasan tentang lantai pabrik.</p>
                             </div>
@@ -88,9 +90,10 @@ export default class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi1.png')}
-                                                                 height="200" width="auto" alt="gambar solusi 1"/>
+                                                                 height="166" width="auto" alt="gambar solusi 1"/>
                                                             <div className="mb-4">
-                                                                <h4 className="text-center jeager-text-color">OEE<br/>Monitoring
+                                                                <h4 className="text-center jeager-text-color"
+                                                                    style={{fontSize: '17px'}}>OEE<br/>Monitoring
                                                                 </h4>
                                                             </div>
                                                         </div>
@@ -100,9 +103,10 @@ export default class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi3.png')}
-                                                                 height="200" width="auto" alt="gambar solusi 3"/>
+                                                                 height="166" width="auto" alt="gambar solusi 3"/>
                                                             <div className="mb-4">
-                                                                <h4 className="text-center jeager-text-color">Environment<br/>Monitoring
+                                                                <h4 className="text-center jeager-text-color"
+                                                                    style={{fontSize: '17px'}}>Environment<br/>Monitoring
                                                                     System
                                                                 </h4>
                                                             </div>
@@ -113,9 +117,10 @@ export default class Homepage extends React.Component {
                                                     <div className="card solution-card">
                                                         <div className="card d-flex align-items-center solution">
                                                             <img className="mt-3" src={require('../assets/Solusi4.png')}
-                                                                 height="200" width="auto" alt="gambar solusi 5"/>
+                                                                 height="166" width="auto" alt="gambar solusi 5"/>
                                                             <div className="mb-4">
-                                                                <h4 className="text-center jeager-text-color">Maintenance<br/>System
+                                                                <h4 className="text-center jeager-text-color"
+                                                                    style={{fontSize: '17px'}}>Maintenance<br/>System
                                                                 </h4>
                                                             </div>
                                                         </div>
@@ -133,7 +138,8 @@ export default class Homepage extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center mt-4 text-capitalize mb-5">
-                                <h2 className="jeager-text-color font-weight-bold section-title">Berkolaborasi Bersama
+                                <h2 className="jeager-text-color font-weight-bold section-title"
+                                    style={{fontSize: '47px'}}>Berkolaborasi Bersama
                                     Jeager</h2>
                             </div>
                             <div className="container" style={{width: '95%'}}>
@@ -141,10 +147,11 @@ export default class Homepage extends React.Component {
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
                                         <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
-                                                <img className="mt-3" src={require('../assets/Value1.png')} height="175"
+                                                <img className="mt-3" src={require('../assets/Value1.png')} height="166"
                                                      width="auto" alt="gambar value 1"/>
                                                 <div className="mb-4">
-                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">No
+                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold"
+                                                        style={{fontSize: '17px'}}>No
                                                         Upfront<br/>Investment
                                                     </h5>
                                                 </div>
@@ -154,10 +161,11 @@ export default class Homepage extends React.Component {
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
                                         <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
-                                                <img className="mt-3" src={require('../assets/Value2.png')} height="175"
+                                                <img className="mt-3" src={require('../assets/Value2.png')} height="166"
                                                      width="auto" alt="gambar value 2"/>
                                                 <div className="mb-4">
-                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">Tailor
+                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold"
+                                                        style={{fontSize: '17px'}}>Tailor
                                                         Made<br/>Solution Delivery
                                                     </h5>
                                                 </div>
@@ -167,10 +175,11 @@ export default class Homepage extends React.Component {
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
                                         <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
-                                                <img className="mt-3" src={require('../assets/Value3.png')} height="175"
+                                                <img className="mt-3" src={require('../assets/Value3.png')} height="166"
                                                      width="auto" alt="gambar value 3"/>
                                                 <div className="mb-4">
-                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">Digitizing
+                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold"
+                                                        style={{fontSize: '17px'}}>Digitizing
                                                         to Create<br/>Business Outcomes
                                                     </h5>
                                                 </div>
@@ -180,10 +189,11 @@ export default class Homepage extends React.Component {
                                     <div className="col-3 d-flex justify-content-center pl-4 pr-4">
                                         <div className="card solution-card no-shadow" style={{width: '90%'}}>
                                             <div className="card d-flex align-items-center solution">
-                                                <img className="mt-3" src={require('../assets/Value4.png')} height="175"
+                                                <img className="mt-3" src={require('../assets/Value4.png')} height="166"
                                                      width="auto" alt="gambar value 4"/>
                                                 <div className="mb-4">
-                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold">New
+                                                    <h5 className="text-center text-capitalize jeager-text-color font-weight-bold"
+                                                        style={{fontSize: '17px'}}>New
                                                         Insight<br/>For Improving
                                                     </h5>
                                                 </div>
@@ -205,16 +215,17 @@ export default class Homepage extends React.Component {
                          style={{paddingTop: '6%', paddingBottom: '6%', background: 'rgba(89, 117, 135, 0.6)'}}>
                         <div className="row pl-5">
                             <div className="col-12 text-white mt-5 pl-5">
-                                <h1 className="font-weight-bold" style={{fontSize: '60px'}}>Jeager, Best
+                                <h1 className="font-weight-bold" style={{fontSize: '47px'}}>Jeager, Best
                                     Partner<br/>For Manufacturing<br/>Solution</h1>
-                                <p style={{fontSize: '29px', lineHeight: 'normal', fontFamily: 'Georgia'}}
+                                <p style={{fontSize: '19px', lineHeight: 'normal', fontFamily: 'Georgia'}}
                                    className="mt-4 font-italic">
                                     Ubah Industri Manufaktur Anda menjadi lebih produktif bersama kami.
                                 </p>
                             </div>
                             <div className="col-12 text-white mt-4 pl-5">
                                 <div
-                                    className="hubungi-kami text-uppercase text-center d-flex align-items-center justify-content-center">
+                                    className="hubungi-kami text-center d-flex align-items-center justify-content-center"
+                                    style={{fontSize: '14px'}}>
                                     Hubungi Kami
                                 </div>
                             </div>

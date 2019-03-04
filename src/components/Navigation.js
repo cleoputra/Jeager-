@@ -39,14 +39,14 @@ export default class Navigation extends React.Component {
                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Solusi
                             </Link>
-                            <div className="dropdown-menu" aria-labelledby="navbarDropdown" style={{fontSize: '13px'}}>
-                                <Link className="dropdown-item jeager-text-color text-uppercase"
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdown" style={{fontSize: '15px'}}>
+                                <Link className="dropdown-item jeager-text-color"
                                       to="/oee-monitoring-system">OEE
                                     Monitoring System</Link>
-                                <Link className="dropdown-item jeager-text-color text-uppercase"
+                                <Link className="dropdown-item jeager-text-color"
                                       to="/environment-monitoring-system">Environment
                                     Monitoring System</Link>
-                                <Link className="dropdown-item jeager-text-color text-uppercase"
+                                <Link className="dropdown-item jeager-text-color"
                                       to="#">Maintenance
                                     System</Link>
                             </div>

@@ -75,7 +75,8 @@ body::-webkit-scrollbar-thumb    {
 
 .email::placeholder {
     color: darkgrey;
-    font-size: 14px;
+    font-size: 15px;
+    padding-left: 3px;
 }
 
 .footer-attrib-fontsize {
@@ -135,7 +136,7 @@ body::-webkit-scrollbar-thumb    {
 }
 
 .solution-card {
-    width: 89%;
+    width: 77%;
     border-radius: 5px;
 }
 
@@ -317,8 +318,8 @@ body::-webkit-scrollbar-thumb    {
 
     .hubungi-kami {
         font-size: 20px;
-        width: 260px;
-        height: 55px;
+        width: 130px;
+        height: 40px;
         background: #112F4B;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
