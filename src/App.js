@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import OEEMonitoringSystem from "./components/OEEMonitoringSystem";
 import EnvironmentMonitoringSystem from "./components/EnvironmentMonitoringSystem";
+import News from "./components/News";
 
 window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js').default;
@@ -46,6 +47,7 @@ class App extends Component {
                     <Route path="/" exact component={Homepage}/>
                     <Route path="/tentang" component={About}/>
                     <Route path="/kontak" component={Contact}/>
+                    <Route path="/berita" component={News}/>
                     <Route path="/oee-monitoring-system" component={OEEMonitoringSystem}/>
                     <Route path="/environment-monitoring-system" component={EnvironmentMonitoringSystem}/>
                 </div>

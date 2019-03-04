@@ -16,13 +16,13 @@ export default class Homepage extends React.Component {
                     backgroundImage: `url(${require('../assets/Rectangle_2.png')})`, backgroundSize: '100% auto',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center top',
-                    height: '778px',
+                    height: '770px',
                     marginTop: '-5.146%'
                 }}>
-                    <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '778px'}}>
+                    <div className="container" style={{background: 'rgba(0, 0, 0, 0.4)', height: '770px'}}>
                         <div className="row d-flex align-items-center" style={{paddingTop: '8%'}}>
                             <div className="col-8 text-white justify-content-center align-items-center mt-5 ml-5 mb-5">
-                                <div className="ml-5 pt-5">
+                                <div className="ml-5 pt-3">
                                     <h1 className="homepage-text mt-5 ml-3"
                                         style={{
                                             fontSize: '47px', fontFamily: 'Rubik', fontWeight: '700'
@@ -40,7 +40,7 @@ export default class Homepage extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 d-flex justify-content-center mt-5">
+                            <div className="col-12 d-flex justify-content-center mt-2">
                                 <div style={{width: '3%'}} className="mt-5">
                                     <img src={require('../assets/Vector.png')} width="100%" alt="tombol scroll"
                                          className="mt-2"/>

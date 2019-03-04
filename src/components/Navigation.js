@@ -52,7 +52,7 @@ export default class Navigation extends React.Component {
                             </div>
                         </li>
                         <li className="nav-item ml-5 active">
-                            <Link className="nav-link text-capitalize" to="#">Berita</Link>
+                            <Link className="nav-link text-capitalize" to="/berita">Berita</Link>
                         </li>
                         <li className="nav-item ml-5 mr-4 active">
                             <Link className="nav-link text-capitalize" to="/kontak"
