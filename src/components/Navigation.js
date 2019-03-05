@@ -58,7 +58,9 @@ export default class Navigation extends React.Component {
                             <Link className="nav-link text-capitalize" to="/kontak"
                                   style={{
                                       borderRadius: '5px',
-                                      background: 'rgba(255, 255, 255, 0.2)'
+                                      background: 'rgba(255, 255, 255, 0.2)',
+                                      paddingLeft: '18px',
+                                      paddingRight: '18px'
                                   }}>Hubungi Kami</Link>
                         </li>
                     </ul>
