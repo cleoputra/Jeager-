@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import {scrollToTop} from "../helper";
@@ -6,6 +7,12 @@ import {scrollToTop} from "../helper";
 export default class Homepage extends React.Component {
     componentDidMount() {
         scrollToTop();
+    }
+
+    static scrollToAnchor(elementAnchor) {
+        document.querySelector('#' + elementAnchor).scrollIntoView({
+            behavior: 'smooth'
+        });
     }
 
     render() {
@@ -33,15 +40,18 @@ export default class Homepage extends React.Component {
                                         fontSize: '19px', fontFamily: 'Georgia'
                                     }}>Dari tumpukan data menjadi perbaikan performansi</p>
                                     <div className="ml-3 mt-4">
-                                        <div className="button-diskusi jeager-text-color text-md-center">
-                                            <img src={require('../assets/wa-diskusi.png')} width="14" height="14"
-                                                 alt="Diskusi bersama kami"/> Diskusikan Bersama Kami
-                                        </div>
+                                        <a href="https://wa.me/6282232419113">
+                                            <div className="button-diskusi jeager-text-color text-md-center">
+                                                <img src={require('../assets/wa-diskusi.png')} width="14" height="14"
+                                                     alt="Diskusi bersama kami"/> Diskusikan Bersama Kami
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 d-flex justify-content-center mt-2">
-                                <div style={{width: '3%'}} className="mt-5">
+                            <div className="col-12 d-flex justify-content-center mt-2" id="buttonScroll">
+                                <div style={{width: '3%'}} className="mt-5"
+                                     onClick={() => Homepage.scrollToAnchor('videoYoutube')}>
                                     <img src={require('../assets/Vector.png')} width="100%" alt="tombol scroll"
                                          className="mt-2"/>
                                 </div>
@@ -51,7 +61,7 @@ export default class Homepage extends React.Component {
                 </section>
                 <section>
                     <div className="container d-flex justify-content-center"
-                         style={{paddingTop: '13%', paddingBottom: '5%'}}>
+                         style={{paddingTop: '13%', paddingBottom: '5%'}} id="videoYoutube">
                         <div className="row pt-4 pb-4" style={{backgroundColor: '#FFD401', width: '94%'}}>
                             <div className="col-5 pt-5">
                                 <img src={require('../assets/Group.png')} width="80%"
@@ -88,29 +98,36 @@ export default class Homepage extends React.Component {
                                             <div className="carousel-inner row ml-3" style={{padding: '15px'}}>
                                                 <div className="carousel-item col-4 active">
                                                     <div className="card solution-card">
-                                                        <div className="card d-flex align-items-center solution">
-                                                            <img className="mt-3" src={require('../assets/Solusi1.png')}
-                                                                 height="166" width="auto" alt="gambar solusi 1"/>
-                                                            <div className="mb-4">
-                                                                <h4 className="text-center jeager-text-color"
-                                                                    style={{fontSize: '17px'}}>OEE<br/>Monitoring
-                                                                </h4>
+                                                        <Link to="/oee-monitoring-system">
+                                                            <div className="card d-flex align-items-center solution">
+                                                                <img className="mt-3"
+                                                                     src={require('../assets/Solusi1.png')}
+                                                                     height="166" width="auto" alt="gambar solusi 1"/>
+                                                                <div className="mb-4">
+                                                                    <h4 className="text-center jeager-text-color"
+                                                                        style={{fontSize: '17px'}}>OEE<br/>Monitoring
+                                                                        System
+                                                                    </h4>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="carousel-item col-4">
                                                     <div className="card solution-card">
-                                                        <div className="card d-flex align-items-center solution">
-                                                            <img className="mt-3" src={require('../assets/Solusi3.png')}
-                                                                 height="166" width="auto" alt="gambar solusi 3"/>
-                                                            <div className="mb-4">
-                                                                <h4 className="text-center jeager-text-color"
-                                                                    style={{fontSize: '17px'}}>Environment<br/>Monitoring
-                                                                    System
-                                                                </h4>
+                                                        <Link to="/environment-monitoring-system">
+                                                            <div className="card d-flex align-items-center solution">
+                                                                <img className="mt-3"
+                                                                     src={require('../assets/Solusi3.png')}
+                                                                     height="166" width="auto" alt="gambar solusi 3"/>
+                                                                <div className="mb-4">
+                                                                    <h4 className="text-center jeager-text-color"
+                                                                        style={{fontSize: '17px'}}>Environment<br/>Monitoring
+                                                                        System
+                                                                    </h4>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="carousel-item col-4">
@@ -223,11 +240,11 @@ export default class Homepage extends React.Component {
                                 </p>
                             </div>
                             <div className="col-12 text-white mt-4 pl-5">
-                                <div
-                                    className="hubungi-kami text-center d-flex align-items-center justify-content-center"
-                                    style={{fontSize: '14px'}}>
+                                <Link
+                                    className="hubungi-kami text-white text-center d-flex align-items-center justify-content-center"
+                                    style={{fontSize: '14px'}} to="/kontak">
                                     Hubungi Kami
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
