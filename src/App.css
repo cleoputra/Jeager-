@@ -311,6 +311,10 @@ body::-webkit-scrollbar-thumb    {
     height: 42px;
 }
 
+#buttonSelengkapnya:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 1366px) {
     .navbar-nav .nav-link {
         font-size: 15px;
