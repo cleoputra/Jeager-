@@ -26,8 +26,29 @@ export default class Contact extends React.Component {
             let alert = swal.fire('Error', error[0], "error");
             alert.finally();
         } else {
-            let alert = swal.fire('Success', null, "success");
-            alert.finally();
+            $.ajax({
+                    url: 'https://apijeager.codeasteroid.com/request_demo_produk',
+                    type: 'POST',
+                    data: {
+                        nama,
+                        email,
+                        nama_perusahaan,
+                        industri,
+                        profesi,
+                        negara,
+                        no_hp,
+                        pesan: pesan_pertanyaan
+                    },
+                    success: () => {
+                        let alert = swal.fire('Sukses', 'Terimakasih telah menghubungi kami!', "success");
+                        alert.finally();
+                    },
+                    error: () => {
+                        let alert = swal.fire('Gagal!', 'Data gagal terkirim!', "error");
+                        alert.finally();
+                    }
+                }
+            );
         }
     }
 
@@ -54,7 +75,8 @@ export default class Contact extends React.Component {
             error.push('Pesan/Pertanyaan ' + ERROR_BASIC);
 
         return error
-    };
+    }
+    ;
 
     static validateEmail(email) {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
