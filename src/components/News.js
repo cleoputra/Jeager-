@@ -10,6 +10,39 @@ export default class News extends React.Component {
         showAll: false
     };
 
+    static renderSideNewsItem(newsSideItem, margin) {
+        return (
+            <div className={margin ? 'col-12 px-0 mt-4' : 'col-12 px-0'}>
+                <a href={newsSideItem.link}>
+                    <div style={{width: '350px', height: '173px'}}>
+                        <img
+                            src={newsSideItem.thumbnail}
+                            width="350"
+                            height="173"
+                            alt={newsSideItem.title}/>
+                        <div style={{
+                            background: '#112F4B',
+                            width: '350px',
+                            height: '65px',
+                            mixBlendMode: 'normal',
+                            opacity: '0.7',
+                            marginTop: '-45%'
+                        }}/>
+                        <h1 className="text-white" style={{
+                            position: 'absolute',
+                            fontSize: '18px',
+                            marginTop: '-19%',
+                            marginLeft: '4%',
+                            zIndex: 1
+                        }}>
+                            {newsSideItem.title}
+                        </h1>
+                    </div>
+                </a>
+            </div>
+        )
+    }
+
     static renderBottomNewsItem(newsItemData) {
         return (
             <div className="col-12 mt-4" key={newsItemData.title}>
@@ -95,62 +128,8 @@ export default class News extends React.Component {
     renderSideNews() {
         return (
             <div className="row">
-                <div className="col-12 px-0">
-                    <a href={this.state.fetched ? this.state.newsData.items[1].link : '#'}>
-                        <div style={{width: '350px', height: '173px'}}>
-                            <img
-                                src={this.state.fetched ? this.state.newsData.items[1].thumbnail : require('../assets/news2.png')}
-                                width="350"
-                                height="173"
-                                alt="News 2"/>
-                            <div style={{
-                                background: '#112F4B',
-                                width: '350px',
-                                height: '65px',
-                                mixBlendMode: 'normal',
-                                opacity: '0.7',
-                                marginTop: '-45%'
-                            }}/>
-                            <h1 className="text-white" style={{
-                                position: 'absolute',
-                                fontSize: '19px',
-                                marginTop: '-19%',
-                                marginLeft: '4%',
-                                zIndex: 1
-                            }}>
-                                {this.state.fetched ? this.state.newsData.items[1].title : 'Loading...'}
-                            </h1>
-                        </div>
-                    </a>
-                </div>
-                <div className="col-12 px-0 mt-4">
-                    <a href={this.state.fetched ? this.state.newsData.items[2].link : '#'}>
-                        <div style={{width: '350px', height: '173px'}}>
-                            <img
-                                src={this.state.fetched ? this.state.newsData.items[2].thumbnail : require('../assets/news3.png')}
-                                width="350"
-                                height="173"
-                                alt="News 2"/>
-                            <div style={{
-                                background: '#112F4B',
-                                width: '350px',
-                                height: '65px',
-                                mixBlendMode: 'normal',
-                                opacity: '0.7',
-                                marginTop: '-45%'
-                            }}/>
-                            <h1 className="text-white" style={{
-                                position: 'absolute',
-                                fontSize: '19px',
-                                marginTop: '-19%',
-                                marginLeft: '4%',
-                                zIndex: 1
-                            }}>
-                                {this.state.fetched ? this.state.newsData.items[2].title : 'Loading...'}
-                            </h1>
-                        </div>
-                    </a>
-                </div>
+                {this.state.fetched ? News.renderSideNewsItem(this.state.newsData.items[1]) : '<h1>Loading ...</h1>'}
+                {this.state.fetched ? News.renderSideNewsItem(this.state.newsData.items[2], true) : '<h1>Loading ...</h1>'}
             </div>
         )
     }
