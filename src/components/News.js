@@ -33,7 +33,7 @@ export default class News extends React.Component {
                                                 <h1 className="text-white" style={{
                                                     position: 'absolute',
                                                     fontSize: '41px',
-                                                    marginTop: '-25%',
+                                                    marginTop: '-26%',
                                                     marginLeft: '4%',
                                                     zIndex: 1
                                                 }}>
@@ -62,7 +62,7 @@ export default class News extends React.Component {
                                                             <h1 className="text-white" style={{
                                                                 position: 'absolute',
                                                                 fontSize: '20px',
-                                                                marginTop: '-19%',
+                                                                marginTop: '-20%',
                                                                 marginLeft: '4%',
                                                                 zIndex: 1
                                                             }}>
@@ -87,7 +87,7 @@ export default class News extends React.Component {
                                                             <h1 className="text-white" style={{
                                                                 position: 'absolute',
                                                                 fontSize: '20px',
-                                                                marginTop: '-19%',
+                                                                marginTop: '-20%',
                                                                 marginLeft: '4%',
                                                                 zIndex: 1
                                                             }}>

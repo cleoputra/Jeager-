@@ -17,7 +17,7 @@ export default class Navigation extends React.Component {
 
         return (
             <nav className="navbar navbar-expand-lg navbar-dark pl-5 pr-3 sticky-top"
-                 style={{boxShadow: 'none', backgroundColor}}>
+                 style={{boxShadow: 'none', backgroundColor, zIndex: 2}}>
                 <Link className="navbar-brand" to="/">
                     <img src={require('../assets/logoputih.png')} height="38"
                          className="d-inline-block align-top" alt=""/>
