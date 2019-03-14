@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import OEEMonitoringSystem from "./components/OEEMonitoringSystem";
 import EnvironmentMonitoringSystem from "./components/EnvironmentMonitoringSystem";
 import News from "./components/News";
+import MaintenanceSystem from "./components/MaintenanceSystem";
 
 window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js').default;
@@ -50,6 +51,7 @@ class App extends Component {
                     <Route path="/berita" component={News}/>
                     <Route path="/oee-monitoring-system" component={OEEMonitoringSystem}/>
                     <Route path="/environment-monitoring-system" component={EnvironmentMonitoringSystem}/>
+                    <Route path="/maintenance-system" component={MaintenanceSystem}/>
                 </div>
             </Router>
         );

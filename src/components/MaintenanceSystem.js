@@ -1,10 +1,10 @@
 import React from 'react';
-import Navigation from "./Navigation";
-import {Link} from 'react-router-dom';
-import Footer from "./Footer";
 import {scrollToTop} from "../helper";
+import Navigation from "./Navigation";
+import {Link} from "react-router-dom";
+import Footer from "./Footer";
 
-export default class OEEMonitoringSystem extends React.Component {
+export default class MaintenanceSystem extends React.Component {
     componentDidMount() {
         scrollToTop();
     }
@@ -14,15 +14,13 @@ export default class OEEMonitoringSystem extends React.Component {
             <div>
                 <Navigation backgroundColor="#112F4B"/>
                 <section style={{
-                    backgroundImage: `url(${require('../assets/bgoee.png')})`,
+                    backgroundImage: `url(${require('../assets/bgmaintenace.png')})`,
                     backgroundSize: '100% auto',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center top',
                     height: '291px'
                 }}>
                     <div className="container" style={{
-                        background: 'rgba(17, 47, 75, 0.6)',
-                        height: '291px',
                         paddingTop: '4%',
                         paddingLeft: '6%'
                     }}>
@@ -30,11 +28,12 @@ export default class OEEMonitoringSystem extends React.Component {
                             <div className="col-12 text-white">
                                 <div style={{borderBottom: '1px solid white', width: '10%', fontSize: '20px'}}>
                                     <Link className="text-white" to="/">Home</Link>&nbsp;>&nbsp;
-                                    <Link className="text-white" to="/oee-monitoring-system">Solusi</Link>
+                                    <Link className="text-white" to="/maintenance-system">Solusi</Link>
                                 </div>
                             </div>
                             <div className="col-12 text-white pt-2">
-                                <h1 className="font-weight-bold" style={{fontSize: '60px'}}>OEE MONITORING SYSTEM</h1>
+                                <h1 className="font-weight-bold" style={{fontSize: '60px'}}>MAINTENANCE
+                                    SYSTEM</h1>
                             </div>
                         </div>
                     </div>
@@ -61,18 +60,20 @@ export default class OEEMonitoringSystem extends React.Component {
                                 paddingTop: '9%',
                                 fontSize: '20px'
                             }}>
-                                <div style={{fontFamily: 'Georgia'}}><b>01</b>&emsp;Menghitung OEE secara manual.</div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>02</b>&emsp;Menunggu output
-                                    hasil OEE terlalu lama.
+                                <div style={{fontFamily: 'Georgia'}}><b>01</b>&emsp;Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit
                                 </div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>03</b>&emsp;Kurang akuratnya
-                                    nilai parameter OEE.
+                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>02</b>&emsp;Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit
                                 </div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>04</b>&emsp;Kurangnya data
-                                    historis terkait parameter OEE.
+                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>03</b>&emsp;Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit
                                 </div>
-                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>05</b>&emsp;Informasi terkait
-                                    analisa Siz Big Losses yang masih kurang.
+                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>04</b>&emsp;Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit
+                                </div>
+                                <div className="mt-2" style={{fontFamily: 'Georgia'}}><b>05</b>&emsp;Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit
                                 </div>
                             </div>
                         </div>
@@ -109,8 +110,10 @@ export default class OEEMonitoringSystem extends React.Component {
                                     dolore
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                     nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                    voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat
                                     non
                                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
@@ -137,29 +140,39 @@ export default class OEEMonitoringSystem extends React.Component {
                                 }}>MODUL</h1>
                             </div>
                             <div className="col-6" style={{
-                                paddingTop: '10.5%'
+                                paddingTop: '6.6%'
                             }}>
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-4 jeager-text-color">
                                             <ul>
-                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Timer</li>
+                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Report</li>
                                                 <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Swipe
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Manpower
                                                 </li>
                                                 <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Rate
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Asset
+                                                </li>
+                                                <li className="mt-4"
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Sparepart
+                                                </li>
+                                                <li className="mt-4"
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Notification
                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="col-8 jeager-text-color">
                                             <ul>
-                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Counter</li>
+                                                <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>History</li>
                                                 <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>OEE
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Inspection
                                                 </li>
                                                 <li className="mt-4"
-                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Data
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Maintenance Plan
+                                                </li>
+                                                <li className="mt-4"
+                                                    style={{fontFamily: 'Georgia', fontSize: '20px'}}>Analytics
+                                                    Dashboard
                                                 </li>
                                             </ul>
                                         </div>
@@ -171,11 +184,11 @@ export default class OEEMonitoringSystem extends React.Component {
                 </section>
                 <section style={{padding: '2.1%'}}>
                     <div className="container" style={{
-                        backgroundImage: `url(${require('../assets/bgproses.png')})`,
+                        backgroundImage: `url(${require('../assets/diagramflow.png')})`,
                         backgroundSize: '100% auto',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center top',
-                        height: '571px'
+                        height: '868px'
                     }}>
                         <div className="row text-white">
                             <div className="col-6" style={{
@@ -185,7 +198,7 @@ export default class OEEMonitoringSystem extends React.Component {
                                 <h1 style={{
                                     fontSize: '50px',
                                     lineHeight: '77px',
-                                }}>PROSES</h1>
+                                }}>DIAGRAM FLOW</h1>
                             </div>
                         </div>
                     </div>

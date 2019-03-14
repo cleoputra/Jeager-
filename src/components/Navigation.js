@@ -47,7 +47,7 @@ export default class Navigation extends React.Component {
                                       to="/environment-monitoring-system">Environment
                                     Monitoring System</Link>
                                 <Link className="dropdown-item jeager-text-color"
-                                      to="#">Maintenance
+                                      to="/maintenance-system">Maintenance
                                     System</Link>
                             </div>
                         </li>

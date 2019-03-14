@@ -138,7 +138,7 @@ export default class EnvironmentMonitoringSystem extends React.Component {
                             }}>
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-4">
+                                        <div className="col-4 jeager-text-color">
                                             <ul>
                                                 <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Sense</li>
                                                 <li className="mt-4"
@@ -146,7 +146,7 @@ export default class EnvironmentMonitoringSystem extends React.Component {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div className="col-8">
+                                        <div className="col-8 jeager-text-color">
                                             <ul>
                                                 <li style={{fontFamily: 'Georgia', fontSize: '20px'}}>Energy</li>
                                                 <li className="mt-4"
@@ -162,7 +162,7 @@ export default class EnvironmentMonitoringSystem extends React.Component {
                 </section>
                 <section style={{padding: '2.1%'}}>
                     <div className="container" style={{
-                        backgroundImage: `url(${require('../assets/bgproses.png')})`,
+                        backgroundImage: `url(${require('../assets/bgprosesenvironment.png')})`,
                         backgroundSize: '100% auto',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center top',
@@ -185,11 +185,13 @@ export default class EnvironmentMonitoringSystem extends React.Component {
                     <h1 style={{fontSize: '29px', fontFamily: 'Ubuntu'}}
                         className="font-weight-bold text-center">Dapatkan demo produk dengan menghubungi kami</h1>
                     <div className="w-100 d-flex justify-content-center mt-5">
-                        <div
-                            className="hubungi-kami text-white text-center d-flex align-items-center justify-content-center"
-                            style={{width: '241px', height: '63px'}}>
-                            Hubungi Kami
-                        </div>
+                        <Link to="/kontak">
+                            <div
+                                className="hubungi-kami text-white text-center d-flex align-items-center justify-content-center"
+                                style={{width: '241px', height: '63px'}}>
+                                Hubungi Kami
+                            </div>
+                        </Link>
                     </div>
                 </section>
                 <section>

@@ -128,8 +128,9 @@ export default class News extends React.Component {
     renderSideNews() {
         return (
             <div className="row">
-                {this.state.fetched ? News.renderSideNewsItem(this.state.newsData.items[1]) : '<h1>Loading ...</h1>'}
-                {this.state.fetched ? News.renderSideNewsItem(this.state.newsData.items[2], true) : '<h1>Loading ...</h1>'}
+                {this.state.fetched ? News.renderSideNewsItem(this.state.newsData.items[1]) : <h1>Loading ...</h1>}
+                {this.state.fetched ? News.renderSideNewsItem(this.state.newsData.items[2], true) :
+                    <h1>Loading ...</h1>}
             </div>
         )
     }
@@ -145,9 +146,12 @@ export default class News extends React.Component {
         } else {
             return (
                 <div>
-                    {this.state.fetched ? News.renderBottomNewsItem(this.state.newsData.items[3]) : '<h1>LOADING ....</h1>'}
-                    {this.state.fetched ? News.renderBottomNewsItem(this.state.newsData.items[4]) : '<h1>LOADING ....</h1>'}
-                    {this.state.fetched ? News.renderBottomNewsItem(this.state.newsData.items[5]) : '<h1>LOADING ....</h1>'}
+                    {this.state.fetched ? News.renderBottomNewsItem(this.state.newsData.items[3]) :
+                        <h1>LOADING ....</h1>}
+                    {this.state.fetched ? News.renderBottomNewsItem(this.state.newsData.items[4]) :
+                        <h1>LOADING ....</h1>}
+                    {this.state.fetched ? News.renderBottomNewsItem(this.state.newsData.items[5]) :
+                        <h1>LOADING ....</h1>}
                 </div>
             );
         }
