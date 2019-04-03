@@ -5,10 +5,7 @@ import './App.css';
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import OEEMonitoringSystem from "./components/OEEMonitoringSystem";
-import EnvironmentMonitoringSystem from "./components/EnvironmentMonitoringSystem";
 import News from "./components/News";
-import MaintenanceSystem from "./components/MaintenanceSystem";
 
 window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js').default;
@@ -49,9 +46,9 @@ class App extends Component {
                     <Route path="/tentang" component={About}/>
                     <Route path="/kontak" component={Contact}/>
                     <Route path="/berita" component={News}/>
-                    <Route path="/oee-monitoring-system" component={OEEMonitoringSystem}/>
+                    {/*<Route path="/oee-monitoring-system" component={OEEMonitoringSystem}/>
                     <Route path="/environment-monitoring-system" component={EnvironmentMonitoringSystem}/>
-                    <Route path="/maintenance-system" component={MaintenanceSystem}/>
+                    <Route path="/maintenance-system" component={MaintenanceSystem}/>*/}
                 </div>
             </Router>
         );

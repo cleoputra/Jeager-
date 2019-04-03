@@ -33,7 +33,7 @@ export default class Navigation extends React.Component {
                         <li className="nav-item active">
                             <Link className="nav-link text-capitalize" to="/tentang">Tentang Kami</Link>
                         </li>
-                        <li className="nav-item dropdown ml-5 active">
+                        {/*<li className="nav-item dropdown ml-5 active">
                             <Link className="nav-link dropdown-toggle text-capitalize" to="#" id="navbarDropdown"
                                   role="button"
                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,7 +50,7 @@ export default class Navigation extends React.Component {
                                       to="/maintenance-system">Maintenance
                                     System</Link>
                             </div>
-                        </li>
+                        </li>*/}
                         <li className="nav-item ml-5 active">
                             <Link className="nav-link text-capitalize" to="/berita">Berita</Link>
                         </li>

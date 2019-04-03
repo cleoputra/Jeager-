@@ -69,7 +69,8 @@ export default class Homepage extends React.Component {
                                      alt="Jeager membantu industri untuk memaksimalkan produksi"/>
                             </div>
                             <div className="col-7 d-flex" style={{marginTop: '-7%', marginBottom: '2.25%'}}>
-                                <iframe width="700" height="425" src="https://www.youtube.com/embed/DzWHKNMwrIM"
+                                <iframe className="mr-5" width="700" height="425"
+                                        src="https://www.youtube.com/embed/DzWHKNMwrIM"
                                         frameBorder="0"
                                         title="youtube"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
