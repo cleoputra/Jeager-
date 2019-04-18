@@ -15,15 +15,15 @@ export default class Footer extends React.Component {
                 data: {email},
                 success: () => {
                     $('#email').val('');
-                    sweetalert.fire('Sukses!', 'Sukses subscribe', 'success');
+                    sweetalert.fire('Sukses!', 'Sukses subscribe', 'success').finally();
                 },
                 error: () => {
                     $('#email').val('');
-                    sweetalert.fire('Gagal!', 'Gagal subscribe', 'error');
+                    sweetalert.fire('Gagal!', 'Gagal subscribe', 'error').finally();
                 }
             });
         else
-            sweetalert.fire('Gagal!', 'Format Email tidak sesuai', 'error');
+            sweetalert.fire('Gagal!', 'Format Email tidak sesuai', 'error').finally();
     }
 
     render() {
@@ -50,7 +50,7 @@ export default class Footer extends React.Component {
                         <div className="d-flex justify-content-center" style={{fontSize: '15px', lineHeight: '36px'}}>
                             <div>
                                 <Link className="d-block text-white" to="/tentang">Tentang Kami</Link>
-                                <Link className="d-block text-white" to="/oee-monitoring-system">Solusi</Link>
+                                {/*<Link className="d-block text-white" to="/oee-monitoring-system">Solusi</Link>*/}
                                 <Link className="d-block text-white" to="/berita">Berita</Link>
                                 <Link className="d-block text-white" to="/kontak">Hubungi Kami</Link>
                             </div>
@@ -60,12 +60,18 @@ export default class Footer extends React.Component {
                         <div className="container d-flex justify-content-center">
                             <div className="row">
                                 <div className="col-12 pl-0" style={{fontSize: '15px'}}>
-                                    <img src={require('../assets/wa.png')} width="24px" alt="Kontak whatsapp"/>
-                                    &nbsp;&nbsp;+62-812-7329-7777
+                                    <a href="https://wa.me/6282232419113" className="text-white" target="_blank"
+                                       rel="noopener noreferrer">
+                                        <img src={require('../assets/wa.png')} width="24px" alt="Kontak whatsapp"/>
+                                        &nbsp;&nbsp;+62-822-3241-9113
+                                    </a>
                                 </div>
                                 <div className="col-12 pl-0 mt-3" style={{fontSize: '15px'}}>
-                                    <img src={require('../assets/email.png')} width="29px" alt="Email Jeager"/>
-                                    &nbsp;info@jeager.io
+                                    <a href="mailto:info@jeager.io" className="text-white" target="_blank"
+                                       rel="noopener noreferrer">
+                                        <img src={require('../assets/email.png')} width="29px" alt="Email Jeager"/>
+                                        &nbsp;info@jeager.io
+                                    </a>
                                 </div>
                                 <div className="col-12 pl-0 mt-3">
                                     <a href="https://www.facebook.com/jeager.iiot">
