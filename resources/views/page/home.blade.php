@@ -1,39 +1,26 @@
 @include('includes.header')
 
-<section style="height: 650px" class="par-sec-1">
+<div class="par-sec-1"></div>
+
+
+<section class="parallax-section">
 	<div class="container">
 		<div class="row">
-
-			<div>
-				<h3 class="header1" >Buat pabrik Anda berbicara</h3>
-				<a class="txt1" style="
-position: fixed;
-left: 28.48%;
-right: 28.48%;
-top: 23.66%;
-
-/* White / 2 */
-color: #F4F4F4;">Tingkatkan efektifitas produk melalui Internet of Things</a>
-			</div>
-
-
-		</div>
-	</div>
-</section>
-
-
-
-<section style="padding-top: 172px; padding-bottom:  50px;" class="parallax-section">
-	<div class="container">
-		<div class="row">
-
-			
-			<div class="col-md-6 col-sm-6">
-				<h3 class="txt2" style="left: 90px; right: 150px;">Pelajari bagaimana platform kami bekerja.</h3>
+	<!-- 		<div class="col-md-6 col-sm-6">
+				<h3 class="txt2" style="padding-top: 120px; padding-left: 90px; padding-right: 150px;">Pelajari bagaimana platform kami bekerja.</h3>
 			</div>
 					
 			<div class="col-md-6 col-sm-6">
 				<iframe width="616" height="346" src="http://www.youtube.com/embed/DzWHKNMwrIM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+ -->
+		<div class="wow col-md-6 col-sm-10" ">
+				<h3 class="txt2-home">Pelajari bagaimana platform<br> kami bekerja.</h3>
+			</div>
+			<div class="col-md-6 col-sm-10" >
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/DzWHKNMwrIM" allowfullscreen></iframe>
+				</div>
 			</div>
 
 		</div>
@@ -48,11 +35,11 @@ color: #F4F4F4;">Tingkatkan efektifitas produk melalui Internet of Things</a>
 			<img src="{{asset('images/h2.png')}}">
 			</div>
 					
-			<div class="col-md-6 col-sm-6">
-				<h3 class="txt2" style="left: 41px;">Solusi kami memberikan informasi berharga untuk anda.</h3>
-				<h5 class="txt3" style="left:41px; right: 80px;">Dengan memberikan data, analisis, <br>dan pelaporan real-time untuk meningkatkan produktivitas Industri Manufatur Anda.</h5>
-				<a class="txt5" style="left:41px; top: calc(50% - 80px/2 + 360px);">OEE Monitoring System > </a>
-				<a class="txt5" style="left:41px; top: calc(50% - 80px/2 + 380px);">Environment Monitoring System > </a>
+			<div class="col-md-6 col-sm-6" style="padding-left: 30px; padding-right: 80px;">
+				<h3 class="txt2" style="padding-top: 100px;">Solusi kami memberikan informasi berharga untuk anda.</h3>
+				<h5 class="txt-grey">Dengan memberikan data, analisis, <br>dan pelaporan real-time untuk meningkatkan produktivitas Industri Manufatur Anda.</h5><br><br>
+				<a class="txt5" href="{{route('solution.oee')}}">OEE Monitoring System > </a><br>
+				<a class="txt5" href="{{route('solution.ems')}}">Environment Monitoring System > </a>
 			</div>
 
 		</div>
@@ -60,12 +47,12 @@ color: #F4F4F4;">Tingkatkan efektifitas produk melalui Internet of Things</a>
 </section>
 
 
-<section style="background-color: #808080; padding-top: 35px; " class="parallax-section">
-	<div style="margin-left: 100px;" class="container">
+<section style="background-color: #808080; padding-top: 35px;" class="parallax-section">
+	<div style="margin-left: 0px;" class="container">
 		<div class="row">
 
 			<div class="col-md-6" style="margin-bottom: 30px;">
-				<a class="txt" style="font-size:34px; color: white;">Solusi kami memberi Anda lebih <br>banyak informasi</a>
+			<h3 class="txt-white">Solusi kami memberi Anda lebih <br>banyak informasi</h3>
 					<br>
 					<div class="col-md-6" style=" margin-top:50px; margin-bottom: 30px;">
 						<img src="{{asset('images/p1.png')}}"><br><br>
@@ -94,9 +81,8 @@ color: #F4F4F4;">Tingkatkan efektifitas produk melalui Internet of Things</a>
 <section class="parallax-section" style="padding-bottom: 100px; padding-top: 100px;">
 	<div class="container">
 		<div style="text-align: center" class="row">			
-				<a class="tx5">Kami siap membantu Anda.</a><br><br>
+				<h3 class="tx5">Kami siap membantu Anda.</h3><br><br>
 				<a class="txt-sol">Hubungi Kami > </a>
-
 		</div>
 	</div>
 </section>

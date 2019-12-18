@@ -1,38 +1,9 @@
 @include('includes.header')
 
-<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-	<div class="container">
-
-		<!-- navbar header -->
-		<div class="navbar-header">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-			</button>
-			<a href="#" class="navbar-brand">Jeager</a>
-		</div>
-
-		<div class="collapse navbar-collapse">
-
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="homepage.html" class="smoothScroll">Beranda</a></li>
-				<li><a href="solustion-jeager.html" class="smoothScroll">Solusi Jeager</a></li>
-				<li><a href="#speakers" class="smoothScroll">Tentang Jeager</a></li>
-				<li><a href="#program" class="smoothScroll">Berita</a></li>
-				<li><a href="#register" class="smoothScroll">Bahasa Indonesia</a></li>
-			</ul>
-
-		</div>
-
-	</div>
-</div>
-
-
 <!-- SEC 1 -->
 <section class="parallax-section" style="padding-bottom: 100px; padding-top: 300px;">
 	<div class="container">
-		<div style="text-align: center; padding-right: 300px; padding-left: 300px;"  class="row">			
+		<div class="row-middle">			
 				<h1 class="header2">Jeager</h1>
 				<h3 class="txt1">Salah satu startup di Program Digital Amoeba, sebuah program inkubasi startup PT. Telkom Indonesia. </h3><br>
 				<a class="txt1">Jeager menciptakan solusi bagi Industri Manufaktur untuk meningkatkan produktivitas lantai produksi, dan siap bertransformasi di era Industry 4.0  </h3>
@@ -50,15 +21,17 @@
 
 
 <!-- SEC 3 -->
-<section class="parallax-section" style="padding-top: 100px;">
-	<div style="text-align: center; padding-right: 220px; padding-left: 220px;">
+<section class="parallax-section" style="padding-top: 100px; padding-bottom: 100px;">
+	<div style="text-align: center; width:70%; margin: auto;">
 		<h3 class="txt6">Platform analisis kami membantu Industri Manufaktur untuk menggunakan data dari lantai produksi dan mengubahnya menjadi “wawasan data” yang berguna bagi manajemen untuk meningkatkan kinerja produksi.</h3>
 	</div>
 </section>
 
 
+<div class="par-sec-2"></div>
+
 <!-- SEC 4 -->
-<section class="parallax-section" style="padding-top: 100px;">
+<section class="parallax-section" style="padding-top: 100px; text-align: center;">
 	<div class="container">
 	<h1 class="header2">Kenali bagaimana sistem kami bekerja.</h1><br><br>
 	<div class="col-md-4" style="left: 50px; text-align: center;">
@@ -101,9 +74,9 @@
 	<div class="container">
 		<div style="text-align: center;">			
 				<h3 class="tx5">Kunjungi Kami.</h3>
-				<h5 class="txt-grey-sol">Telkom Landmark Tower lt. 38.</h5>
-				<h5 class="txt-grey-sol">Jl. Gatot Subroto No. Kav. 52, Kuningan Barat,</h5>
-				<h5 class="txt-grey-sol">Mampang Prapatan, Kota Jakarta Selatan, DKI Jakarta</h5>	
+				<h7 class="txt-grey-sol">Telkom Landmark Tower lt. 38.</h7><br>
+				<h7 class="txt-grey-sol">Jl. Gatot Subroto No. Kav. 52, Kuningan Barat,</h7><br>
+				<h7 class="txt-grey-sol">Mampang Prapatan, Kota Jakarta Selatan, DKI Jakarta</h7>	
 		</div>
 	</div>
 </section>

@@ -46,10 +46,9 @@
 				
 			<div class="col-md-4" style="padding-top: 300px; left: 80px;">
 				<h3 class="txt1" style="color: black; text-align: left;">OEE Monitoring System.</h3>
-				<h4 class="txt-grey" >Sistem yang menampilkan nilai OEE</h4><br>
-				<h4 class="txt-grey"><i>real-time</i> dalam Industri Manufaktur</h4>
+				<h7 class="txt-grey" >Sistem yang menampilkan nilai OEE</h4><br><i>real-time</i> dalam Industri Manufaktur</h7>
 				<br><br>
-				<a class="txt5" >Lihat lebih lanjut > </a>
+				<a class="txt5" href="{{route('solution.oee')}}" >Lihat lebih lanjut > </a>
 			</div>
 					
 			<div class="col-md-8">
@@ -71,8 +70,7 @@
 					
 			<div class="col-md-8" style="left: 100px; top: 350px;">
 				<h3 class="txt1" style="color: black; text-align: left;">Enviroment Monitoring System.</h3>
-				<h4 class="txt-grey" >Sistem monitoring lingkungan untuk menginformasikan</h4><br>
-				<h4 class="txt-grey" ><i>real-condition </i>dari area yang di tentukan</h4>
+				<h7 class="txt-grey" >Sistem monitoring lingkungan untuk menginformasikan</h4><br><i>real-condition </i>dari area yang di tentukan</h7>
 				<br><br>
 				<a class="txt5" >Lihat lebih lanjut > </a>
 			</div>

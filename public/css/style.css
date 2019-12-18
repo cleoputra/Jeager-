@@ -1,8 +1,124 @@
-/*
 
-*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .parallax-section{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+.txt-white{
+font-style: bold;
+font-size: 22px !important;
+line-height: 26px !important;
+display: flex;
+align-items: center;
+text-align: center;
+}
+.txt-grey{
+font-style: normal;
+font-weight: normal;
+font-size: 16px !important;
+line-height: 19px !important;
+color: #808080;
+}
+  .txt1{
+        font-size: 16px !important;
+line-height: 19px !important;
+font-style: normal;
+font-weight: normal;
+  }
+  .txt2{
+    font-weight: bold;
+font-size: 22px !important;
+line-height: 26px !important;
+display: flex;
+align-items: center;
+  }
+
+  .txt5{
+    font-size: 16px !important;
+line-height: 19px !important;
+font-style: normal;
+font-weight: normal;
+  }
+
+    .txt6 {
+   font-size: 16px !important;
+line-height: 19px !important;
+font-style: bold;
+font-weight: normal;
+text-align: center;
+}
+
+  .txt2-home{
+    font-weight: bold;
+font-size: 22px !important;
+line-height: 26px !important;
+text-align: left;
+  }
+
+  .tx5{
+font-size: 22px !important;
+line-height: 26px !important;
+  }
+
+
+  iframe{
+    width: 348px;
+    height: 194px;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*WEBSITE*/
+.row-middle{
+  width: 55%;
+  margin:auto;
+  text-align: center;
+}
+
+.txt-ems-h{
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+color: #102F4A;
+}
+
+.txt-ems{
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #102F4A;
+}
+
+.txt-sol-white{
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+align-items: center;
+text-align: center;
+padding-left: 330px;
+padding-right: 330px;
+color: #FFFFFF;
+}
+.txt-sol{
+  font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+align-items: center;
+text-align: center;
+}
+
 .txt-grey-small{
-font-family: Roboto;
 font-style: italic;
 font-weight: normal;
 font-size: 16px;
@@ -10,25 +126,8 @@ line-height: 19px;
 color: #808080;
 }
 
-.header1{
-  position: fixed;
-left: 21.26%;
-right: 21.19%;
-top: 12.28%;
-/* Headline 2, 42 / Bold */
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 42px;
-line-height: 49px;
-text-align: center;
-
-/* White / 1 */
-color: #FFFFFF;
-}
 
 .header2{
-  font-family: Roboto;
   font-size: 42px; 
   line-height: 49px;  
   font-weight: bold; 
@@ -36,7 +135,7 @@ color: #FFFFFF;
 }
 
 .tx-sol{
-    font-family: Roboto;
+    
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
@@ -44,73 +143,60 @@ line-height: 23px;
 }
 
 .txt-grey{
-      font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 23px;
-position: absolute;
 color: #808080;
+
 }
 
+
 .txt-grey-sol{
-       font-family: Roboto;
-font-style: normal;
-font-weight: normal;
 font-size: 20px;
-line-height: 0px;
 color: #808080; 
 }
 
-  .txt{
-    font-family: Roboto;
+  .txt-white{
 font-style: normal;
 font-weight: normal;
+font-size: 34px;
+color: white;
   }
+
+  /*txt1==txt5*/
   .txt1{
 
-font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 23px;
-text-align: center;
 color: black;
   }
   .txt2{
-font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 34px;
 line-height: 40px;
 color: black;
-position: absolute;
-top: calc(50% - 80px/2 + 150px);
-display: flex;
   }
-
-  .txt3{
-    font-family: Roboto;
+  .txt2-home{
+padding-top: 120px; padding-left: 90px; 
 font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-position: absolute;
-top: calc(50% - 80px/2 + 250px);
-color: #808080;
+font-weight: bold;
+font-size: 34px;
+line-height: 40px;
+color: black;
   }
 
   .txt5{
-    font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 23px;
-position: absolute;
   }
 
   .txt6 {
-    font-family: Roboto;
     font-weight: bold;
 font-size: 28px;
 line-height: 33px;
@@ -137,23 +223,17 @@ color: black;
 
 .img-center{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+      margin-left: auto;
+      margin-right: auto;
+  }
 
 .tx5{
-    color: black; 
-    font-family: Roboto;
-font-style: normal;
 font-weight: bold;
 font-size: 34px;
 line-height: 40px;
   }
 
-body {
-		background: #ffffff;
-    
-}
+
 
 
 /*---------------------------------------
@@ -279,20 +359,40 @@ footer {
 .parallax-section {
   background-attachment: fixed !important;
   background-size: cover !important;
+  overflow-x: hidden;
+
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 .par-sec-1 {
-
   /* The image used */
   background-image: url('../images/h1.png');
   
 
   /* Create the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 75%;
-  padding-top: 850px;
+  padding-top: 650px;
   background-color: #102F4A;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.par-sec-2 {
+  /* The image used */
+  background-image: url('../images/h7.jpg');
+  
+
+  /* Create the parallax scrolling effect */
+  padding-top: 650px;
+  background-color: #102F4A;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -839,7 +939,7 @@ footer {
 
   .custom-navbar .nav li a {
     font-size: 11px;
-	line-height: 20px;
+  line-height: 20px;
   }
 
   #intro { height: 65vh; }
