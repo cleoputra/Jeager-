@@ -25,7 +25,7 @@
 				<li><a style="color: white;" href="{{route('solution.Jeager')}}" >Solusi Jeager</a></li>
 				<li><a style="color: white;" href="{{route('about.Jeager')}}" >Tentang Jeager</a></li>
 				<li><a style="color: white;" href="#" >Berita</a></li>
-				<li><a style="color: white;"><img src="{{asset('images/Indonesia.png')}}"> Bahasa Indonesia</a></li>
+				<li><a style="color: white;"><img class="subs-w" src="{{asset('images/Indonesia.png')}}"> Bahasa Indonesia</a></li>
 			</ul>
 
 		</div>
