@@ -1,241 +1,4 @@
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .parallax-section{
-    padding-top: 50px;
-    padding-bottom: 30px;
-  }
-.txt-white{
-font-style: bold;
-font-size: 22px !important;
-line-height: 26px !important;
-display: flex;
-align-items: center;
-text-align: center;
-}
-.txt-grey{
-font-style: normal;
-font-weight: normal;
-font-size: 16px !important;
-line-height: 19px !important;
-color: #808080;
-}
-  .txt1{
-        font-size: 16px !important;
-line-height: 19px !important;
-font-style: normal;
-font-weight: normal;
-  }
-  .txt2{
-    font-weight: bold;
-font-size: 22px !important;
-line-height: 26px !important;
-display: flex;
-align-items: center;
-  }
-
-  .txt5{
-    font-size: 16px !important;
-line-height: 19px !important;
-font-style: normal;
-font-weight: normal;
-  }
-
-    .txt6 {
-   font-size: 16px !important;
-line-height: 19px !important;
-font-style: bold;
-font-weight: normal;
-text-align: center;
-}
-
-  .txt2-home{
-    font-weight: bold;
-font-size: 22px !important;
-line-height: 26px !important;
-text-align: left;
-  }
-
-  .tx5{
-font-size: 22px !important;
-line-height: 26px !important;
-  }
-
-
-  iframe{
-    width: 348px;
-    height: 194px;
-  }
-
-  img{
-    width: 100%;
-    height: auto;
-  }
-}
-
-/*WEBSITE*/
-.row-middle{
-  width: 55%;
-  margin:auto;
-  text-align: center;
-}
-
-.txt-ems-h{
-font-weight: bold;
-font-size: 28px;
-line-height: 33px;
-color: #102F4A;
-}
-
-.txt-ems{
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-color: #102F4A;
-}
-
-.txt-sol-white{
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-align-items: center;
-text-align: center;
-padding-left: 330px;
-padding-right: 330px;
-color: #FFFFFF;
-}
-.txt-sol{
-  font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-align-items: center;
-text-align: center;
-}
-
-.txt-grey-small{
-font-style: italic;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-color: #808080;
-}
-
-
-.header2{
-  font-size: 42px; 
-  line-height: 49px;  
-  font-weight: bold; 
-  color: black;
-}
-
-.tx-sol{
-    
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-}
-
-.txt-grey{
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-color: #808080;
-
-}
-
-
-.txt-grey-sol{
-font-size: 20px;
-color: #808080; 
-}
-
-  .txt-white{
-font-style: normal;
-font-weight: normal;
-font-size: 34px;
-color: white;
-  }
-
-  /*txt1==txt5*/
-  .txt1{
-
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-color: black;
-  }
-  .txt2{
-font-style: normal;
-font-weight: bold;
-font-size: 34px;
-line-height: 40px;
-color: black;
-  }
-  .txt2-home{
-padding-top: 120px; padding-left: 90px; 
-font-style: normal;
-font-weight: bold;
-font-size: 34px;
-line-height: 40px;
-color: black;
-  }
-
-  .txt5{
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-  }
-
-  .txt6 {
-    font-weight: bold;
-font-size: 28px;
-line-height: 33px;
-text-align: center;
-color: black;
-}
-  .txt6-white {
-    font-family: Roboto;
-    font-weight: bold;
-font-size: 28px;
-line-height: 33px;
-text-align: center;
-color: white;
-}
-
-  .txt6-left{
-      font-family: Roboto;
-    font-weight: bold;
-font-size: 28px;
-line-height: 33px;
-text-align: left;
-color: black;   
-  }
-
-.img-center{
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-.tx5{
-font-weight: bold;
-font-size: 34px;
-line-height: 40px;
-  }
-
-
-
-
 /*---------------------------------------
     Typorgraphy              
 -----------------------------------------*/
@@ -296,8 +59,8 @@ a {
 #program,
 #sponsors, 
 #contact, footer {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #detail,
@@ -365,26 +128,42 @@ footer {
   padding-bottom: 50px;
 }
 
+.parallax-section-oee {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  overflow-x: hidden;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.parallax-section-blank {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  overflow-x: hidden;
+
+  padding-top: 300px;
+  padding-bottom: 50px;
+}
+
+
 .par-sec-1 {
   /* The image used */
   background-image: url('../images/h1.png');
-  
 
   /* Create the parallax scrolling effect */
-  padding-top: 650px;
+  padding-top: 750px;
   background-color: #102F4A;
 
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
-
 
 
 .par-sec-2 {
   /* The image used */
   background-image: url('../images/h7.jpg');
-  
 
   /* Create the parallax scrolling effect */
   padding-top: 650px;
@@ -395,6 +174,41 @@ footer {
   background-size: cover;
 }
 
+.par-sec-3 {
+  /* The image used */
+  background-image: url('../images/o1.png');
+
+  /* Create the parallax scrolling effect */
+  padding-top: 750px;
+  background-color: #102F4A;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.par-sec-4 {
+  /* The image used */
+  background-image: url('../images/e1.png');
+
+  /* Create the parallax scrolling effect */
+  padding-top: 1110px;
+  background-color: #102F4A;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.par-sec-about{
+  /* The image used */
+  background-image: url('../images/about-web.png');
+
+  /* Create the parallax scrolling effect */
+  padding-top: 1550px;
+
+  background-attachment: absolute;
+  background-position: center;
+  background-size: cover;
+}
 
 
 /*---------------------------------------
@@ -449,19 +263,17 @@ footer {
     Navigation Links section              
 -----------------------------------------*/
 .custom-navbar {
-    margin-bottom: 0;
-    background-color: #101010;
+    margin-bottom: 0px;
+    background-color: white;
 }
 
 .custom-navbar .navbar-brand {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 40px;
+    padding-left: 180px;
 }
 
 .custom-navbar .nav li a {
-    color: #ddd;
+    color: black;
+    opacity: 100%;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -469,6 +281,7 @@ footer {
     line-height: 40px;
     transition: all 0.4s ease-in-out;
 }
+
 
 .custom-navbar .nav li a:hover {
     background: transparent;
@@ -492,10 +305,11 @@ footer {
 
 .custom-navbar .navbar-toggle {
     background-color: transparent;
+    margin-top: 20px;
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #ffffff;
+    background: black;
     border-color: transparent;
 }
 
@@ -503,12 +317,12 @@ footer {
     .custom-navbar {
         padding: 20px 0;
         border-bottom: 0;
-        background: 0 0; 
+        background: 0 0;
     }
     .custom-navbar.top-nav-collapse {
         background: #101010;
         padding: 0;
-        opacity: 30%;
+        opacity: 0%;
     }
 
 }
@@ -907,20 +721,20 @@ footer {
 }
 
 .social-icon li a {
-    color: #666;
+    color: white;
     border-radius: 100px;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     line-height: 50px;
     text-align: center;
     vertical-align: middle;
 }
 
 .social-icon li a:hover {
-    background: #f2545f;
+    background: ;
     color: #ffffff;
 }
 
@@ -931,7 +745,7 @@ footer {
 -----------------------------------------*/
 @media (max-width: 980px) {
 
-  p {font-size: 13px;}
+p {font-size: 13px;}
 
   .custom-navbar .navbar-brand {
     font-size: 2rem;

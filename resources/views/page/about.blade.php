@@ -1,7 +1,7 @@
 @include('includes.header')
 
 <!-- SEC 1 -->
-<section class="parallax-section" style="padding-bottom: 100px; padding-top: 300px;">
+<section class="parallax-section-blank">
 	<div class="container">
 		<div class="row-middle">			
 				<h1 class="header2">Jeager</h1>
@@ -31,43 +31,7 @@
 <div class="par-sec-2"></div>
 
 <!-- SEC 4 -->
-<section class="parallax-section" style="padding-top: 100px; text-align: center;">
-	<div class="container">
-	<h1 class="header2">Kenali bagaimana sistem kami bekerja.</h1><br><br>
-	<div class="col-md-4" style="left: 50px; text-align: center;">
-		<div style="margin-top: 50px;">
-			<h5 class="txt1"><b>Connect</b></h5>
-			<h5 class="txt-grey">Memasang sensor IoT pada setiap mesin produksi untuk membaca dan mencatat kinerja mesin.</h5>
-		</div>
-
-		<div style="margin-top: 420px;">
-			<h5 class="txt1"><b>Analyze</b></h5>
-			<h5 class="txt-grey">Data yang terkumpul akan dianalisis secara otomatis dan tersimpan secara historis.</h5>
-		</div>
-
-		<div style="margin-top: 390px;">
-			<h5 class="txt1"><b>Act</b></h5>
-			<h5 class="txt-grey">Visualisasi data dapat membantu Manajemen untuk meningkatkan peforma produksi dan menciptakan lingkungan produksi yang lebih baik.</h5>
-		</div>
-	</div>
-	
-	<div class="col-md-4">
-		<img class="img-center" src="images/h6.png">
-	</div>
-	
-	<div class="col-md-4" style="text-align: center; right: 70px;">
-		<div style="margin-top: 280px;">
-			<h5 class="txt1"><b>Collect</b></h5>
-			<h5 class="txt-grey">Data akan dikumpul pada cloud database Jeager dengan tingkat keamanan yang tinggi.</h5>
-		</div>
-
-		<div style="margin-top: 420px;">
-			<h5 class="txt1"><b>Visualize</b></h5>
-			<h5 class="txt-grey">Data yang telah dianalisis, ditampilkan secara visual untuk membantu proses analisis data.</h5>
-		</div>
-	</div>
-</div>
-</section>
+<div class="par-sec-about"></div>
 
 <!-- SEC 6 -->
 <section class="parallax-section" style="padding-top: 120px;">
@@ -88,15 +52,5 @@
 	</div>
 </section>
 
-<!-- SEC 8 -->
-<section class="parallax-section" style="padding-top: 120px;">
-	<div class="container">
-		<div style="text-align: center" class="row">			
-				<h3 class="tx5">Kami siap membantu Anda.</h3>
-				<a class="txt-sol">Hubungi Kami > </a>
-
-		</div>
-	</div>
-</section>
 
 @include('includes.footer')

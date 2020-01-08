@@ -1,0 +1,526 @@
+html, body {width: auto!important; overflow-x: hidden!important}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .custom-navbar .navbar-brand {
+    padding-left: 25px !important;
+  } 
+
+  .none{
+    display: none !important;
+  }
+
+  .custom-navbar-h {
+    background-color: #102F4A !important;
+  }
+  .par-sec-1{
+  background-image: url('../images/h1-mobile.png') !important;
+  }
+  .par-sec-2{
+  background-image: url('../images/h7-mobile.png') !important;
+  }
+  .par-sec-3 {
+  /* The image used */
+  background-image: url('../images/o1-mobile.png') !important;
+  }
+  .par-sec-4{
+  background-image: url('../images/e1-mobile.png') !important;    
+  }
+  .par-sec-about{
+  background-image: url('../images/about-mob.png') !important; 
+  padding-top: 646px !important;
+  margin-top: 100px !important;
+  }
+
+  .parallax-section{
+    padding-top: 50px !important;
+    padding-bottom: 30px !important ;
+  }
+
+  .parallax-section-blank{
+    padding-top: 150px !important;
+    padding-bottom: 30px !important ;
+  }
+  .row-middle{
+      width: 90% !important;
+  margin:auto !important;
+
+  }
+
+/*TEXT*/
+  .header2{
+font-size: 34px !important;
+line-height: 40px !important;
+text-align: center !important;
+  }
+
+.txt-white{
+font-style: bold;
+font-size: 22px !important;
+line-height: 26px !important;
+display: flex;
+align-items: center;
+text-align: center;
+}
+.txt-white-s{
+  font-size: 16px !important;
+line-height: 19px !important;
+text-align: center !important;
+color: white;
+font-weight: normal;
+}
+.txt-grey{
+font-size: 16px !important;
+line-height: 19px !important;
+color: #808080;
+}
+  .txt1{
+font-size: 16px !important;
+line-height: 19px !important;
+font-style: normal;
+font-weight: normal;
+  }
+  .txt2{
+padding-top: 30px !important;
+font-size: 22px !important;
+line-height: 26px !important;
+  }
+
+  .txt5{
+    font-size: 16px !important;
+line-height: 19px !important;
+font-style: normal;
+font-weight: normal;
+  }
+
+    .txt6 {
+   font-size: 16px !important;
+line-height: 19px !important;
+font-style: bold;
+font-weight: normal;
+text-align: center;
+}
+
+  .txt2-home{
+    font-weight: bold;
+font-size: 22px !important;
+line-height: 26px !important;
+text-align: left !important;
+padding-left: 0px !important;
+padding-top: 30px !important;
+  }
+
+  .tx5{
+font-size: 22px !important;
+line-height: 26px !important;
+  }
+
+   .txt6-white {
+font-size: 20px !important;
+line-height: 23px !important;
+}
+
+  .txt6-head{
+   font-size: 20px !important;
+line-height: 23px !important; 
+  }
+
+.txt6-left{
+   font-size: 20px !important;
+line-height: 23px !important; 
+}
+
+  .txt-sol-white{
+    font-size: 14px !important;
+    width: 100% !important;
+}
+
+  .txt-grey-sol{
+font-size: 16px !important;
+line-height: 19px !important; 
+}
+
+line-height{ 16px !important;
+width: 100% !important;
+}
+  .txt-sol{
+    width: 100% !important; 
+  }
+
+  iframe{
+    width: 100%;
+    height: 194px;
+  }
+
+/*IMG MOBILE*/
+  img{
+    width: 100% ;
+    height: auto ;
+  }
+
+  .petik{
+    width: 40px;
+    height: 35px;
+  }
+
+
+  .zig-zag-oee{
+    left: 0px !important;
+    padding-top: 10px !important;
+
+  }
+
+  .zig-zag{
+    left: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  .zig-zag-2{
+  left: 0px !important; 
+  top: 0px !important;
+  }
+
+  .section-ems-1{
+  padding-left: 20px !important; 
+  padding-top: 30px !important;
+  padding-right: 50px !important;
+  }
+
+  .section-ems-2{
+  padding-left: 20px !important; 
+  padding-top: 30px !important;
+  padding-right: 50px !important;
+  }
+
+  .parallax-section-ems{
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  padding-left: 0px !important;
+  }
+
+  .img-sol{
+    width: 215px !important;
+    height: 392px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+
+  .img-h-1{
+    width: 167px !important;
+    height: 128px !important;
+    display: block !important;
+   margin-left: auto !important;
+    margin-right: auto !important; 
+  }
+ 
+  .img-h-2{
+    width: 211px !important;
+    height: 62px !important;
+    display: block !important;
+   margin-left: auto !important;
+    margin-right: auto !important; 
+  }
+
+  .img-h-3{
+    width: 166px !important;
+    height: 128px !important;
+    display: block !important;
+   margin-left: auto !important;
+    margin-right: auto !important; 
+  }
+
+  .img-h-4{
+    width: 166px !important;
+    height: 128px !important;
+    display: block !important;
+   margin-left: auto !important;
+    margin-right: auto !important; 
+  }
+
+.subs{
+  padding-top: 8px !important;
+  width: auto !important;
+  height: 40px !important;
+  }
+
+  #ip2{
+    width: 300px !important;
+  }
+
+  .logo_Jeager{
+  width: 144px !important ;
+  height: 58px !important;
+  margin: 30px !important;
+  }
+
+  .left-nul{
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  .margin-min{
+    margin-bottom: 30px !important;
+  }
+
+}
+
+/*WEBSITE*/
+
+.parallax-section-ems {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  overflow-x: hidden;
+
+  padding-top: 120px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+.section-ems-1{
+  text-align: left; 
+  padding-left: 210px; 
+  padding-top: 150px;
+}
+.section-ems-2{
+  text-align: left; 
+  padding-top: 180px; 
+  padding-right: 200px;
+}
+
+.zig-zag-oee{
+  left: 80px;
+  padding-top: 0px;
+  padding-top: 300px;
+}
+
+.zig-zag{
+  left: 80px;
+  padding-top: 0px;
+}
+
+.zig-zag-2{
+  left: 100px; 
+  top: 275px;
+}
+
+.row-middle{
+  width: 55%;
+  margin:auto;
+  text-align: center;
+}
+
+.sol-grey{
+  font-size: 12px; 
+  color: #808080;
+  font-weight: normal;
+}
+
+.txt-ems-h{
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+color: #102F4A;
+}
+
+.txt-ems{
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #102F4A;
+}
+
+.txt-sol-white{
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+margin: auto;
+width: 50%;
+color: #FFFFFF;
+}
+.txt-sol{
+  font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+margin: auto;
+width: 40%;
+text-align: center;
+}
+
+.txt-grey-small{
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #808080;
+}
+
+
+.header2{
+  font-size: 42px; 
+  line-height: 49px;  
+  font-weight: bold; 
+  color: black;
+}
+
+.tx-sol{
+    
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+}
+
+.txt-grey{
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+color: #808080;
+
+}
+
+
+.txt-grey-sol{
+font-size: 20px;
+color: #808080; 
+}
+
+  .txt-white{
+font-style: bold;
+font-weight: bold;
+font-size: 34px;
+color: white;
+  }
+
+  .txt-white-s{
+    font-weight: normal;
+    color: white; 
+    font-size: 20px;
+  }
+
+  /*txt1==txt5*/
+  .txt1{
+
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+color: black;
+  }
+  .txt2{
+font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 40px;
+color: black;
+  }
+  .txt2-home{
+padding-top: 120px; 
+padding-left: 90px; 
+font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 40px;
+color: black;
+  }
+
+  .txt5{
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+  }
+
+  .txt6 {
+    font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+color: black;
+}
+  .txt6-head {
+    font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+color: black;
+}
+  .txt6-white {
+    font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+color: white;
+}
+
+  .txt6-left{
+    font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+text-align: left;
+color: black;   
+  }
+
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.tx5{
+font-weight: bold;
+font-size: 34px;
+line-height: 40px;
+color: black;
+  }
+
+.ft_text{
+font-size: 12px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+
+.brm{
+  display: block;
+  margin-bottom: 4.5em;
+}
+
+.brs{
+  display: block;
+  margin-bottom: -0.5em;
+}
+
+
+#ip2 {
+    border-radius: 10px;
+    border: 2px white;
+    padding: 5px;
+    width: 167px;
+    height: 26px;    
+    color: black;
+}
+
+hr{
+  display: block;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color: white;"
+}
+
+.logo_Jeager{
+  width: ;
+  height: ;
+}

@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/owl.theme.css')}}">
 <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
+<link rel="stylesheet" href="{{asset('css/jeager.style.css')}}">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
 
 <!-- Main css -->
@@ -35,22 +36,21 @@
 
 		<!-- navbar header -->
 		<div class="navbar-header">
+			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-1.png')}}"></a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand">Jeager</a>
 		</div>
-
 		<div class="collapse navbar-collapse">
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="{{route('home.Jeager')}}" class="smoothScroll">Beranda</a></li>
-				<li><a href="{{route('solution.Jeager')}}" class="smoothScroll">Solusi Jeager</a></li>
-				<li><a href="{{route('about.Jeager')}}" class="smoothScroll">Tentang Jeager</a></li>
-				<li><a href="#program" class="smoothScroll">Berita</a></li>
-				<li><a href="#register" class="smoothScroll">Bahasa Indonesia</a></li>
+				<li><a href="{{route('home.Jeager')}}" >Beranda</a></li>
+				<li><a href="{{route('solution.Jeager')}}" >Solusi Jeager</a></li>
+				<li><a href="{{route('about.Jeager')}}" >Tentang Jeager</a></li>
+				<li><a href="{{route('solution.oee')}}" >Berita</a></li>
+				<li><a href="{{route('solution.ems')}}" >Bahasa Indonesia</a></li>
 			</ul>
 
 		</div>
