@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Website Jeager</title>
 <meta name="description" content="">
 <meta name="author" content="">
 <meta charset="UTF-8">
@@ -25,6 +24,7 @@
 
 </head>
 
+<title>Website Jeager</title>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
 
@@ -33,16 +33,16 @@
 <!-- =========================
      NAVIGATION LINKS     
 ============================== -->
-<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+<div class="navbar navbar-fixed-top custom-navbar bluez" role="navigation">
 	<div class="container">
 
 		<!-- navbar header -->
 		<div class="navbar-header">
 			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-2.png')}}"></a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar white"></span>
+				<span class="icon icon-bar white"></span>
+				<span class="icon icon-bar white"></span>
 			</button>
 		</div>
 		<div class="collapse navbar-collapse">
@@ -65,7 +65,7 @@
 <div class="par-sec-1"></div>
 	
 
-<section class="parallax-section" style="border-radius: 25px;">
+<section class="parallax-section" style="">
 	<div class="container">
 		<div class="row">
 		<div class="wow col-md-6" >

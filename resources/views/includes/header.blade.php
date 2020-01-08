@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Website Jeager</title>
 <meta name="description" content="">
 <meta name="author" content="">
 <meta charset="UTF-8">
@@ -25,6 +24,7 @@
 
 </head>
 
+<title>Website Jeager</title>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
 

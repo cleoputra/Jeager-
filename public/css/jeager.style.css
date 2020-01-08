@@ -15,6 +15,11 @@ html, body {width: auto!important; overflow-x: hidden!important}
     display: none !important;
   }
 
+  .content-50{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
   .custom-navbar-h {
     background-color: #102F4A !important;
   }
@@ -50,6 +55,27 @@ html, body {width: auto!important; overflow-x: hidden!important}
       width: 90% !important;
   margin:auto !important;
 
+  }
+
+ /*mobile header background*/
+  .greyz{
+   background-color: #EEEEEE !important;
+  }
+  .bluez{
+    background-color: #102F4A !important;
+  }
+
+  .center-mobile{
+    text-align: center !important;
+  }
+
+  .icon-footer{
+    width: 11px !important;
+    height: 16px !important;
+  }
+
+  .cont-full{
+    width: 100% !important;
   }
 
 /*TEXT*/
@@ -243,11 +269,16 @@ width: 100% !important;
     margin-right: auto !important; 
   }
 
-.subs{
-  padding-top: 8px !important;
-  width: auto !important;
-  height: 40px !important;
+.subs-w{
+  display: none !important;
+
   }
+.subs-m{
+  display: inline !important; 
+  margin: 10px !important;
+  height: 30px !important;
+  width: 300px !important;
+}
 
   #ip2{
     width: 300px !important;
@@ -520,7 +551,10 @@ hr{
   color: white;"
 }
 
-.logo_Jeager{
-  width: ;
-  height: ;
+.white{
+  background-color: white !important;
+}
+
+.subs-m{
+  display: none;
 }

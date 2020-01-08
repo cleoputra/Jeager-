@@ -27,12 +27,13 @@
 			</div>
 
  			<div class="col-md-5" align="left" style="padding-top: 20px; ">
-				<div class="row" style="">
+				<div class="row center-mobile">
 				<h7 class="ft_text"><b>Biarkan kami memberi lebih banyak informasi.<br class="brs">Subscribe sekarang.</b></h7>
 				</div>
-				<div class="row">
+				<div class="row center-mobile">
 					<input type="email" name="" placeholder="E-mail" id="ip2"/>
-					<a href=""><img class="subs" src="{{asset('images/b-foot.png')}}"></a>
+					<a href=""><img class="subs-w" src="{{asset('images/b-foot.png')}}"></a>
+					<a href=""><img class="subs-m" src="{{asset('images/b-foot-m.png')}}"></a>
 				</div>
 				<br class="brm">
 				
@@ -51,7 +52,7 @@
 				<div class="row">
 					<div class="col-md-1" style="padding-left: 0px;">
 						<ul class="social-icon">
-							<li><a href="#" class="fa fa-map-marker wow"  ></a></li>
+							<li><a class="fa fa-map-marker wow"></a></li>
 						</ul>
 					</div>
 					<div class="col-md-11" style="padding-top: 10px; padding-left: 0px;">
@@ -60,7 +61,7 @@
 				</div>
 			</div>
 	</div>
-	<div class="container" style="width: 75%;" align="left">
+	<div class="container cont-full" style="width: 75%;" align="left">
 	<hr>	
 		<h9 class="ft_text">Copyright &#169 2017 Jeager Manufacturing Solution &#8226 Term &#8226 Privacy &#8226 Security &#8226</h9>
 	</div>

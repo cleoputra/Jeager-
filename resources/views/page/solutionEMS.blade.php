@@ -19,7 +19,7 @@
 <section class="parallax-section" >
 	<div class="row">
 	<div class="col-md-12" style="text-align: center;">
-		<h7 class="txt6"><img src="{{asset('images/e2.png')}}" align="left">Membantu Industri Manufaktur untuk melakukan <br>condition-based monitoring dengan lebih mudah.<img align="right" src="{{asset('images/e3.png')}}"></h7>
+		<h7 class="txt6"><!-- <img src="{{asset('images/e2.png')}}" align="left"> -->Membantu Industri Manufaktur untuk melakukan <br>condition-based monitoring dengan lebih mudah.<!-- <img align="right" src="{{asset('images/e3.png')}}"> --></h7>
 	</div>
 </div>
 </section>
