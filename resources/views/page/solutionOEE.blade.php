@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Website Jeager</title>
-<meta name="description" content="">
-<meta name="author" content="">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, initial-scale= 1">
+@include('includes.header')
 
-
-<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-<link rel="stylesheet" href="{{asset('css/animate.css')}}">
-<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
-<link rel="stylesheet" href="{{asset('css/owl.theme.css')}}">
-<link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
-<link rel="stylesheet" href="{{asset('css/jeager.style.css')}}">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
-
-<!-- Main css -->
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Google Font -->
-<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
-
-</head>
-
+<title>Jeager - Industrial Internet of Things</title>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
 
@@ -50,7 +26,7 @@
 				<li><a href="{{route('solution.Jeager')}}" >Solusi Jeager</a></li>
 				<li><a href="{{route('about.Jeager')}}" >Tentang Jeager</a></li>
 				<li><a href="{{route('solution.oee')}}" >Berita</a></li>
-				<li><a href="{{route('solution.ems')}}" >Bahasa Indonesia</a></li>
+				<li> <a><img src="{{asset('images/Indonesia.png')}}"> Bahasa Indonesia</li>
 			</ul>
 
 		</div>

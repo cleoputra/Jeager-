@@ -1,5 +1,39 @@
 @include('includes.header')
 
+<title>Jeager - Industrial Internet of Things</title>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+
+<!-- =========================
+     NAVIGATION LINKS     
+============================== -->
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-1.png')}}"></a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse">
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{{route('home.Jeager')}}" >Beranda</a></li>
+				<li><a href="{{route('solution.Jeager')}}" >Solusi Jeager</a></li>
+				<li><a href="{{route('about.Jeager')}}" >Tentang Jeager</a></li>
+				<li><a href="#" >Berita</a></li>
+				<li> <a><img src="{{asset('images/Indonesia.png')}}"> Bahasa Indonesia</li>
+			</ul>
+
+		</div>
+
+	</div>
+</div>
+
 <!-- SEC 1 -->
 <section class="parallax-section-blank">
 	<div class="container">
