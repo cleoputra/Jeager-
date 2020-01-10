@@ -38,7 +38,7 @@
 <div class="par-sec-1"></div>
 	
 
-<section class="parallax-section" style="">
+<section class="parallax-section">
 	<div class="container">
 		<div class="row">
 		<div class="wow col-md-6" >
