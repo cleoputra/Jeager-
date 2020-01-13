@@ -149,7 +149,7 @@ footer {
 
 .par-sec-1 {
   /* The image used */
-  background-image: url('../images/h1.png');
+  background-image: url('../images/h1.svg');
 
   /* Create the parallax scrolling effect */
   padding-top: 750px;
@@ -183,7 +183,8 @@ footer {
   background-color: #102F4A;
 
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .par-sec-4 {
@@ -200,14 +201,15 @@ footer {
 
 .par-sec-about{
   /* The image used */
-  background-image: url('../images/about-web.png');
+  background-image: url('../images/about-web.svg');
 
   /* Create the parallax scrolling effect */
   padding-top: 1550px;
 
   background-attachment: absolute;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
@@ -375,7 +377,7 @@ footer {
 
 #detail .fa {
   color: #f2545f;
-  font-size: 48px;
+  font-size: 48px;x`
 }
 
 
@@ -837,7 +839,7 @@ p {font-size: 13px;}
 }
 
 .choice_item .choice_text h4:hover {
-  color: #ff1857;
+  color: #2D6DA4;;
 }
 
 .choice_item .choice_text p {

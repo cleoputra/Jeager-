@@ -12,7 +12,7 @@
 
 		<!-- navbar header -->
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-1.png')}}"></a>
+			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-1.svg')}}"></a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
@@ -49,7 +49,7 @@
 <!-- SEC 2 -->
 <section class="parallax-section">
 	<div>
-		<img class="img-center" src="images/h5.png">
+		<img class="img-center" src="{{asset('images/h5.svg')}}">
 	</div>
 </section>
 

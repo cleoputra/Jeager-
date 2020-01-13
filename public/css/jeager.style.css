@@ -11,8 +11,13 @@ html, body {width: auto!important; overflow-x: hidden!important}
     padding-left: 25px !important;
   } 
 
+/*NONE*/
   .none{
     display: none !important;
+  }
+
+  .left-none{
+    padding-left: 0px !important;  
   }
 
   .content-50{
@@ -40,6 +45,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
   background-image: url('../images/about-mob.png') !important; 
   padding-top: 646px !important;
   margin-top: 100px !important;
+
   }
 
   .parallax-section{
@@ -299,6 +305,9 @@ width: 100% !important;
     margin-bottom: 30px !important;
   }
 
+  .flex-mob{
+    width: 14% !important;
+  }
 }
 
 /*WEBSITE*/
@@ -519,6 +528,9 @@ line-height: 24px;
 color: #FFFFFF;
 }
 
+.ft_text:hover{
+  color: #FFFFFF;
+  }
 
 .brm{
   display: block;
@@ -558,3 +570,19 @@ hr{
 .subs-m{
   display: none;
 }
+
+.petik-ems{
+  font-size: 72px; font-family: Times New Roman; color: #2D6DA4; opacity: 0.2;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-center{
+  display: flex; 
+  justify-content: center;
+}
+
+
+

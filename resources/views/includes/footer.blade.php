@@ -11,7 +11,7 @@
 	<div class="container">
 	
 			<div class="col-md-4 left-nul" style="padding-left: 78px;">
-				<img class="logo_Jeager" align="" src="{{asset('images/logo_footer.png')}}">
+				<img class="logo_Jeager" align="" src="{{asset('images/logo_footer.svg')}}">
 			</div>
 
 			<div class="col-md-3 left-nul" align="left" style="padding-left: 70px; padding-top: 20px;">
@@ -32,7 +32,7 @@
 				</div>
 				<div class="row center-mobile">
 					<input type="email" name="" placeholder="E-mail" id="ip2"/>
-					<a href=""><img class="subs-w" src="{{asset('images/b-foot.png')}}"></a>
+					<a href=""><img class="subs-w" src="{{asset('images/b-foot.svg')}}"></a>
 					<a href=""><img class="subs-m" src="{{asset('images/b-foot-m.png')}}"></a>
 				</div>
 				<br class="brm">
@@ -46,17 +46,17 @@
 					<li><a href="#" class="fa fa-envelope wow" ></a></li>
 					<li><a href="#" class="fa fa-linkedin wow" ></a></li>
 					<li><a href="#" class="fa fa-facebook wow" ></a></li>
-					<li><a href="#" class="fa fa-medium wow" ></a></li>
+					<li><a href="#"><img style="padding-top: 12px;" src="{{asset('images/m.svg')}}"></a></li>
 				</ul>
 				</div>	
-				<div class="row">
-					<div class="col-md-1" style="padding-left: 0px;">
+				<div class="row flex">
+					<div class="col-md-1 flex-mob" style="width:8%; padding-left: 0px;">
 						<ul class="social-icon">
 							<li><a class="fa fa-map-marker wow"></a></li>
 						</ul>
 					</div>
 					<div class="col-md-11" style="padding-top: 10px; padding-left: 0px;">
-						<h9 class="ft_text">Telkom Landmark Tower lt.38.<br class="brs">Jl. Gatot Subroto No. Kav. 52, Kuningan Barat,<br class="brs">Mampang Prapatan, Kota Jakarta Selatan, DKI Jakarta</h9>
+						<p class="ft_text">Telkom Landmark Tower lt.38.<br class="brs">Jl. Gatot Subroto No. Kav. 52, Kuningan Barat,<br class="brs">Mampang Prapatan, Kota Jakarta Selatan, DKI Jakarta</p>
 					</div>
 				</div>
 			</div>
