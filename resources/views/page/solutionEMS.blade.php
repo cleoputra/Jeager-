@@ -53,8 +53,10 @@
 <!-- SEC 2 -->
 <section class="parallax-section" >
 	<div class="row">
-	<div class="col-md-12" style="text-align: center;">
-		<h7 class="txt6"><!-- <img src="{{asset('images/e2.png')}}" align="left"> -->Membantu Industri Manufaktur untuk melakukan <br>condition-based monitoring dengan lebih mudah.<!-- <img align="right" src="{{asset('images/e3.png')}}"> --></h7>
+	<div class="col-md-12" style="justify-content:center; display: flex;">
+		
+	<p class="petik-ems" > " </p><h6 class="txt6">Membantu Industri Manufaktur untuk melakukan <br>condition-based monitoring dengan lebih mudah.<p class="petik-ems" style="margin-left: 700px;"> " </p></h6>
+		
 	</div>
 </div>
 </section>

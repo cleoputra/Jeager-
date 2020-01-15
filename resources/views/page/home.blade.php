@@ -11,7 +11,7 @@
 
 		<!-- navbar header -->
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-2.png')}}"></a>
+			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-2.svg')}}"></a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar white"></span>
 				<span class="icon icon-bar white"></span>
@@ -34,11 +34,12 @@
 </div>
 
 <!-- START SECTION -->
-	
+
+<!-- SEC 0 -->
 <div class="par-sec-1"></div>
 	
 
-<section class="parallax-section" style="">
+<section class="parallax-section">
 	<div class="container">
 		<div class="row">
 		<div class="wow col-md-6" >
@@ -58,7 +59,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="{{asset('images/h2.png')}}">
+				<img src="{{asset('images/h2.svg')}}">
 			</div>
 					
 			<div class="col-md-6" style="padding-left: 30px; padding-right: 80px;">
@@ -73,7 +74,7 @@
 </section>
 
 
-<section class="parallax-section-ems" style="background-color: #808080; padding-top: 35px;">
+<section class="parallax-section-ems left-none" style="background-color: #808080; padding-top: 35px; padding-left: 85px;">
 	<div class="container">
 			<div class="col-md-12" style="margin-bottom: 50px;">
 				<h3 class="txt-white">Solusi kami memberi Anda lebih banyak informasi</h3>
@@ -82,20 +83,20 @@
 
 			<div class="col-md-6" style="margin-bottom: 20px;">
 					<div class="col-md-6" style=" margin-top:0px; margin-bottom: 0px;">
-						<img class="img-h-1" width="104px" height="71px" src="{{asset('images/p1.png')}}"><br><br>
+						<img class="img-h-1" width="104px" height="71px" src="{{asset('images/p1.svg')}}"><br><br>
 						<h6 class="txt-white-s">Digitilasasi untuk menciptakan hasil bisnis</h6>
 					<br><br><br>
-						<img class="img-h-2" src="{{asset('images/p2.png')}}"><br><br><Br>
+						<img class="img-h-2" src="{{asset('images/p2.svg')}}"><br><br><Br>
 						<h6 class="txt-white-s">Memahami karakteristik Manufaktur di Indonesia</h6>
 					</div>
 			</div>
 
 			<div class="col-md-6" style="margin-bottom: 20px;">
 					<div class="col-md-8" style=" margin-top:0px; margin-bottom: 0px;">
-						<img class="img-h-2" src="{{asset('images/p3.png')}}"><br><br><br>
+						<img class="img-h-2" src="{{asset('images/p3.svg')}}"><br><br><br>
 						<h6 class="txt-white-s" style="color: white; font-size: 20px;" >Merubah data menjadi informasi untuk peningkatan performa produk</h6>
 					<br><br><br>
-						<img class="img-h-4" src="{{asset('images/p4.png')}}"><br><br>
+						<img class="img-h-4" src="{{asset('images/p4.svg')}}"><br><br>
 						<h6 class="txt-white-s" >Sistem dapat diakses dimana saja via web dan mobile</h6>
 					</div>
 			</div>
