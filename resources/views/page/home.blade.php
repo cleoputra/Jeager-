@@ -1,8 +1,5 @@
 @include('includes.header')
 
-<title>Jeager - Industrial Internet of Things</title>
-<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-
 <!-- =========================
      NAVIGATION LINKS     
 ============================== -->
@@ -24,7 +21,7 @@
 				<li><a style="color: white;" href="{{route('home.Jeager')}}" >Beranda</a></li>
 				<li><a style="color: white;" href="{{route('solution.Jeager')}}" >Solusi Jeager</a></li>
 				<li><a style="color: white;" href="{{route('about.Jeager')}}" >Tentang Jeager</a></li>
-				<li><a style="color: white;" href="#" >Berita</a></li>
+				<li><a style="color: white;" href="{{route('news.Jeager')}}" >Berita</a></li>
 				<li><a style="color: white;"><img class="subs-w" src="{{asset('images/Indonesia.png')}}"> Bahasa Indonesia</a></li>
 			</ul>
 
@@ -43,7 +40,7 @@
 	<div class="container">
 		<div class="row">
 		<div class="wow col-md-6" >
-			<h3 class="txt2-home">Pelajari bagaimana platform<br> kami bekerja.</h3>
+			<h3 class="txt2-home">Pelajari bagaimana<br> platform kami bekerja.</h3>
 		</div>
 		<div class="col-md-6 col-sm-10" >
 			<div class="embed-responsive embed-responsive-16by9">

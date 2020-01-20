@@ -177,7 +177,7 @@ font-size: 16px !important;
 line-height: 19px !important; 
 }
 
-line-height{ 16px !important;
+line-height{ 
 width: 100% !important;
 }
   .txt-sol{
@@ -282,8 +282,6 @@ width: 100% !important;
 .subs-m{
   display: inline !important; 
   margin: 10px !important;
-  height: 30px !important;
-  width: 300px !important;
 }
 
   #ip2{
@@ -307,6 +305,20 @@ width: 100% !important;
 
   .flex-mob{
     width: 14% !important;
+  }
+
+  .subsBut{
+    margin-top: 12px !important;
+    padding:6px 120px !important;
+  }
+
+  .embed-responsive-item{
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .no-flex-mobile{
+    flex: none !important;
   }
 }
 
@@ -560,7 +572,7 @@ hr{
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-  color: white;"
+  color: white;
 }
 
 .white{
@@ -572,7 +584,11 @@ hr{
 }
 
 .petik-ems{
-  font-size: 72px; font-family: Times New Roman; color: #2D6DA4; opacity: 0.2;
+  font-size: 72px; 
+  font-family: 'Times New Roman', Times, serif;
+  color: #2D6DA4; 
+  opacity: 0.2;
+
 }
 
 .flex{
@@ -582,6 +598,29 @@ hr{
 .flex-center{
   display: flex; 
   justify-content: center;
+}
+
+.subsBut {
+	background:linear-gradient(to bottom, #2d6da4 5%, #1e62d0 100%);
+	background-color:black;
+	border-radius:10px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px 24px;
+	
+}
+.subsBut:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #2d6ca4 100%);
+  background-color:#2d6da4;
+  color: white;
+}
+.subsBut:active {
+	position:relative;
+	top:1px;
 }
 
 

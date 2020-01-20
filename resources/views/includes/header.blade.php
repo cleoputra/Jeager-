@@ -23,4 +23,5 @@
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
 
 </head>
-
+<title>Jeager - Industrial Internet of Things</title>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">

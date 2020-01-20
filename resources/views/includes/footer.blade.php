@@ -11,7 +11,7 @@
 	<div class="container">
 	
 			<div class="col-md-4 left-nul" style="padding-left: 78px;">
-				<img class="logo_Jeager" align="" src="{{asset('images/logo_footer.svg')}}">
+				<img class="logo_Jeager" src="{{asset('images/logo_footer.svg')}}">
 			</div>
 
 			<div class="col-md-3 left-nul" align="left" style="padding-left: 70px; padding-top: 20px;">
@@ -32,8 +32,7 @@
 				</div>
 				<div class="row center-mobile">
 					<input type="email" name="" placeholder="E-mail" id="ip2"/>
-					<a href=""><img class="subs-w" src="{{asset('images/b-foot.svg')}}"></a>
-					<a href=""><img class="subs-m" src="{{asset('images/b-foot-m.png')}}"></a>
+					<a href="" class="subsBut">Subscribe</a>
 				</div>
 				<br class="brm">
 				
