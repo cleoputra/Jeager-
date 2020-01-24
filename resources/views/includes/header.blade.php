@@ -24,4 +24,8 @@
 
 </head>
 <title>Jeager - Industrial Internet of Things</title>
+<style>
+
+
+</style>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">

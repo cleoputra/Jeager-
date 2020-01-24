@@ -277,9 +277,8 @@ footer {
     color: black;
     opacity: 100%;
     font-size: 12px;
-    font-weight: 500;
     letter-spacing: 0.6px;
-    line-height: 0px;
+    line-height: 20px;
 }
 
 
@@ -287,7 +286,6 @@ footer {
     background: #2D6DA4;
     color: white;
     border-radius: 10px;
-    
 }
 
 .custom-navbar .nav li.active > a {
@@ -745,6 +743,7 @@ p {font-size: 13px;}
 
   .custom-navbar .navbar-brand {
     font-size: 2rem;
+    padding-left: 10px !important;
   }
 
   .custom-navbar .nav li a {
@@ -769,6 +768,7 @@ p {font-size: 13px;}
 
   .custom-navbar .navbar-brand {
     line-height: 20px;
+    padding-left: 10px !important;
   }
 
   #overview img,
