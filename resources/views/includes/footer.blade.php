@@ -7,6 +7,33 @@
 	</div>
 </section>
 
+<!-- POP-UP -->
+<button class="open-button" onclick="openForm()"><li class="fa fa-phone"></li><b>&nbsp &nbsp Hubungi Kami</button>
+
+<div class="form-popup w3-animate-bottom" id="myForm">
+  <form action="#" class="form-container">
+    <h6 class="txt-pop-head" style="text-align: left;"><li class="fa fa-phone"></li><b> Hubungi Kami</b></h6>
+    <p class="txt-tag">Isi data dibawah ini dan kami akan mendukung bisnis anda.</p>
+
+    <label class="txt-pop-label"><li class="fa fa-building">&nbsp &nbsp Nama Perusahaan*</label>
+    <input type="text" id="pop-input" name="email" >
+
+    <label class="txt-pop-label"><li class="fa fa-envelope">&nbsp &nbsp E-mail*</label>
+    <input type="text" id="pop-input" name="email" >
+
+    <label class="txt-pop-label"><li class="fa fa-phone">&nbsp &nbsp No. Telepon*</label>
+    <input type="text" id="pop-input" name="email" >
+
+    <label class="txt-pop-label"><li class="fa fa-question">&nbsp &nbsp Pertanyaan*</label>
+    <input type="text" id="pop-input" name="email" >
+
+    <button type="submit" class="btn">Kirim</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!-- END POP-UP -->
+
+
 <footer style="background-color: #2D6DA4">
 	<div class="container">
 	
@@ -20,18 +47,18 @@
 				<a class="ft_text" href="">Solusi Jeager</a><br>
 				<a class="ft_text" href="">Tentang Jeager</a><br>
 				<a class="ft_text" href="">Berita</a><br>
-				<br>
+				<br> 
 				<h7 class="ft_text"><b>Solusi kami</b></h7><br>
 				<a class="ft_text" href="">OEE Monitoring System</a><br>
 				<a class="ft_text" href="">Environment Monitoring System</a>
 			</div>
-
+			<br class="br-none-w"> <br class="br-none-w"> 
  			<div class="col-md-5" align="left" style="padding-top: 20px; ">
-				<div class="row center-mobile">
-				<h7 class="ft_text"><b>Biarkan kami memberi lebih banyak informasi.<br class="brs">Subscribe sekarang.</b></h7>
+				<div class="row left-mobile">
+				<h7 class="ft_text"><b>Biarkan kami memberi lebih banyak informasi.<br class="brs">Subscribe sekarang.</b></h7> <br class="br-none-w">
 				</div>
-				<div class="row center-mobile">
-					<input type="email" name="" placeholder="E-mail" id="ip2"/>
+				<div class="row left-mobile">
+					<input type="email" name="" placeholder="Enter your email address" id="ip2"/>
 					<a href="" class="subsBut">Subscribe</a>
 				</div>
 				<br class="brm">
@@ -41,11 +68,11 @@
 				</div>	
 				<div class="row">
 					<ul class="social-icon">
-					<li><a href="#" class="fa fa-whatsapp wow" ></a></li>
-					<li><a href="#" class="fa fa-envelope wow" ></a></li>
-					<li><a href="#" class="fa fa-linkedin wow" ></a></li>
-					<li><a href="#" class="fa fa-facebook wow" ></a></li>
-					<li><a href="#"><img style="padding-top: 12px;" src="{{asset('images/m.svg')}}"></a></li>
+					<li><a href="https://wa.me/6282211776239" target="_blank" class="fa fa-whatsapp wow" ></a></li>
+					<li><a href="mailto:info@jeager.io" target="_blank" class="fa fa-envelope wow" ></a></li>
+					<li><a href="https://www.linkedin.com/company/jeager-manufacturingsolution/" target="_blank" class="fa fa-linkedin wow" ></a></li>
+					<li><a href="https://www.facebook.com/jeagersolution/" target="_blank" class="fa fa-facebook wow" ></a></li>
+					<li><a href="https://medium.com/jeager-industrial-internet-of-things" target="_blank"><img style="padding-top: 12px;" src="{{asset('images/m.svg')}}"></a></li>
 				</ul>
 				</div>	
 				<div class="row flex">
@@ -68,12 +95,22 @@
 
 
 <!-- Back top -->
-<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+<!-- <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a> -->
 
 
 <!-- =========================
      SCRIPTS   
 ============================== -->
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/jquery.parallax.js')}}"></script>

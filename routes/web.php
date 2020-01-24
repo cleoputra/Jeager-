@@ -21,10 +21,11 @@ Route::view('/news', 'page.news')->name('news.Jeager');
 
 Route::view('/test', 'page.test')->name('test.Jeager');
 
-Route::get('testing', function(){
-    
-    $path = '../resources/lang/en/newsJeager.json';
-    $content = json_decode(file_get_contents($path), true);
 
-    return view('page.test', compact('path'));
-});
+// Route::get('testing', function(){
+    
+//     $path = '../resources/lang/en/newsJeager.json';
+//     $content = json_decode(file_get_contents($path), true);
+
+//     return view('page.test', compact('path'));
+// });

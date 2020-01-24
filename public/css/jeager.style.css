@@ -75,6 +75,10 @@ html, body {width: auto!important; overflow-x: hidden!important}
     text-align: center !important;
   }
 
+  .left-mobile{
+    text-align: left !important;
+  }
+
   .icon-footer{
     width: 11px !important;
     height: 16px !important;
@@ -82,6 +86,16 @@ html, body {width: auto!important; overflow-x: hidden!important}
 
   .cont-full{
     width: 100% !important;
+  }
+
+  .br-none{
+    margin-bottom: 0px !important;
+    display: block !important;
+  }
+
+  .br-none-w{
+    margin-bottom: 22px !important;
+    display: block !important ;
   }
 
 /*TEXT*/
@@ -285,7 +299,7 @@ width: 100% !important;
 }
 
   #ip2{
-    width: 300px !important;
+    width: 305px !important;
   }
 
   .logo_Jeager{
@@ -300,7 +314,8 @@ width: 100% !important;
   }
 
   .margin-min{
-    margin-bottom: 30px !important;
+    margin-bottom: 75px !important;
+    margin-top: 50px !important;
   }
 
   .flex-mob{
@@ -309,7 +324,7 @@ width: 100% !important;
 
   .subsBut{
     margin-top: 12px !important;
-    padding:6px 120px !important;
+    padding:6px 125px !important;
   }
 
   .embed-responsive-item{
@@ -319,6 +334,10 @@ width: 100% !important;
 
   .no-flex-mobile{
     flex: none !important;
+  }
+
+  .l-none{
+    left: 0px !important;
   }
 }
 
@@ -414,6 +433,29 @@ line-height: 19px;
 color: #808080;
 }
 
+.txt-pop-label{
+font-family: Roboto;
+font-weight: bold;
+font-size: 13px;
+line-height: 15px;
+color: white;
+}
+
+.txt-tag{
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #D4D4D4;
+}
+
+.txt-pop-head{
+  font-family: Roboto;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+color: white;
+}
 
 .header2{
   font-size: 42px; 
@@ -546,7 +588,7 @@ color: #FFFFFF;
 
 .brm{
   display: block;
-  margin-bottom: 4.5em;
+  margin-bottom: 4.8em;
 }
 
 .brs{
@@ -554,14 +596,24 @@ color: #FFFFFF;
   margin-bottom: -0.5em;
 }
 
+.br-none-w{
+  margin-bottom: 0px ;
+  display: block ;
+}
 
 #ip2 {
     border-radius: 10px;
     border: 2px white;
     padding: 5px;
-    width: 167px;
+    width: 180px;
     height: 26px;    
     color: black;
+}
+
+#ip2::placeholder{
+font-size: 14px;
+line-height: 16px;
+color: #D4D4D4;
 }
 
 hr{
@@ -623,5 +675,77 @@ hr{
 	top:1px;
 }
 
+/* POP UP FORM */
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+background: #102F4A;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
 
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  border: 2px solid #102F4A;
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #102F4A;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #5A87AE;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  border-radius: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#pop-input{
+    border-radius: 10px;
+}
 
