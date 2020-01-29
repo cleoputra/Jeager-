@@ -45,7 +45,7 @@
 <div class="par-sec-3"></div>
 
 <!-- SEC 2 -->
-<section class="parallax-section">
+<section class="parallax-section" id="oee-2">
 	<div class="container">
 		<div class="col-md-8">
 			<img class="petik" src="{{asset('images/o2.png')}}">
