@@ -51,7 +51,7 @@
 	<div class="row">
 	<div class="col-md-12" style="justify-content:center; display: flex;">
 		
-	<p class="petik-ems" > " </p><h6 class="txt6">Membantu Industri Manufaktur untuk melakukan <br>condition-based monitoring dengan lebih mudah.<p class="petik-ems" style="margin-left: 700px;"> " </p></h6>
+	<h6 class="txt6"><p class="petik-ems" style="margin-right: 700px;"> "</p> Membantu Industri Manufaktur untuk melakukan <br>condition-based monitoring dengan lebih mudah.<p class="petik-ems" style="margin-left: 700px;"> " </p></h6>
 		
 	</div>
 </div>

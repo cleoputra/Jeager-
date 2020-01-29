@@ -29,3 +29,6 @@ Route::view('/test', 'page.test')->name('test.Jeager');
 
 //     return view('page.test', compact('path'));
 // });
+
+Route::view('/admin-dash', 'admin.dashboard')->name('admin.dash');
+Route::view('/admin-detail', 'admin.detail')->name('admin.detail');
