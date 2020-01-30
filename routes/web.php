@@ -17,14 +17,11 @@ Route::view('/solution', 'page.solutionJeager')->name('solution.Jeager');
 Route::view('/solution-OEE', 'page.solutionOEE')->name('solution.oee');
 Route::view('/solution-EMS', 'page.solutionEMS')->name('solution.ems');
 
-Route::view('/news', 'page.news')->name('news.Jeager');
+Route::get('/news', 'NewsController@getCURL')->name('news.Jeager');
 
 Route::view('/test', 'page.test')->name('test.Jeager');
-
-
 Route::view('/admin-dash', 'admin.dashboard')->name('admin.dash');
 Route::view('/admin-detail', 'admin.detail')->name('admin.detail');
-
 
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
