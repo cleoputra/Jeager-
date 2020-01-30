@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="{{asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="{{asset('bower_components/Ionicons/css/ionicons.min.css')}}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('dist/css/AdminLTE.min.css')}}">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -23,10 +21,7 @@
   <link rel="stylesheet" href="{{asset('bower_components/morris.js/morris.css')}}">
   <!-- jvectormap -->
   <link rel="stylesheet" href="{{asset('bower_components/jvectormap/jquery-jvectormap.css')}}">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="{{asset('bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
+  
   <!-- bootstrap wysihtml5 - text editor -->  
   <link rel="stylesheet" href="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
   <!-- iCheck -->
@@ -37,7 +32,7 @@
   <link rel="icon" href="{{asset('images/icon-head.png')}}">
 
 </head>
-<body class="hold-transition skin-green sidebar-mini">
+<body class="hold-transition skin-purple sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -67,13 +62,13 @@
               <li class="user-footer">
 
                 <div class="pull-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href=""
+                    <a class="dropdown-item" href="{{route('logout')}}"
                        onclick="event.preventDefault();
                                      document.getElementById('logout-form').submit();">
                         {{ __('Logout') }}
                     </a>
 
-                    <form id="logout-form" action="" method="POST" style="display: none;">
+                    <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
                         @csrf
                     </form>
                 </div>
