@@ -641,12 +641,12 @@ font-weight: normal;
 }
 
 #ip2 {
-    border-radius: 10px;
-    border: 2px white;
-    padding: 5px;
-    width: 180px;
-    height: 26px;    
-    color: black;
+  border-radius: 10px;
+  border: 2px white;
+  padding: 5px;
+  width: 180px;
+  height: 26px;    
+  color: black;
 }
 
 #ip2::placeholder{
@@ -679,7 +679,6 @@ hr{
   font-family: "Times New Roman", Times, serif;
   color: #2D6DA4; 
   opacity: 0.2;
-
 }
 
 .flex{
@@ -687,7 +686,6 @@ hr{
 }
 
 .flex-center{
-  display: flex; 
   justify-content: center;
 }
 

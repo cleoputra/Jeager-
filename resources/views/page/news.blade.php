@@ -41,9 +41,9 @@
 
 <!-- SEC 2 -->
 <section class="parallax-section">
-	<div class="container">
-        <div class="row flex-center">                              		
-        	<div class="col-md-3 col-sm-6" >
+	<div class="container-fluid">
+        <div class="row">                              		
+        	<div class="col-md-3">
         		<div class="choice_item">
 					<img class="img-fluid" src="{{asset('images/n1.jpeg')}}" alt="">
 						<div class="choice_text">
@@ -55,7 +55,7 @@
 				</div>
         	</div>
 
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-3">
         		<div class="choice_item">
 					<img class="img-fluid" src="{{asset('images/n2.jpeg')}}" alt="">
 						<div class="choice_text">
@@ -67,7 +67,7 @@
 				</div>
 			</div>
 	
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-3">
         		<div class="choice_item">
 					<img class="img-fluid" src="{{asset('images/n3.jpeg')}}" alt="">
 						<div class="choice_text">

@@ -8,7 +8,7 @@
                 <div class="col-md-12">
                   <div class="box box-widget widget-user">
                     <!-- Add the bg color to the header using any of the bg-* classes -->
-                    <div class="widget-user-header bg-green-active">
+                    <div class="widget-user-header bg-purple-active">
                       <h3 class="widget-user-username"></h3>
                     </div>
                     <div class="widget-user-image">
