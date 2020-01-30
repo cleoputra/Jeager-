@@ -17,11 +17,9 @@ Route::view('/solution', 'page.solutionJeager')->name('solution.Jeager');
 Route::view('/solution-OEE', 'page.solutionOEE')->name('solution.oee');
 Route::view('/solution-EMS', 'page.solutionEMS')->name('solution.ems');
 
-Route::view('/news', 'page.news')->name('news.Jeager');
+Route::get('/news', 'NewsController@getCURL')->name('news.Jeager');
 
 Route::view('/test', 'page.test')->name('test.Jeager');
-
-
 // Route::get('testing', function(){
     
 //     $path = '../resources/lang/en/newsJeager.json';
