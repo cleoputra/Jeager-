@@ -20,13 +20,22 @@ Route::view('/solution-EMS', 'page.solutionEMS')->name('solution.ems');
 Route::get('/news', 'NewsController@getCURL')->name('news.Jeager');
 
 Route::view('/test', 'page.test')->name('test.Jeager');
+<<<<<<< HEAD
 // Route::get('testing', function(){
     
 //     $path = '../resources/lang/en/newsJeager.json';
 //     $content = json_decode(file_get_contents($path), true);
+=======
 
-//     return view('page.test', compact('path'));
-// });
 
 Route::view('/admin-dash', 'admin.dashboard')->name('admin.dash');
 Route::view('/admin-detail', 'admin.detail')->name('admin.detail');
+>>>>>>> fd466a367f35691e892039c45a8773cdb9a1cbce
+
+
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+Auth::routes(['register' => false]);
+Auth::routes();
+
