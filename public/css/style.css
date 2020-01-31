@@ -180,7 +180,6 @@ footer {
 
   /* Create the parallax scrolling effect */
   padding-top: 800px;
-  background-color: #102F4A;
 
   background-position: center;
   background-size: 100%;
@@ -804,93 +803,18 @@ p {font-size: 13px;}
 
 }
 
-/* choice Area css
-============================================================================================ */
-.choice_inner {
-  margin-bottom: -30px;
+
+.news:hover{
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.choice_item {
-  margin-bottom: 30px;
+.news-col{
+  width: 75%; 
+  margin:auto; 
 }
 
-.choice_item .choice_text {
-  margin-top: 20px;
-}
-
-.choice_item .choice_text h4 {
-  font-size: 18px;
-  line-height: 27px;
-  color: #222222;
-  font-family: "Roboto", sans-serif;
+.news-txt{
   font-weight: 500;
-  margin-bottom: 15px;
-  -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
-  transition: all 300ms linear 0s;
-  padding-right: 40px;
+font-size: 22px;
+line-height: 26px;
 }
-
-.choice_item:hover{
-   box-shadow: 1px 5px 5px grey;
-   margin-right: 20px;
-}
-
-.choice_item .choice_text h4:hover {
-  color: #2D6DA4;;
-}
-
-.choice_item .choice_text p {
-  margin-bottom: 0px;
-}
-
-.choice_text {
-  margin-top: 20px;
-}
-
-.choice_text h4 {
-  font-size: 18px;
-  line-height: 27px;
-  color: #222222;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  margin-bottom: 15px;
-  -webkit-transition: all 300ms linear 0s;
-  -o-transition: all 300ms linear 0s;
-  transition: all 300ms linear 0s;
-}
-
-.choice_text p {
-  margin-bottom: 0px;
-}
-
-.small .choice_text h4 {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.date {
-  margin-bottom: 15px;
-}
-
-.date .gad_btn {
-  color: #fff;
-}
-
-.date a {
-  color: #777777;
-  font-size: 12px;
-  font-family: "Open Sans", sans-serif;
-  margin-right: 15px;
-}
-
-.date a i {
-  padding-right: 8px;
-}
-
-.date a:last-child {
-  margin-right: 0px;
-}
-
-/* End choice Area css
-============================================================================================ */

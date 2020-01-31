@@ -10,25 +10,25 @@
 <!-- POP-UP -->
 <button class="open-button" onclick="openForm()"><li class="fa fa-phone"></li><b>&nbsp &nbsp Hubungi Kami</button>
 <!-- mobile btn-pop  -->
-<button class="open-button-m subs-m" onclick="openForm()"><li class="fa fa-phone"></li></button>
+<button class="open-button-m subs-m" onclick="openForm()"><li style="font-size: 22px;" class="fa fa-phone"></li></button>
 
 <div class="form-popup" id="myForm">
   <form action="#" class="form-container">
 	<h6 class="txt-pop-head"><li class="fa fa-phone"></li><b> Hubungi Kami</b>
-	<li onclick="closeForm()" class="fa fa-times" id="close" ></h6>
+	<li onclick="closeForm()" class="fa fa-times" id="close"></h6>
 	
-	<p class="txt-tag">Isi data dibawah ini dan kami akan mendukung bisnis anda.</p>
+	<p class="txt-tag">Isi data dibawah ini dan kami akan mendukung bisnis anda.</p><br>
 
-    <label class="txt-pop-label"><li class="fa fa-building">&nbsp &nbsp Nama Perusahaan*</label>
+    <li class="fa fa-building white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Perusahaan*</label>
     <input type="text" id="pop-input" name="email" >
 
-    <label class="txt-pop-label"><li class="fa fa-envelope">&nbsp &nbsp E-mail*</label>
+    <li class="fa fa-envelope white-c"><label class="txt-pop-label">&nbsp &nbsp E-mail*</label>
     <input type="text" id="pop-input" name="email" >
 
-    <label class="txt-pop-label"><li class="fa fa-phone">&nbsp &nbsp No. Telepon*</label>
+    <li class="fa fa-phone white-c"><label class="txt-pop-label">&nbsp &nbsp No. Telepon*</label>
     <input type="text" id="pop-input" name="email" >
 
-    <label class="txt-pop-label"><li class="fa fa-question">&nbsp &nbsp Pertanyaan*</label>
+	<li class="fa fa-question white-c"><label class="txt-pop-label">&nbsp &nbsp Pertanyaan*</label>
     <input type="text" id="pop-input" name="email" >
 
     <button type="submit" class="btn">Kirim</button>
