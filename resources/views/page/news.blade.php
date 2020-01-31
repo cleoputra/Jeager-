@@ -30,33 +30,28 @@
     </div>
 </div <!-- SEC 1 -->
 <section class="parallax-section-blank">
-    <div class="container">
-        <div class="row" style="text-align: center;">
-            <h3 class="header2 content-50">Kenali lebih lanjut tentang<br> apa yang kami lakukan.</h3>
-        </div>
+    <div class="container" style="text-align:center;">
+        <h3 class="header2 content-50">Kenali lebih lanjut tentang<br class=none> apa yang kami lakukan.</h3>
     </div>
 </section>
 
 <!-- SEC 2 -->
 <section class="parallax-section">
     <div class="container">
-        <div class="row">
-            @foreach($news as $n)
-            <div class="col-sm-6 col-md-3 col-lg-4">
-                <div class="choice_item">
-                    <img class="img-fluid" src="{{$n->image}}" alt="{{$n->title}}">
-                    <div class="choice_text">
-                        <a href="{{$n->link}}" target="_blank">
-                            <h4>{{$n->title}}</h4>
-                        </a>
-                        <div class="date">
-                            <a><i class="fa fa-calendar" aria-hidden="true"></i>{{$n->created_at}}</a>
-                        </div>
-                    </div>
+        <div class="row news-col">
+        @foreach($news as $n)
+            <div class="col-sm-6 col-md-4">
+                <a href="{{$n->link}}" target="_blank"><div class="thumbnail news">
+                <img src="{{$n->image}}" alt="{{$n->title}}">
+                <div class="caption">
+                    <h5><b>{{$n->title}}</b></h5>
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp{{date("d F Y", strtotime($n->created_at))}}</p>      
+                </div>
                 </div>
             </div>
+            </a>
             @endforeach
-        </div>
+         </div>
     </div>
 </section>
 

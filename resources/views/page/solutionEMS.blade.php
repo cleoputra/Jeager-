@@ -15,7 +15,7 @@
 				<span class="icon icon-bar"></span>
 			</button>
 		</div>
-		<div class="collapse navbar-collapse">
+	<div class="collapse navbar-collapse">
 
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="{{route('home.Jeager')}}" >Beranda</a></li>

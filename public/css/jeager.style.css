@@ -21,8 +21,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
   }
 
   .content-50{
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    padding: 20px !important;
   }
 
   .custom-navbar-h {
@@ -37,6 +36,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
   .par-sec-3 {
   /* The image used */
   background-image: url('../images/o1-mobile.png') !important;
+  padding-top: 650px !important;
   }
   .par-sec-4{
   background-image: url('../images/e1-mobile.png') !important;    
@@ -45,7 +45,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
   background-image: url('../images/about-mob.png') !important; 
   padding-top: 646px !important;
   margin-top: 100px !important;
-
+  background-size: 90% 93% !important;
   }
 
   .parallax-section{
@@ -375,6 +375,11 @@ width: 100% !important;
   .petik-ems{
     display: none !important;
   }
+
+  .flex-center{
+    display: grid !important;
+  }
+  
 }
 
 
@@ -473,9 +478,8 @@ color: #808080;
 
 .txt-pop-label{
 font-family: "Roboto";
-font-weight: bold;
-font-size: 13px;
 line-height: 15px;
+font-size: 13px;
 color: white;
 }
 
@@ -488,7 +492,6 @@ color: white;
 }
 
 .txt-pop-head{
-  font-family: Roboto;
 font-weight: bold;
 font-size: 16px;
 line-height: 19px;
@@ -687,6 +690,7 @@ hr{
 
 .flex-center{
   justify-content: center;
+  display: flex;
 }
 
 .subsBut {
@@ -726,6 +730,10 @@ hr{
   right: 28px;
   width: 280px;
   z-index: 1;
+}
+
+.content-50{
+  padding: auto;
 }
 
 /* The popup form - hidden by default */
@@ -769,6 +777,7 @@ hr{
   width: 100%;
   margin-bottom:10px;
   border-radius: 10px;
+  font-family: "Roboto";
 }
 
 /* Add a red background color to the cancel button */
@@ -793,5 +802,10 @@ hr{
 
 #oee-2{
   padding-left: 50px;
+}
+
+
+.white-c{
+  color: white;
 }
 
