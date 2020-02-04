@@ -3,26 +3,26 @@
 <!-- =========================
      NAVIGATION LINKS     
 ============================== -->
-<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+<div class="navbar navbar-fixed-top custom-navbar greyz" role="navigation">
 	<div class="container">
 
 		<!-- navbar header -->
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-1.png')}}"></a>
+			<a href="{{route('home.Jeager')}}" class="navbar-brand"><img src="{{asset('images/logo-1.svg')}}"></a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
 		</div>
-	<div class="collapse navbar-collapse">
+		<div class="collapse navbar-collapse">
 
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="{{route('home.Jeager')}}" >Beranda</a></li>
 				<li><a href="{{route('solution.Jeager')}}" >Solusi Jeager</a></li>
 				<li><a href="{{route('about.Jeager')}}" >Tentang Jeager</a></li>
 				<li><a href="{{route('news.Jeager')}}" >Berita</a></li>
-				<li> <a><img class="subs-w" src="{{asset('images/English.png')}}"> English</li>
+				<li> <a><img class="subs-w" src="{{asset('images/Indonesia.png')}}"> Indonesia</li>
 			</ul>
 
 		</div>
@@ -38,7 +38,7 @@
 		<a style="font-size: 12px; color: #808080;"> > </a> 
 		<a href="{{route('solution.Jeager')}}" style="font-size: 12px; color: #808080;">&nbsp Solusi Jeager &nbsp</a>
 		<a style="font-size: 12px; color: #808080;"> > </a>
-		<a href="{{route('solution.ems')}}" style="font-size: 12px; color: #808080;">&nbsp OEE Monitoring System </a>
+		<a href="{{route('solution.ems')}}" style="font-size: 12px; color: #808080;">&nbsp Environment Monitoring System </a>
 	</div>
 </section>
 

@@ -341,14 +341,14 @@ width: 100% !important;
   }
 
   .open-button-m {
-    background: #5A87AE !important;
+    background: #2B2B2B !important;
       color: white !important;
       border: 30px !important;
       cursor: pointer !important; 
-      border-radius: 50% !important;
+      border-radius: 100% !important;
       position: fixed !important;
-      bottom: 23px !important;
-      right: 15px !important;
+      bottom: 0px !important;
+      right: 5px !important;
       padding: 24px;
       z-index: 1;
     }
@@ -719,15 +719,15 @@ hr{
 /* POP UP FORM */
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  background: #102F4A;
+  background: #2B2B2B;
   color: white;
   padding: 16px 20px;
   border: none;
   text-align: left;
   cursor: pointer;
   position: fixed;
-  bottom: 23px;
-  right: 28px;
+  bottom: 0px;
+  right: 0px;
   width: 280px;
   z-index: 1;
 }
@@ -740,9 +740,9 @@ hr{
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 18px;
-  border: 2px solid #102F4A;
+  bottom: 0px;
+  right: 0px;
+  border: 2px solid #2B2B2B;
   z-index: 1;  
 }
 
@@ -750,7 +750,7 @@ hr{
 .form-container {
   max-width: 300px;
   padding: 20px;
-  background-color: #102F4A;
+  background-color: #2B2B2B;
 }
 
 /* Full-width input fields */

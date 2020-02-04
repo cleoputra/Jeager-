@@ -8,7 +8,7 @@
 
 		<!-- navbar header -->
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand"><img src="{{asset('images/logo-2.svg')}}"></a>
+			<a href="{{route('home.Jeager')}}" class="navbar-brand"><img src="{{asset('images/logo-2.svg')}}"></a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar white"></span>
 				<span class="icon icon-bar white"></span>
@@ -22,7 +22,7 @@
 				<li><a style="color: white;" href="{{route('solution.Jeager')}}" >Solusi Jeager</a></li>
 				<li><a style="color: white;" href="{{route('about.Jeager')}}" >Tentang Jeager</a></li>
 				<li><a style="color: white;" href="{{route('news.Jeager')}}" >Berita</a></li>
-				<li><a style="color: white;"><img class="subs-w" src="{{asset('images/English.png')}}"> English</a></li>
+				<li><a style="color: white;"><img class="subs-w" src="{{asset('images/Indonesia.png')}}"> Indonesia</a></li>	
 			</ul>
 
 		</div>
@@ -33,10 +33,13 @@
 <!-- START SECTION -->
 
 <!-- SEC 0 -->
-<div class="par-sec-1"></div>
+<div class="par-sec-1">
+	<li class="none" style="text-align: center;"><a href="#section2"><img src="{{asset('images/arrow.png')}}"></a></li>
+	<br>
+</div>
 	
 
-<section class="parallax-section">
+<section class="parallax-section" id="section2">
 	<div class="container">
 		<div class="row">
 		<div class="wow col-md-6" >

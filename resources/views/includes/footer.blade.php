@@ -19,6 +19,9 @@
 	
 	<p class="txt-tag">Isi data dibawah ini dan kami akan mendukung bisnis anda.</p><br>
 
+	<!-- <li class="fa fa-user white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Lengkap*</label>
+    <input type="text" id="pop-input" name="email" > -->
+
     <li class="fa fa-building white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Perusahaan*</label>
     <input type="text" id="pop-input" name="email" >
 
