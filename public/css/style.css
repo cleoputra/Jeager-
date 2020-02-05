@@ -146,18 +146,21 @@ footer {
   padding-bottom: 50px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .par-sec-1 {
   /* The image used */
   background-image: url('../images/h1.png');
 
   /* Create the parallax scrolling effect */
-  padding-top: 750px;
+  padding-top: 585px;
   background-color: #102F4A;
 
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: 90%;
 }
 
 
@@ -266,10 +269,13 @@ footer {
 .custom-navbar {
     margin-bottom: 0px;
     background-color: white;
+    
 }
 
 .custom-navbar .navbar-brand {
     padding-left: 180px;
+    width: 112px;
+    height: 40px;
 }
 
 .custom-navbar .nav li a {
@@ -285,12 +291,12 @@ footer {
     background: #2D6DA4;
     color: white;
     border-radius: 10px;
-
 }
 
-.custom-navbar .nav li.active > a {
-    background-color: transparent;
-    color: #66ccff;
+ .custom-navbar .nav li.active > a {
+  background: #2D6DA4;
+  color: white;
+  border-radius: 10px;
 }
 
 .custom-navbar .navbar-toggle {
@@ -306,18 +312,17 @@ footer {
 .custom-navbar .navbar-toggle .icon-bar {
     background: black;
     border-color: transparent;
-}
+} 
 
 @media(min-width:768px) {
     .custom-navbar {
-        padding: 20px 0;
+        padding: 5px 0;
         border-bottom: 0;
         background: 0 0;
     }
     .custom-navbar.top-nav-collapse {
-        background: #101010;
-        padding: 0;
-        opacity: 0%;
+      background-color: rgba(255, 255, 255, 0.5);
+      
     }
 
 }
@@ -478,139 +483,6 @@ footer {
 }
 .tab-content {
   padding-top: 20px;
-}
-
-
-
-/*---------------------------------------
-    Regsiter section              
------------------------------------------*/
-#register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-}
-
-#register .form-control {
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 0px;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-
-#register input {
-  height: 45px;
-}
-
-#register input[type="submit"] {
-  background: #f2545f;
-  border-radius: 100px;
-  border: none;
-  color: #ffffff;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 12px;
-  transition: all 0.4s ease-in-out;
-}
-
-#register input[type="submit"]:hover {
-  background: #ffffff;
-  color: #222;
-}
-
-
-
-/*---------------------------------------
-   Faq section              
------------------------------------------*/
-#faq {
-  background: #f9f9f9;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
-#faq .panel-group {
-  margin-top: 32px;
-}
-
-#faq .panel-group .panel {
-  margin-bottom: 8px;
-}
-
-#faq .panel-default {
-  border: none;
-}
-
-#faq .panel-default>.panel-heading {
-  background: #f0f0f0;
-  color: #505050;
-}
-
-#faq .panel-heading {
-  border: none;
-  padding-top: 8px;
-  padding-bottom: 6px;
-}
-
-#faq .panel-default>.panel-heading+.panel-collapse>.panel-body {
-  border-top: none;
-  padding-top: 22px;
-  padding-left: 32px;
-  padding-bottom: 22px;
-}
-
-#faq .panel-heading .panel-title a[data-toggle="collapse"] {
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 10px 15px;
-}
-
-#faq .panel-heading .panel-title a[data-toggle="collapse"]::after {
-  content: "-";
-  display: block;
-  position: absolute;
-  line-height: 1;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
-  content: "+";
-}
-
-
-
-/*---------------------------------------
-   Venue section              
------------------------------------------*/
-#venue {
-    background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-
-#venue p {
-  padding-top: 12px;
-  padding-bottom: 18px;
-}
-
-
-
-/*---------------------------------------
-   Sponsors section              
------------------------------------------*/
-#sponsors img {
-  margin-top: 18px;
 }
 
 
@@ -803,7 +675,7 @@ p {font-size: 13px;}
 
 }
 
-
+/* NEWS */
 .news:hover{
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
 }

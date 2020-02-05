@@ -8,7 +8,7 @@
 
         <!-- navbar header -->
         <div class="navbar-header">
-            <a href="#" class="navbar-brand"><img src="{{asset('images/logo-1.svg')}}"></a>
+            <a href="{{route('home.Jeager')}}" class="navbar-brand"><img src="{{asset('images/logo-1.svg')}}"></a>
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
@@ -22,7 +22,7 @@
                 <li><a href="{{route('solution.Jeager')}}">Solusi Jeager</a></li>
                 <li><a href="{{route('about.Jeager')}}">Tentang Jeager</a></li>
                 <li><a href="{{route('news.Jeager')}}">Berita</a></li>
-                <li> <a><img class="subs-w" src="{{asset('images/English.png')}}"> Bahasa Indonesia</li>
+                <li> <a><img class="subs-w" src="{{asset('images/Indonesia.png')}}"> Indonesia</li>
             </ul>
 
         </div>
