@@ -792,6 +792,9 @@ hr{
 
 #pop-input{
     border-radius: 10px;
+    color:black;
+    font-family: Roboto;  
+    font-weight: bold;
 }
 
 #close{
