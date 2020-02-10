@@ -13,7 +13,8 @@
 <button class="open-button-m subs-m" onclick="openForm()"><li style="font-size: 22px;" class="fa fa-phone"></li></button>
 
 <div class="form-popup" id="myForm">
-  <form action="#" class="form-container">
+  <form method="POST" action="{{ route('submit') }}" class="form-container" id="form">
+  @csrf
 	<h6 class="txt-pop-head"><li class="fa fa-phone"></li><b> Hubungi Kami</b>
 	<li onclick="closeForm()" class="fa fa-times" id="close"></h6>
 	
@@ -23,18 +24,18 @@
     <input type="text" id="pop-input" name="email" > -->
 
     <li class="fa fa-building white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Perusahaan*</label>
-    <input type="text" id="pop-input" name="email" >
+    <input type="text" id="pop-input" name="perusahaan" >
 
     <li class="fa fa-envelope white-c"><label class="txt-pop-label">&nbsp &nbsp E-mail*</label>
     <input type="text" id="pop-input" name="email" >
 
     <li class="fa fa-phone white-c"><label class="txt-pop-label">&nbsp &nbsp No. Telepon*</label>
-    <input type="text" id="pop-input" name="email" >
+    <input type="text" id="pop-input" name="telp" >
 
 	<li class="fa fa-question white-c"><label class="txt-pop-label">&nbsp &nbsp Pertanyaan*</label>
-    <input type="text" id="pop-input" name="email" >
+    <input type="text" id="pop-input" name="pertanyaan" >
 
-    <button type="submit" class="btn">Kirim</button>
+    <button type="submit" class="btn" id="e-recruit" id="form">Kirim</button>
   </form>
 </div>
 <!-- END POP-UP -->
@@ -49,14 +50,14 @@
 
 			<div class="col-md-3 left-nul" align="left" style="padding-left: 70px; padding-top: 20px;">
 				<h7 class="ft_text"><b>Jelajahi lebih lanjut</b></h7><br>
-				<a class="ft_text" href="">Beranda</a><br>
-				<a class="ft_text" href="">Solusi Jeager</a><br>
-				<a class="ft_text" href="">Tentang Jeager</a><br>
-				<a class="ft_text" href="">Berita</a><br>
+				<a class="ft_text" href="{{route('home.Jeager')}}">Beranda</a><br>
+				<a class="ft_text" href="{{route('solution.Jeager')}}">Solusi Jeager</a><br>
+				<a class="ft_text" href="{{route('about.Jeager')}}">Tentang Jeager</a><br>
+				<a class="ft_text" href="{{route('news.Jeager')}}">Berita</a><br>
 				<br> 
 				<h7 class="ft_text"><b>Solusi kami</b></h7><br>
-				<a class="ft_text" href="">OEE Monitoring System</a><br>
-				<a class="ft_text" href="">Environment Monitoring System</a>
+				<a class="ft_text" href="{{route('solution.oee')}}">OEE Monitoring System</a><br>
+				<a class="ft_text" href="{{route('solution.ems')}}">Environment Monitoring System</a>
 			</div>
 			<br class="br-none-w"> <br class="br-none-w"> 
  			<div class="col-md-5" align="left" style="padding-top: 20px; ">

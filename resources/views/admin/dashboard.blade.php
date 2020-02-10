@@ -9,30 +9,30 @@
                 <h3 class="box-title"><b>Tabel Hubungi Kami </b></h3>
               </div>
               <!-- /.box-header -->
-              <div class="box-body table-responsive no-padding">
+              <div class="box-body table-responsive no-paddin g">
                 <table class="table table-hover">
                   <tr>
                     <th>ID</th>
                     <th>TANGGAL DAFTAR</th>
                     <th>NAMA PERUSAHAAN</th>
                   </tr>
-
+                      @foreach($formTable as $f_table)
                       <tr>
-                        <td>1</td>
-                        <td>1/28/2020</td>
-                        <td>PT. Indo Bharat Rayon</td>
+                        <td>{{ $f_table->id }}</td>
+                        <td>{{ $f_table->created_at }}</td>
+                        <td>{{ $f_table->perusahaan }}</td>
                        
                         <td>
-                          <form method="get" action="{{route('admin.detail')}}">
+                          <form method="get" action="{{ route('admin.detail', ['formTable' => $f_table->id]) }}">
                             <button type="submit" class="btn btn-success btn-sm">Detail</button>
                           </form>
                         </td>
                         
                         <td>
-                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-danger" @click="">Delete</button>
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-danger" @click="changeId({{ $f_table->id }})">Delete</button>
                         </td>
-                   
                       </tr>
+                      @endforeach
                     </table>
 
                       {{-- Modal Delete --}}
@@ -45,7 +45,7 @@
                               <h4 class="modal-title">Delete Data</h4>
                             </div>
                             <div class="modal-body">
-                            <p>This will be erased the data. Are you sure to proceed?</p>
+                            <p>This will be erased the #@{{ id }} data. Are you sure to proceed?</p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>

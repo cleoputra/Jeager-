@@ -21,21 +21,21 @@
                         
                         <div class="col-sm-4 border-right">
                           <div class="description-block">
-                            <h5 class="description-header"></h5>
+                            <h5 class="description-header">{{ $formTable->email }}</h5>
                             <span class="description-text">EMAIL</span>
                           </div>
                         </div>
                         
                         <div class="col-sm-4 border-right">
                           <div class="description-block">
-                            <h5 class="description-header"></h5>
+                            <h5 class="description-header">{{ $formTable->perusahaan }}</h5>
                             <span class="description-text">NAMA PERUSAHAAN</span>
                           </div>       
                         </div>
 
                         <div class="col-sm-4">
                           <div class="description-block">
-                            <h5 class="description-header"></h5>
+                            <h5 class="description-header">{{ $formTable->telp }}</h5>
                             <span class="description-text">NO. TELP</span>
                           </div>
                         </div>
@@ -49,7 +49,7 @@
                         
                         <div class="col-sm-4 border-right">
                           <div class="description-block">
-                            <h5 class="description-header"></h5>
+                            <h5 class="description-header">{{ $formTable->created_at }}</h5>
                             <span class="description-text">TANGGAL DAFTAR</span>
                           </div>
                         </div>
@@ -57,7 +57,7 @@
                         
                         <div class="col-sm-4 border-right">
                           <div class="description-block">
-                            <h5 class="description-header"></h5>
+                            <h5 class="description-header">{{ $formTable->pertanyaan }}</h5>
                             <span class="description-text">PERTANYAAN</span>
                           </div>
                         </div>

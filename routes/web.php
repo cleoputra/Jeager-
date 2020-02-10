@@ -20,8 +20,9 @@ Route::view('/solution-EMS', 'page.solutionEMS')->name('solution.ems');
 Route::get('/news', 'NewsController@getCURL')->name('news.Jeager');
 
 Route::view('/test', 'page.test')->name('test.Jeager');
-Route::view('/admin-dash', 'admin.dashboard')->name('admin.dash');
-Route::view('/admin-detail', 'admin.detail')->name('admin.detail');
+Route::get('/admin-dash', 'PostController@index')->name('admin.dash');
+Route::get('/admin-detail/{formTable}', 'PostController@detail')->name('admin.detail');
+Route::delete('delete/{formTable}', 'PostController@delete')->name('delete');
 
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
@@ -29,3 +30,5 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 Auth::routes(['register' => false]);
 Auth::routes();
 
+
+Route::post('/submit', 'FormController@submit')->name('submit');
