@@ -85,7 +85,7 @@
 			<div class="col-md-6" style="margin-bottom: 20px;">
 					<div class="col-md-6" style=" margin-top:0px; margin-bottom: 0px;">
 						<img class="img-h-1" width="104px" height="71px" src="{{asset('images/p1.svg')}}" alt="Digitalisasi"><br><br class="br-none">
-						<h6 class="txt-white-s">Digitilasasi untuk menciptakan hasil bisnis</h6>
+						<h6 class="txt-white-s">Digitalasasi untuk menciptakan hasil bisnis</h6>
 					<br><br><br>
 						<img class="img-h-2" src="{{asset('images/p2.svg')}}" alt="Karakteristik Manufaktur"><br><br class="br-none"><br class="br-none">
 						<h6 class="txt-white-s">Memahami karakteristik Manufaktur di Indonesia</h6>

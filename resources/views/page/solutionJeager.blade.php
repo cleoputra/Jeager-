@@ -35,7 +35,7 @@
 <section class="parallax-section-blank" >
 	<div class="container">
 		<div class="row" style="text-align: center;">			
-				<h3 class="header2 content-50">Tingkatkan produktifitas<br>Manufaktur Anda bersama kami</h3>
+				<h3 class="header2 content-50">Tingkatkan produktivitas<br>Manufaktur Anda bersama kami</h3>
 		</div>
 	</div>
 </section>
