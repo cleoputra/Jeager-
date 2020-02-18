@@ -16,29 +16,37 @@
   <form method="POST" action="{{ route('submit') }}" class="form-container" id="form">
   @csrf
 	<h6 class="txt-pop-head"><li class="fa fa-phone"></li><b> Hubungi Kami</b>
-	<li onclick="closeForm()" class="fa fa-times" id="close"></h6>
+	<li onclick="closeForm()" class="fa fa-angle-down" id="close"></h6>
 	
-	<p class="txt-tag">Isi data dibawah ini dan kami akan mendukung bisnis anda.</p><br>
+	<p class="txt-tag">Isi data diba`wah ini dan kami akan mendukung bisnis anda.</p><br>
 
-	<!-- <li class="fa fa-user white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Lengkap*</label>
-    <input type="text" id="pop-input" name="email" > -->
-
-    <li class="fa fa-building white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Perusahaan*</label>
-    <input type="text" id="pop-input" name="perusahaan" >
+    <li class="fa fa-building white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Lengkap/Perusahaan*</label>
+    <input type="text" id="pop-input" name="perusahaan" required>
 
     <li class="fa fa-envelope white-c"><label class="txt-pop-label">&nbsp &nbsp E-mail*</label>
-    <input type="text" id="pop-input" name="email" >
+    <input type="text" id="pop-input" name="email" required>
 
     <li class="fa fa-phone white-c"><label class="txt-pop-label">&nbsp &nbsp No. Telepon*</label>
-    <input type="text" id="pop-input" name="telp" >
+    <input type="text" id="pop-input" name="telp" required>
 
 	<li class="fa fa-question white-c"><label class="txt-pop-label">&nbsp &nbsp Pertanyaan*</label>
-    <input type="text" id="pop-input" name="pertanyaan" >
+    <input type="text" id="pop-input" name="pertanyaan" required>
 
-    <button type="submit" class="btn" id="e-recruit" id="form">Kirim</button>
+    <button type="submit" class="btn" id="myBtn">Kirim</button>
   </form>
 </div>
 <!-- END POP-UP -->
+
+<!-- Modal content -->
+<div id="myModal" class="modal">
+  <div class="modal-content" align="center">
+    <img width="96px" height="96px" src="{{asset('images/notif_done.png')}}">
+    <h2 class="t-big">Terkirim!</h2>
+    <p class="t-small">Terima kasih telah menghubungi kami. Tim kami akan segera menghubungi Anda.</p>
+    <button id="e-recruit" class="close" style="text-align:center;"><b>OK</button>
+  </div>
+</div>
+
 
 
 <footer style="background-color: #2D6DA4;">
@@ -60,7 +68,7 @@
 				<a class="ft_text" href="{{route('solution.ems')}}">Environment Monitoring System</a>
 			</div>
 			<br class="br-none-w"> <br class="br-none-w"> 
- 			<div class="col-md-5" align="left" style="padding-top: 20px; ">
+ 			<div class="col-md-5" align="left" style="padding-top: 20px;">
 				<div class="row left-mobile">
 				<h7 class="ft_text"><b>Biarkan kami memberi lebih banyak informasi.<br class="brs">Subscribe sekarang.</b></h7> <br class="br-none-w">
 				</div>
@@ -118,6 +126,27 @@ function closeForm() {
 }
 </script>
 
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/jquery.parallax.js')}}"></script>
@@ -126,5 +155,7 @@ function closeForm() {
 <script src="{{asset('js/wow.min.js')}}"></script>
 <script src="{{asset('js/custom.js')}}"></script>
 
+
 </body>
 </html>
+

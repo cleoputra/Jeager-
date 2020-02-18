@@ -64,14 +64,14 @@
 		<h6 class="txt-ems">Membantu Industri Manufaktur untuk memantau kondisi lingkungan di lokasi pabrik dengan lebih mudah. <br><br>Dengan indikator : Temperatur, Kelembapan, Kecepatan Angin, Indoor Pressure, Kadar Amonia, Intensitas Cahaya, Listrik, Tangki Solar. <br><br>*indikator dapat ditambah sesuai kebutuhan </h6>
 	</div>
 	<div class="col-md-6" >
-		<img align="left" src="{{asset('images/e4.png')}}">
+		<img align="left" src="{{asset('images/e4.png')}}" alt="Pemantauan Kondisi">
 	</div>
 </section>
 
 <!-- SEC 4 -->
 <section class="parallax-section" style="background-color: #E5EFF8;">
 	<div class="col-md-6">
-		<img align="right" src="{{asset('images/e5.png')}}">
+		<img align="right" src="{{asset('images/e5.png')}}" alt="Real-time">
 	</div>
 	<div class="col-md-6 section-ems-2">
 		<h3 class="txt-ems-h">Pemantauan Secara <i>Real-time</i></h3>
@@ -86,14 +86,14 @@
 		<h6 class="txt-ems">Memberikan informasi dan notifikasi jika terjadi kondisi <i><b>anomali</b></i> dari <i><b>threshold</b></i> yang ditentukan oleh pengguna.</h6>
 	</div>
 	<div class="col-md-6" >
-		<img align="left" src="{{asset('images/e6.png')}}">
+		<img align="left" src="{{asset('images/e6.png')}}" alt="Notifikasi">
 	</div>
 </section>
 
 <!-- SEC 6 -->
 <section class="parallax-section" style="background-color: #E5EFF8;">
 	<div class="col-md-6">
-		<img align="right" src="{{asset('images/e5.png')}}">
+		<img align="right" src="{{asset('images/e5.png')}}" alt="Pelaporan">
 	</div>
 	<div class="col-md-6 section-ems-2">
 		<h3 class="txt-ems-h">Pelaporan</h3>

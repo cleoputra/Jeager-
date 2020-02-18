@@ -22,6 +22,6 @@ class FormController extends Controller
             'pertanyaan' => $request->input('pertanyaan'),
            ]);
 
-           return back()->with('success', 'Berhasil submit!');
+           return back()->with('success_message', 'Berhasil submit!');
     }
 }

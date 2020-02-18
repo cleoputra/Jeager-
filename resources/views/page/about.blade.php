@@ -46,7 +46,7 @@
 <!-- SEC 2 -->
 <section class="parallax-section">
 	<div>
-		<img class="img-center" src="{{asset('images/h5.png')}}">
+		<img alt="Tentang Kami" class="img-center" src="{{asset('images/h5.png')}}">
 	</div>
 </section>
 

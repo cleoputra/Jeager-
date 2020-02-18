@@ -379,6 +379,14 @@ width: 100% !important;
   .flex-center{
     display: grid !important;
   }
+  .modal-content {
+    max-width: 280px !important;
+    max-height: 280px !important;
+    margin-left: 4% !important;
+  }
+  #b-ok {
+    padding: 12px 130px !important;
+  }
   
 }
 
@@ -795,6 +803,7 @@ hr{
     color:black;
     font-family: Roboto;  
     font-weight: bold;
+    height: 32px;
 }
 
 #close{
@@ -812,3 +821,85 @@ hr{
   color: white;
 }
 
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0%;
+  top: 0%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: absolute;
+  max-width: 370px;
+  max-height: 370px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-right: 28px;
+  padding-left:27px;
+  padding-bottom: 26px;
+  margin-left: 35%;
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.t-small{
+  font-size: 16px;
+line-height: 19px;
+font-weight: normal;
+text-align: center;
+color: #333333;
+}
+
+.t-big{
+  font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #333333;
+}
+
+#b-ok {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background-color:#f4f4f4;
+	border-radius:10px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#00a650;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+  padding:15px 170px;
+}
+
+#b-ok:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #f4f4f4 100%);
+	background-color:#f6f6f6;
+}
+#b-ok:active {
+	position:relative;
+	top:1px;
+}
