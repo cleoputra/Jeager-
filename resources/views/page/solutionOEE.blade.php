@@ -61,7 +61,7 @@
 	<div class="container">
 		<h3 class="txt6-white">Pemantauan OEE secara Real-Time</h3>
 		<h6 class="txt-sol-white">Memberikan informasi mengenai proses produksi dari sudut pandang mesin, lini produksi, pabrik dan perusahaan secara real-time. Dapat diakses dimana saja menggunakan perangkat apapun.</h6><br><br>
-		<img src="{{asset('images/oee1.png')}}">
+		<img src="{{asset('images/oee1.png')}}" alt="OEE secara Real-time">
 	</div>
 </section>
 
@@ -70,7 +70,7 @@
 	<div class="container" >
 		<h3 class="txt6-head">Data analisis yang anda inginkan</h3>
 		<h6 class="txt-sol">Membantu Departemen terkait untuk melakukan peningkatan berdasarkan data yang valid dan akurat.</h6><br><br>
-		<img src="{{asset('images/oee2.png')}}">
+		<img src="{{asset('images/oee2.png')}}" alt="Analisa Data">
 	</div>
 </section>
 
@@ -79,7 +79,7 @@
 	<div class="container">
 		<h3 class="txt6-white">Informasi Total Loss yang terjadi</h3>
 		<h6 class="txt-sol-white">Menyajikan loss total yang terjadi pada proses produksi.</h6><br><br>
-		<img src="{{asset('images/oee3.png')}}">
+		<img src="{{asset('images/oee3.png')}}" alt="Info Total Loss">
 	</div>
 </section>
 
@@ -88,7 +88,7 @@
 	<div class="container">
 		<h3 class="txt6-head">Lihat data lebih akurat</h3>
 		<h6 class="txt-sol">Menyajikan data dan informasi ke dalam grafis pareto untuk mempermudah proses analisa dan pengambilan keputusan. </h6><br><br>
-		<img src="{{asset('images/oee4.png')}}">
+		<img src="{{asset('images/oee4.png')}}" alt="Data yang Akurat">
 	</div>
 </section>
 
@@ -97,7 +97,7 @@
 	<div class="container">
 		<h3 class="txt6-white">Satu pabrik dalam satu data</h3>
 		<h6 class="txt-sol-white">Menghasilkan laporan nilai OEE sesuai dengan periode yang diinginkan untuk mempermudah dan mempercepat proses pelaporan.</h6><br><br>
-		<img src="{{asset('images/oee5.png')}}">
+		<img src="{{asset('images/oee5.png')}}" alt="Satu Pabrik dalam Satu Data">
 	</div>	
 </section>
 

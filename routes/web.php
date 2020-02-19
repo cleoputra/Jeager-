@@ -19,7 +19,6 @@ Route::view('/solution-EMS', 'page.solutionEMS')->name('solution.ems');
 
 Route::get('/news', 'NewsController@getCURL')->name('news.Jeager');
 
-Route::view('/test', 'page.test')->name('test.Jeager');
 Route::get('/admin-dash', 'PostController@index')->name('admin.dash');
 Route::get('/admin-detail/{formTable}', 'PostController@detail')->name('admin.detail');
 Route::delete('delete/{formTable}', 'PostController@delete')->name('delete');

@@ -78,26 +78,26 @@
 	<div class="container">
 			<div class="col-md-12" style="margin-bottom: 50px;">
 			<br class="br-none-w"><br class="br-none-w">
-				<h3 class="txt-white">Solusi kami memberi Anda lebih banyak informasi</h3>
+			<h3 class="txt-white">Solusi kami memberi Anda lebih banyak informasi</h3>
 			</div>
 		<div class="row">
 
 			<div class="col-md-6" style="margin-bottom: 20px;">
 					<div class="col-md-6" style=" margin-top:0px; margin-bottom: 0px;">
-						<img class="img-h-1" width="104px" height="71px" src="{{asset('images/p1.svg')}}"><br><br class="br-none">
-						<h6 class="txt-white-s">Digitilasasi untuk menciptakan hasil bisnis</h6>
+						<img class="img-h-1" width="104px" height="71px" src="{{asset('images/p1.svg')}}" alt="Digitalisasi"><br><br class="br-none">
+						<h6 class="txt-white-s">Digitalisasi untuk menciptakan hasil bisnis</h6>
 					<br><br><br>
-						<img class="img-h-2" src="{{asset('images/p2.svg')}}"><br><br class="br-none"><br class="br-none">
+						<img class="img-h-2" src="{{asset('images/p2.svg')}}" alt="Karakteristik Manufaktur"><br><br class="br-none"><br class="br-none">
 						<h6 class="txt-white-s">Memahami karakteristik Manufaktur di Indonesia</h6>
 					</div>
 			</div>
 			<br class="br-none-w"><br class="br-none-w">
 			<div class="col-md-6" style="margin-bottom: 20px;">
 					<div class="col-md-8" style=" margin-top:0px; margin-bottom: 0px;">
-						<img class="img-h-2" src="{{asset('images/p3.svg')}}"><br><br class="br-none"><br class="br-none">
+						<img class="img-h-2" src="{{asset('images/p3.svg')}}" alt="Merubah Data"><br><br class="br-none"><br class="br-none">
 						<h6 class="txt-white-s" style="color: white; font-size: 20px;" >Merubah data menjadi informasi untuk peningkatan performa produk</h6>
 					<br><br><br>
-						<img class="img-h-4" src="{{asset('images/p4.svg')}}"><br><br class="br-none" >
+						<img class="img-h-4" src="{{asset('images/p4.svg')}}" alt="Diakses via web dan mobile"><br><br class="br-none" >
 						<h6 class="txt-white-s" >Sistem dapat diakses dimana saja via web dan mobile</h6>
 					</div>
 			</div>

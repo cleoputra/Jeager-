@@ -35,7 +35,7 @@
                       @endforeach
                     </table>
 
-                      {{-- Modal Delete --}}
+                      <!-- Modal Delete -->
                       <div class="modal modal-danger fade" id="modal-danger">
                         <div class="modal-dialog">
                           <div class="modal-content">
