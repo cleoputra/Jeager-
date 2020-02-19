@@ -67,7 +67,7 @@
 			</div>
 					
 			<div class="col-md-8 zig-zag-2" >
-				<h3 class="txt1" style="color: black; text-align: left;">Enviroment Monitoring System.</h3>
+				<h3 class="txt1" style="color: black; text-align: left;">Environment Monitoring System.</h3>
 				<h7 class="txt-grey" >Sistem monitoring lingkungan untuk menginformasikan</h4><br><i>real-condition </i>dari area yang di tentukan</h7>
 				<br><br>
 				<a class="txt5" href="{{route('solution.ems')}}" >Lihat lebih lanjut > </a>

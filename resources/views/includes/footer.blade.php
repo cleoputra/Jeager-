@@ -18,7 +18,7 @@
 	<h6 class="txt-pop-head"><li class="fa fa-phone"></li><b> Hubungi Kami</b>
 	<li onclick="closeForm()" class="fa fa-angle-down" id="close"></h6>
 	
-	<p class="txt-tag">Isi data diba`wah ini dan kami akan mendukung bisnis anda.</p><br>
+	<p class="txt-tag">Isi data dibawah ini dan kami akan mendukung bisnis anda.</p><br>
 
     <li class="fa fa-building white-c"><label class="txt-pop-label">&nbsp &nbsp Nama Lengkap/Perusahaan*</label>
     <input type="text" id="pop-input" name="perusahaan" required>
