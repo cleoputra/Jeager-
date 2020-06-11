@@ -150,18 +150,18 @@ html{
   scroll-behavior: smooth;
 }
 
-.par-sec-1 {
-  /* The image used */
-  background-image: url('../images/h1.png');
+  .par-sec-1 {
+    /* The image used */
+    background-image: url('../images/h1.png');
 
-  /* Create the parallax scrolling effect */
-  padding-top: 585px;
-  background-color: #102F4A;
+    /* Create the parallax scrolling effect */
+    padding-top: 585px;
+    background-color: #102F4A;
 
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 90%;
-}
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 90%;
+  }
 
 
 .par-sec-2 {

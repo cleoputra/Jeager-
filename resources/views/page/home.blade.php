@@ -59,7 +59,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="{{asset('images/h2.svg')}}">
+				<img src="{{asset('images/h2.png')}}">
 			</div>
 					
 			<div class="col-md-6" style="padding-left: 30px; padding-right: 80px;">
