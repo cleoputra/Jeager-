@@ -53,6 +53,8 @@
 			</div>	
 			<div class="col-md-8">
 					<img src="{{asset('images/h3.png')}}" alt="OEE System"><br><br>
+					<img src="{{asset('images/h3.svg')}}" alt="OEE System"><br><br>
+
 			</div>
 	
 </section>
@@ -64,6 +66,7 @@
 				
 			<div class="col-md-4 zig-zag">
 				<img class="img-sol" src="{{asset('images/h4.png')}}" alt="Environment Monitoring System"><br><br>
+				<img class="img-sol" src="{{asset('images/h4.svg')}}" alt="Environment Monitoring System"><br><br>
 			</div>
 					
 			<div class="col-md-8 zig-zag-2" >
